@@ -6,7 +6,7 @@ Research checked October 18, 2026. This is a collection/testing proposal, not a 
 
 Collect multiple listener distances. There is no verified single reference distance that establishes recognition of every weapon at every audible range. Turning down a close sample is not a substitute for collecting genuine distant examples. Train for the conditions the app will actually encounter, then measure generalization on separate recordings.
 
-The existing app detects the `gunshot` sound class. It does not identify a weapon by name or estimate its distance. Weapon identity would be a separate supervised task; recording identity metadata now will make that possible later without promising it works today.
+The existing app detects the `gunshot` sound class. It does not acoustically identify a weapon by name or estimate its distance. The labeler now supports human weapon metadata and context-based proposals from curated public sources; see [public-source collection](TRAINING.md#building-the-weapon-dataset-from-public-source-videos). A trained weapon recognizer remains a separate future task.
 
 ## What the sources establish
 
@@ -90,7 +90,7 @@ file,take_id,session_id,game_version,weapon,weapon_upgrade,attachments,firing_mo
 
 Mark unavailable information `unknown`. One record per constant setup is fine; if a five-minute file changes weapon, distance or room, include the relevant start/end timestamps in the notes or make separate takes. Describe `self`/`teammate`/`other_raider` accurately: recording a teammate is legitimate sound-class data but does not establish an enemy-only classifier.
 
-This log is collection metadata. The current labeler does not have weapon-name/distance controls and the training code does not automatically use this CSV. Continue marking audible intervals as `gunshot` in the labeler. Later code would need to load this metadata explicitly for per-distance reports or weapon-name training.
+This recording log is collection metadata. The labeler now has an optional human weapon field for `gunshot`, but no distance controls. The training code does not automatically use this recording-log CSV; it differs from the public-source seed CSV supported by `build-weapon-dataset`. Continue marking audible intervals as `gunshot`. Per-distance reports and weapon-name training still need a separate implementation.
 
 ## How to test whether one recording distance is enough
 

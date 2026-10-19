@@ -118,13 +118,71 @@ def binary_metrics(y, scores, threshold=.6, classes=CORE_CLASSES):
     return result
 
 
+def _presence_rows(clip, classes):
+    # Import here so the offline model and quick-review producer share exactly
+    # the same eligibility rules, without making inference load review widgets.
+    from .presence_review import presence_training_rows
+    return presence_training_rows(clip, classes)
+
+
+def _media_sha256(path):
+    digest = hashlib.sha256()
+    with path.open("rb") as stream:
+        for block in iter(lambda: stream.read(1024 * 1024), b""):
+            digest.update(block)
+    return digest.hexdigest()
+
+
+def _clip_training_windows(clip, audio, classes):
+    """Combine legacy exhaustive intervals and exact human presence questions.
+
+    A presence answer supplies precisely one existing second, never a sliding
+    family of windows and never event onset/offset or another class's negatives.
+    """
+    targets, legacy_keys, presence_keys = {}, set(), set()
+    for end_frame in range(RATE, len(audio) + 1, round(HOP * RATE)):
+        end = end_frame / RATE
+        target = window_labels(end - WINDOW, end, clip, classes)
+        if target is not None:
+            key = (end_frame - RATE, end_frame)
+            targets[key] = target
+            legacy_keys.add(key)
+    spans = reviewed_spans(clip, classes)
+    for row in _presence_rows(clip, classes):
+        first, last = round(row["start"] * RATE), round(row["end"] * RATE)
+        if (abs(first - row["start"] * RATE) > 1e-6
+                or abs(last - row["end"] * RATE) > 1e-6 or last - first != RATE):
+            raise ValueError(f"Presence review is not an exact sample-aligned second: {clip['file']}")
+        if first < 0 or last > len(audio):
+            raise ValueError(f"Presence review exceeds available audio: {clip['file']}. Recheck its source and answer.")
+        key = first, last
+        target = np.array([float(row["present"])], np.float32)
+        fully_reviewed = any(span["start"] <= row["start"] + 1e-6
+                             and row["end"] <= span["end"] + 1e-6 for span in spans)
+        # 'Any gunfire?' differs from a legacy grid window's weak-boundary
+        # exclusion. Even a small audible overlap contradicts a human No.
+        legacy_present = any(interval["label"] == "gunshot"
+                             and min(row["end"], interval["end"]) > max(row["start"], interval["start"])
+                             for interval in clip.get("intervals", []))
+        if ((not row["present"] and legacy_present)
+                or (row["present"] and fully_reviewed and not legacy_present)
+                or (key in targets and not np.array_equal(targets[key], target))):
+            raise ValueError(f"Conflicting human labels in {clip['file']} at {row['start']:.4f}-{row['end']:.4f}s. "
+                             "Reopen quick review and resolve its answer or the overlapping saved intervals before training.")
+        targets[key] = target
+        presence_keys.add(key)
+    return targets, legacy_keys, presence_keys
+
+
 def train_model(manifest, output=None, progress=print, classes=CORE_CLASSES):
     classes = tuple(classes)
     if not classes or len(set(classes)) != len(classes) or not set(classes).issubset(TARGET_CLASSES):
         raise ValueError("Choose one or more unique supported sound classes")
     manifest = Path(manifest)
+    manifest_bytes = manifest.read_bytes()
     doc = load_dataset(manifest)
-    eligible = [c for c in doc["clips"] if c.get("track_confirmed") and reviewed_spans(c, classes)]
+    eligible = [c for c in doc["clips"] if c.get("track_confirmed")
+                and (reviewed_spans(c, classes) or _presence_rows(c, classes))]
     if not eligible:
         raise ValueError("No reviewed clips with confirmed audio tracks covering the selected classes. Run label-training and review the selected event types plus background first.")
     for split in ("train", "validation"):
@@ -132,10 +190,14 @@ def train_model(manifest, output=None, progress=print, classes=CORE_CLASSES):
         if not selected:
             raise ValueError(f"No reviewed {split} clips. Label separate recording groups for train and validation.")
         for label in classes:
-            if not any(r["label"] == label for c in selected for r in c.get("intervals", [])):
+            if not (any(r["label"] == label for c in selected for r in c.get("intervals", []))
+                    or (label == "gunshot" and any(row["present"] for c in selected
+                                                   for row in _presence_rows(c, classes)))):
                 raise ValueError(f"No {label} labels in {split}. Every selected class needs verified examples in both splits.")
     # Do not load/use held-out test audio while fitting or selecting anything.
     arrays = {s: ([], []) for s in ("train", "validation")}
+    annotation_counts = {s: {"presence_windows": 0, "interval_windows": 0, "legacy_interval_windows": 0}
+                         for s in arrays}
     used = []
     for clip in eligible:
         if clip["split"] == "test":
@@ -143,19 +205,32 @@ def train_model(manifest, output=None, progress=print, classes=CORE_CLASSES):
         path = media_path(manifest, clip)
         if not path.is_file() or path.stat().st_size != clip["size"]:
             raise ValueError(f"Media changed or is missing: {clip['file']}. Recheck annotations before training.")
+        presence = _presence_rows(clip, classes)
+        stamp = path.stat()
+        if presence and clip.get("presence_media") is not None:
+            if clip["presence_media"] != {"size": stamp.st_size, "mtime_ns": stamp.st_mtime_ns}:
+                raise ValueError(f"Media changed since quick review: {clip['file']}. Recheck its source before training.")
+        if presence and clip.get("source_sha256") and _media_sha256(path) != clip["source_sha256"]:
+            raise ValueError(f"Media SHA-256 changed: {clip['file']}. Recheck quick-review answers before training.")
         progress(f"Reading {clip['file']} / {clip['split']}")
         # Cap decode to the reviewed portion, not the entire collection.
+        ends = [r["end"] for r in reviewed_spans(clip, classes)] + [r["end"] for r in presence]
         audio = read_media_audio(path, clip["audio_stream"], RATE,
-                                 max_seconds=max(r["end"] for r in reviewed_spans(clip, classes)))
+                                 max_seconds=max(ends))
+        if path.stat().st_size != stamp.st_size or path.stat().st_mtime_ns != stamp.st_mtime_ns:
+            raise ValueError(f"Media changed during training: {clip['file']}. Close writers and recheck labels.")
         xs, ys = arrays[clip["split"]]
-        for end_frame in range(RATE, len(audio) + 1, round(HOP * RATE)):
-            end = end_frame / RATE
-            target = window_labels(end - WINDOW, end, clip, classes)
-            if target is not None:
-                xs.append(features(audio[end_frame - RATE:end_frame]))
-                ys.append(target)
+        windows, legacy_keys, presence_keys = _clip_training_windows(clip, audio, classes)
+        for (first, last), target in sorted(windows.items()):
+            xs.append(features(audio[first:last]))
+            ys.append(target)
+        row_counts = annotation_counts[clip["split"]]
+        row_counts["presence_windows"] += len(presence_keys)
+        row_counts["interval_windows"] += len(legacy_keys - presence_keys)
+        row_counts["legacy_interval_windows"] += len(legacy_keys)
         used.append({"file": clip["file"], "group": clip["group"], "split": clip["split"],
-                     "audio_stream": clip["audio_stream"]})
+                     "audio_stream": clip["audio_stream"], "presence_windows": len(presence_keys),
+                     "source_sha256": clip.get("source_sha256")})
     counts = {}
     converted = {}
     for split, (xs, ys) in arrays.items():
@@ -169,20 +244,28 @@ def train_model(manifest, output=None, progress=print, classes=CORE_CLASSES):
             pos, neg = int(y[:, index].sum()), int((1 - y[:, index]).sum())
             if min(pos, neg) < minimum:
                 raise ValueError(f"{split}/{label}: {pos} positive, {neg} negative windows; need at least {minimum} of each. Label more audio including background.")
-        counts[split] = {"windows": len(y), "positive_windows": dict(zip(classes, y.sum(axis=0).astype(int).tolist()))}
+        counts[split] = {"windows": len(y), **annotation_counts[split],
+                         "positive_windows": dict(zip(classes, y.sum(axis=0).astype(int).tolist()))}
         converted[split] = x, y
     progress(f"Fitting {len(classes)} independent logistic heads on log-mel features")
     started = time.perf_counter()
     mean, scale, weights = fit_logistic(*converted["train"])
     x_val, y_val = converted["validation"]
+    has_presence = any(row["presence_windows"] for row in annotation_counts.values())
+    has_intervals = any(row["legacy_interval_windows"] for row in annotation_counts.values())
+    annotation_kind = ("window_presence_and_intervals" if has_presence and has_intervals
+                       else "window_presence" if has_presence else "intervals")
     report = {"version": 1, "feature_version": FEATURE_VERSION, "classes": list(classes),
               "created_at": utc_now(),
               "rate": RATE, "window_seconds": WINDOW, "hop_seconds": HOP,
               "training_seconds": time.perf_counter() - started,
-              "manifest_sha256": hashlib.sha256(manifest.read_bytes()).hexdigest(),
+              "manifest_sha256": hashlib.sha256(manifest_bytes).hexdigest(),
+              "annotation_kind": annotation_kind,
               "clips_used": used, "counts": counts,
               "validation_window_metrics_at_0.6": binary_metrics(y_val, probabilities(x_val, mean, scale, weights), classes=classes),
-              "limitations": "Experimental shallow model. Scores uncalibrated. Window metrics are not event accuracy; test split untouched. Cannot identify enemy/teammate/self."}
+              "limitations": "Experimental shallow model. Scores uncalibrated. Sampled-window metrics are not event recall or gameplay accuracy; test split untouched. Presence answers describe only their exact seconds, not event boundaries. Overlapping windows are not independent examples. Cannot identify enemy/teammate/self or weapon identity."}
+    if manifest.read_bytes() != manifest_bytes:
+        raise ValueError("Dataset changed during training. Close the labeler and rerun; no model was saved.")
     output = Path(output) if output else default_model_path()
     output.parent.mkdir(parents=True, exist_ok=True)
     temporary = output.with_suffix(".tmp")

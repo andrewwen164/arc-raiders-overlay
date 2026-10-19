@@ -18,6 +18,7 @@ dependencies = [
 dev = ["pytest>=8.3,<10", "ruff>=0.11,<0.16"]
 classifier = ["torch>=2.6,<3", "transformers>=4.48,<5", "huggingface-hub>=0.28,<1", "safetensors>=0.5,<1"]
 training = ["av>=16,<20"]
+collection = ["av>=16,<20", "yt-dlp[default]>=2025.3.31,<2028", "imageio-ffmpeg>=0.6,<0.7"]
 
 [project.scripts]
 arc-audio = "arc_audio.__main__:main"

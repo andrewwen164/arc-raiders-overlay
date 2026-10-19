@@ -22,3 +22,7 @@ training/.labeler-smoke.json
 1st test/.labeler-smoke.suggestions.json
 training/imported/
 1st test/imported/
+training/sources/
+*.collection.lock
+training/.weapon-*-smoke.json
+training/.weapon-*-smoke.suggestions.json

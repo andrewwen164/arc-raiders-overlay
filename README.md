@@ -12,13 +12,17 @@ The baseline detects **sound activity** and **transients**, not footsteps or ene
 
 The labeler supports reversible AI decisions, editing saved intervals, manual intervals without suggestions, and importing additional local video/WAV recordings. See [adding and editing training data](TRAINING.md#add-your-own-intervals-or-recordings). Importing external recordings copies them locally into the dataset; it does not modify the originals or start live capture.
 
+**Simple gunfire review is now the default:** `label-training training\dataset.json` plays short samples and asks **Yes / No / Unsure**, with optional weapon multiple choice, replay, previous/undo and automatic advance. Those answers train one-second gunfire presence directly; no manual timestamps or reviewed-range marking is required. Use `--advanced` only for the optional interval editor. See [quick review and training](TRAINING.md#quick-gunfire-review-yes--no--unsure).
+
+**Public weapon-audio collection:** the curated CSV can now drive explicit yt-dlp audio acquisition, timestamp-limited transient proposals and weapon-context pre-labeling in the existing labeler. Review with Accept/Reject/Correct Weapon; nothing is automatically accepted or trained. See [building the weapon dataset](TRAINING.md#building-the-weapon-dataset-from-public-source-videos). Collection downloads source audio into the local dataset cache; ordinary inference still uses no network or audio uploads.
+
 ## Scope and permission
 
 This uses standard WASAPI whole-output-device loopback, Win32 desktop window styles and `RegisterHotKey`. It does not read game memory, inject code, install rendering/input hooks, change game files, inspect packets, automate gameplay, or bypass anti-cheat.
 
 **Permission for live-match use has not been established. This is not approved by Embark and is not guaranteed safe from bans.** Developer policy approval means the developer permits a particular use. Anti-cheat detection is a separate technical question: using documented desktop APIs does not prove permission or prevent detection. Obtain explicit guidance from the developer before using it in live matches. Start with synthetic or your own recorded audio.
 
-All inference is local. There are no paid APIs, accounts, audio uploads, or runtime network calls. Package installation and the explicit model-download command require Internet access. Settings, model files and detection logs are local. The app **never writes captured raw audio** and has no recording feature; its only WAV-writing command creates a synthetic fixture on explicit request. Audio exists temporarily in bounded RAM buffers (50 ms chunks; AST retains about 10.24 seconds).
+All inference is local. There are no paid APIs, accounts or audio uploads. Ordinary analysis makes no network calls; package installation, explicit model downloads and the optional source-collection/discovery commands require Internet access. Settings, model files and detection logs are local. The app **never records captured raw audio**. Explicit media imports and collection retain local copies of selected source recordings; `make-demo` writes a synthetic WAV on request. Live audio exists temporarily in bounded RAM buffers (50 ms chunks; AST retains about 10.24 seconds).
 
 ## Setup — exact PowerShell commands
 

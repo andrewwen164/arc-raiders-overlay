@@ -3,7 +3,10 @@
 import hashlib
 import json
 import math
+import os
 import re
+import tempfile
+import time
 from pathlib import Path
 
 import numpy as np
@@ -14,6 +17,13 @@ CLASS_NAMES = {"footsteps": "Footsteps", "reload": "Reload", "gunshot": "Gunfire
                "landing": "Landing / fall impact", "snap_hook": "Snap Hook use", "zipline": "Zip-line use",
                "climb_vault": "Climb / vault", "healing": "Healing / consumables"}
 MEDIA_SUFFIXES = {".mp4", ".mkv", ".mov", ".wav"}
+
+
+def validate_weapon(value):
+    """Optional human weapon identity; event taxonomy remains unchanged."""
+    if value is not None and (not isinstance(value, str) or not re.fullmatch(r"[a-z0-9]+(?:_[a-z0-9]+)*", value)
+                              or len(value) > 80):
+        raise ValueError("Weapon must be an optional lowercase identifier such as anvil or il_toro")
 
 
 def require_av():
@@ -27,9 +37,23 @@ def require_av():
 def save_dataset(path, document):
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
-    temporary = path.with_suffix(".tmp")
-    temporary.write_text(json.dumps(document, indent=2), encoding="utf-8")
-    temporary.replace(path)
+    descriptor, name = tempfile.mkstemp(prefix="." + path.stem + "-", suffix=".tmp", dir=path.parent)
+    temporary = Path(name)
+    try:
+        with os.fdopen(descriptor, "w", encoding="utf-8") as stream:
+            stream.write(json.dumps(document, indent=2))
+        # Indexers/antivirus can briefly hold a Windows destination open. A
+        # bounded retry retains atomic replacement and never truncates labels.
+        for attempt in range(6):
+            try:
+                temporary.replace(path)
+                break
+            except PermissionError:
+                if attempt == 5:
+                    raise
+                time.sleep(.04 * (attempt + 1))
+    finally:
+        temporary.unlink(missing_ok=True)
 
 
 def media_path(manifest, clip):
@@ -56,7 +80,15 @@ def load_dataset(path):
     doc = json.loads(path.read_text(encoding="utf-8"))
     if not isinstance(doc, dict) or doc.get("version") != 1 or not isinstance(doc.get("clips"), list):
         raise ValueError("Dataset requires version 1 and a clips array")
-    seen, groups = set(), {}
+    if "weapons" in doc:
+        weapons = doc["weapons"]
+        if not isinstance(weapons, list) or any(not isinstance(weapon, str) for weapon in weapons):
+            raise ValueError("Dataset weapons must be a list of lowercase identifiers")
+        if len(set(weapons)) != len(weapons):
+            raise ValueError("Dataset weapon vocabulary contains duplicates")
+        for weapon in weapons:
+            validate_weapon(weapon)
+    seen, groups, collection_groups = set(), {}, {}
     for clip in doc["clips"]:
         if not isinstance(clip, dict) or not isinstance(clip.get("file"), str):
             raise ValueError("Each clip requires a local media filename")
@@ -76,6 +108,13 @@ def load_dataset(path):
         if group in groups and groups[group] != split:
             raise ValueError(f"Group {group} crosses splits; prevent recording/session leakage")
         groups[group] = split
+        source_id = clip.get("collection_source_id")
+        if source_id is not None:
+            if not isinstance(source_id, str) or not source_id:
+                raise ValueError("Collection source identity must be a nonempty string")
+            if source_id in collection_groups and collection_groups[source_id] != (group, split):
+                raise ValueError("A public source video crosses groups/splits; keep every variant together")
+            collection_groups[source_id] = (group, split)
         streams = clip.get("audio_streams", [])
         if clip.get("audio_stream") not in [s["index"] for s in streams]:
             raise ValueError(f"Invalid audio stream for {clip['file']}")
@@ -87,10 +126,15 @@ def load_dataset(path):
                 raise ValueError("Reviewed ranges need a nonempty list of supported classes")
         for row in clip.get("intervals", []):
             validate_span(row, duration)
+            validate_weapon(row.get("weapon"))
+            if row.get("weapon") is not None and row.get("label") != "gunshot":
+                raise ValueError("Weapon identity is supported only on gunshot annotations")
             if row.get("label") not in TARGET_CLASSES:
                 raise ValueError(f"Unsupported sound label; allowed: {', '.join(TARGET_CLASSES)}")
             if row.get("source", "unknown") not in ("unknown", "self", "teammate", "other_raider"):
                 raise ValueError("Invalid human source tag")
+        from .presence_review import validate_presence_reviews
+        validate_presence_reviews(clip)
     return doc
 
 
@@ -167,15 +211,22 @@ def reviewed_spans(clip, classes=CORE_CLASSES):
 
 def merge_reviewed(spans):
     """Merge only reviews with identical scope; preserve what was actually checked."""
-    scopes = {}
+    scopes, linked = {}, []
     for row in spans:
         scope = tuple(label for label in TARGET_CLASSES if label in row.get("classes", CORE_CLASSES))
+        if row.get("proposal_id"):
+            # Durable linkage makes undo safe even if the sidecar decision save
+            # failed. Never merge it into unrelated manual coverage.
+            linked.append(dict(row, classes=list(scope)))
+            continue
         scopes.setdefault(scope, []).append(row)
-    return [dict(row, classes=list(scope)) for scope, rows in scopes.items() for row in merge_spans(rows)]
+    return [dict(row, classes=list(scope)) for scope, rows in scopes.items() for row in merge_spans(rows)] + linked
 
 
 def dataset_summary(doc):
+    from .presence_review import presence_summary
     return {"clips": len(doc["clips"]), "minutes": round(sum(c["duration"] for c in doc["clips"]) / 60, 2),
+            "quick_review_windows": presence_summary(doc),
             "confirmed_tracks": sum(bool(c.get("track_confirmed")) for c in doc["clips"]),
             "reviewed_seconds": round(sum(r["end"] - r["start"] for c in doc["clips"]
                                           for r in merge_spans(c.get("reviewed", []))), 2),

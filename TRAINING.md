@@ -2,6 +2,44 @@
 
 The local backend can be trained for any selected subset of these classes. These are candidate cues to evaluate, not claims of reliable recognition. The first pilot now has human gunfire labels; no trained ARC model has been created yet. Label counts alone do not establish reviewed background or independent validation data. Use the readiness check below for the current saved state.
 
+## Quick gunfire review: Yes / No / Unsure
+
+This is now the default labeling view:
+
+```powershell
+.\.venv\Scripts\python.exe -m arc_audio label-training .\training\dataset.json
+```
+
+The app plays a brief sample from a proposed sound, then asks **Any gunfire in this sample?** Answer **Yes (Y)**, **No (N)** or **Unsure (U)**. Space replays it; Previous/Left and Undo let you change an answer. Automatic playback/advance is on by default. No timestamp entry, clip cutting, manual interval creation or **Mark range fully reviewed** step is needed for this workflow.
+
+For each new source, listen and answer the multiple-choice game-audio confirmation first. It is never automatically confirmed. Weapon selection is optional multiple choice and starts at **Unknown**, even when a source suggests a name. Only a positive answer with your explicit weapon choice records weapon metadata. No/Unsure do not identify a weapon. Background proposals are interleaved with shot candidates and ask the same neutral question; they are not assumed negative.
+
+Each Yes/No is saved as one exact, sample-aligned **one-second window presence label** in `presence_reviews`: Yes means gunfire occurs somewhere in that second; No means no gunfire in that second. It creates no precise event onset/offset and labels no surrounding audio or other sound class. Unsure and Undo have durable nontraining states in `presence_states`, so reopening after a candidate-sidecar save failure does not resurrect an old answer. The dataset is authoritative. Existing manual intervals/reviewed ranges are preserved, and conflicting answers are refused. Media fingerprints and selected-track checks protect answers from changed sources.
+
+Playback uses Qt's source timeline, codec seeking and timers, so its boundaries are approximate; these are presence questions, not sample-accurate event annotations. Controls unlock after playback and source confirmation. Replay or choose Unsure if a boundary, mixed sound, music, commentary or distant/suppressed shot makes the answer unclear. Keyboard shortcuts pause while a dropdown has focus.
+
+Use the source-role multiple choice to mark a genuinely separate recording group **Independent validation**; other reviewed sources can remain **Training**. This explicitly changes the whole group. Nothing is shuffled automatically, and final test sources remain excluded from quick review. Different uploads can reuse the same footage, so separate URLs alone do not establish independent recordings.
+
+Check progress, then train the first gunfire/background experiment after sufficient answers exist:
+
+```powershell
+.\.venv\Scripts\python.exe -m arc_audio training-status .\training\dataset.json
+.\.venv\Scripts\python.exe -m arc_audio train-local .\training\dataset.json `
+  --classes gunshot --output .\artifacts\quick-review-experiment\gunfire.npz
+```
+
+The current technical minimum is **20 Yes + 20 No training windows**, plus **5 Yes + 5 No validation windows** from independent groups. This is a minimum for running an experiment, not enough evidence to claim accuracy. You do not need to review every proposal before trying an initial fit. Quick answers feed training directly, exactly once per answered second; the trainer does not generate sliding labels around a Yes or infer background around it. Multi-class training cannot use a gunfire-only No to label other classes absent.
+
+The report distinguishes presence-window data from legacy intervals. Its validation metrics describe the sampled questions, not event-level recall, false alarms over all gameplay or accuracy on every weapon/distance. The event evaluator still requires actual event intervals and exhaustive reviewed spans; it will not invent those from Yes/No answers. This experiment output does not replace the default runtime model or activate itself in the companion. No actual model is trained until you run the command with sufficient human answers.
+
+The older interval editor remains optional for advanced work:
+
+```powershell
+.\.venv\Scripts\python.exe -m arc_audio label-training .\training\dataset.json --advanced
+```
+
+The interval/review-range instructions below describe that optional editor, not a prerequisite for quick gunfire review.
+
 | Label | Audible event to annotate |
 |---|---|
 | `footsteps` | Human walking/running steps |
@@ -27,12 +65,12 @@ The initial split has 17 train clips, one validation clip and one test clip. Cli
 
 Raw media remains in place. Inventory reads headers; training decodes only the selected audio track into memory. No extracted gameplay WAVs, network requests, uploads or paid services are used.
 
-## Start reviewing
+## Advanced interval review (optional)
 
 The first controlled collection is prepared separately: see [1st test/README.md](1st%20test/README.md). It contains seven listener-side clips with Silencer II conditions; Ferro 50 m silenced is missing. Open it with:
 
 ```powershell
-.\.venv\Scripts\python.exe -m arc_audio label-training '.\1st test\dataset.json'
+.\.venv\Scripts\python.exe -m arc_audio label-training '.\1st test\dataset.json' --advanced
 ```
 
 This pilot has review-only pretrained gunfire suggestions and defaults to checking only Gunfire. The original mixed-gameplay dataset below remains separate and its existing annotations are preserved.
@@ -53,10 +91,10 @@ The media dependency is installed in this checkout. On a new environment install
 Set-Location -LiteralPath 'C:\Users\andre\OneDrive\Desktop\Codebase\arc raiders overlay'
 uv pip install --python .venv\Scripts\python.exe 'av>=16,<20'
 .\.venv\Scripts\python.exe -m arc_audio prepare-training training
-.\.venv\Scripts\python.exe -m arc_audio label-training training\dataset.json
+.\.venv\Scripts\python.exe -m arc_audio label-training training\dataset.json --advanced
 ```
 
-You can also open **Label training videos…** from the main control window while analysis is stopped. The labeler plays the original local video with sound. Play/pause, seek, ±2 seconds, and slower playback help locate events. Position values are seconds on the video's timeline, including audio-track offsets.
+The main control window's **Label training videos** button opens quick review while analysis is stopped. Use the explicit `--advanced` command above for this optional interval editor. It plays the original local video with sound. Play/pause, seek, ±2 seconds, and slower playback help locate events. Position values are seconds on the video's timeline, including audio-track offsets.
 
 For each clip you review:
 
@@ -94,6 +132,116 @@ Accept is enabled only when a row is selected and **I listened and confirmed thi
 Only explicit acceptance saves a human interval; rejected or pending proposals supply no training examples. No action automatically adds reviewed coverage. Listen for missed events and independently mark fully checked ranges afterward. Avoid duplicate labels for one event/burst and keep final test annotation independent of model suggestions. Changes autosave; stale windows cannot overwrite newer dataset/decision files. A failed dataset save rolls back the edit, and a later decision-sidecar failure reports that sound labels saved but the decision needs retrying. Table/editor selection is reset after either failure so retries cannot target a different sorted row.
 
 Proposals include scores, processing time, media fingerprints and model/config hashes. Stale/other-track proposals are hidden. Reruns preserve decisions and add new IDs; they do not erase lower-scoring candidates from previous runs. Close the labeler while regenerating; the generator aborts rather than overwriting concurrently changed labels or proposals. The trainer/evaluator read only the dataset's human intervals and class-scoped reviewed ranges, never this sidecar.
+
+## Building the weapon dataset from public source videos
+
+You can collect weapon-shot proposals from the curated `arc_raiders_audio_seed_manifest.csv` without recording gameplay or cutting videos yourself. This extends the existing dataset and PySide labeler; it does **not** train a weapon classifier. Close the labeler before collection, then use PowerShell from this repository:
+
+```powershell
+.\.venv\Scripts\python.exe -m pip install -e '.[collection]'
+
+.\.venv\Scripts\python.exe -m arc_audio build-weapon-dataset `
+  .\arc_raiders_audio_seed_manifest.csv `
+  --dataset .\training\dataset.json
+
+.\.venv\Scripts\python.exe -m arc_audio weapon-dataset-status `
+  .\training\dataset.json
+
+.\.venv\Scripts\python.exe -m arc_audio label-training `
+  .\training\dataset.json
+```
+
+For an existing uv environment missing pip, run `uv --cache-dir .cache\uv pip install --python .venv\Scripts\python.exe pip` first. The collection extra includes PyAV, yt-dlp with its default JavaScript support packages, and imageio-ffmpeg. An installed supported Deno or Node runtime improves YouTube compatibility; the collector enables available local runtimes and does not install one or fetch remote JavaScript components. See the [yt-dlp installation documentation](https://github.com/yt-dlp/yt-dlp#installation) and [JavaScript runtime documentation](https://github.com/yt-dlp/yt-dlp/wiki/EJS).
+
+Inspect the manifest without writing files or accessing the network:
+
+```powershell
+.\.venv\Scripts\python.exe -m arc_audio build-weapon-dataset `
+  .\arc_raiders_audio_seed_manifest.csv --dataset .\training\dataset.json --dry-run
+```
+
+For a small first run, append `--source-url 'https://www.youtube.com/watch?v=VB9FH35YGUY'`, or use `--max-sources 1` for the first unique URL. `--source-url` selects an exact URL in the CSV. All imported weapon names remain available for corrections even when collecting a subset.
+
+### What acquisition does
+
+CSV columns are `weapon,source_title,source_url,start,end,quality,notes`; extra columns and every original cell are retained in source metadata. Times accept blank, seconds, `MM:SS` and `HH:MM:SS`, including fractional seconds. Local media paths, relative to the CSV directory, are also supported. YouTube URLs are canonicalized by video ID, so multiple weapons/ranges from one video use one media file and one source group.
+
+The explicit command downloads the best available **audio-only** stream with yt-dlp. It preserves the original container and full source timeline in `training\sources\`; it does not make thousands of permanent WAVs. An alternative `--storage` must stay inside the dataset directory. Processing respects manifest start/end ranges and caps decoding at the last needed end. The entire compressed audio track may still download once, including portions outside the processing range; sources are canonical originals, not separately trimmed exports. No audio is uploaded and the cache is excluded from Git. Keep downloaded material local and use sources you have permission to process; collection does not grant redistribution rights.
+
+Reruns reuse fingerprint-verified downloads and deterministic candidate IDs. They preserve accepted/rejected/corrected decisions, human intervals, track confirmations and reviewed coverage. Source failures are reported and checkpointed individually; later URLs continue. The command exits 1 if any source failed, so read the summary rather than assuming the whole batch failed. Retry the same command after resolving a download error. A `.collection.lock` prevents concurrent collectors; remove a stale lock only after confirming no collector is running. The labeler detects external dataset edits and refuses to overwrite newer labels.
+
+### Candidate detection and weapon proposals
+
+This stage uses NumPy/SciPy **signal-processing heuristics**, not AST or a trained weapon recognizer. It combines adaptive RMS/noise-floor rise, spectral flux, onset prominence, crest and high-frequency content. It deliberately over-generates: speech, music, impacts, reloads, machinery and interface sounds can qualify. Quiet/suppressed/overlapping gunfire can be missed. `detection_score` is a heuristic ranking in 0–1 and `quality_score` is a review priority in 0–100; neither is a gunshot probability or accuracy measurement.
+
+Onsets can remain separate at approximately 70 ms spacing, including automatic bursts. Suggested event spans are roughly 150 ms or shorter at the next onset; these are editable boundaries, not measured complete shot tails. Playback defaults to 0.35 seconds before and 1.00 second after the onset, clipped to the manifest range. Configure with `--pre`, `--post` and `--min-spacing`. Absolute source timestamps are preserved. Every candidate records provenance and lightweight RMS, peak, zero-crossing, spectral centroid/bandwidth/rolloff and log-mel summaries.
+
+`gunshot` remains the sound class. A single weapon associated with the source/range becomes `proposed_weapon`; it is context, not acoustic recognition. Mixed gameplay can contain opponents' weapons as well. When overlapping source rows list different weapons, candidates are **unknown/ambiguous** with possible names, instead of duplicating every onset for every weapon. In the supplied seed, 26 untimestamped rows reference one all-weapons showcase; those require a human weapon choice or better curated ranges. No weapon names or timestamp ranges are invented.
+
+### Human review and annotation format
+
+The normal `label-training` command now opens [Yes / No / Unsure review](#quick-gunfire-review-yes--no--unsure). It saves directly trainable window-presence answers without manual time marks or coverage steps. The interval acceptance workflow below remains available only through `--advanced`.
+
+In **AI suggestions**, select a source/candidate, listen, confirm the audio track, then Accept, Reject or choose a weapon and **Save weapon correction / accept**. Acceptance writes a human interval; rejection leaves the candidate out of training. Decisions remain reversible. Unknown weapon is allowed for generic gunfire. Refine Start/End if the proposed boundary misses the audible event. A suggested annotation after human acceptance is:
+
+```json
+{"start": 142.31, "end": 142.46, "label": "gunshot", "weapon": "anvil", "source": "unknown", "proposal_id": "stable-candidate-id"}
+```
+
+`weapon` is optional; old version-1 datasets still load. Weapon identifiers are lowercase with underscores, for example `il_toro`. Other sound classes cannot carry weapon identity. The dataset records manifest rows in `weapon_sources`, vocabulary in `weapons`, and source provenance on each imported clip. Candidate scores/context/features/status remain in `dataset.suggestions.json`; valid statuses now include `corrected`. Correcting weapon creates a real accepted gunshot annotation with that human-selected weapon. The existing trainer continues learning **event classes** and ignores weapon metadata; no 26-class training was added.
+
+Review controls work across sources: **A** accepts, **R** rejects, **W** opens the weapon correction dropdown, **Left/Right** select Previous/Next, and **Space** plays/pauses. Shortcuts operate in the suggestions tab with this app focused; typing fields, dropdowns, sliders and modal dialogs keep normal keyboard behavior. After choosing a correction, click **Save weapon correction / accept**. Enable **Auto-advance after Accept / Reject** and optional **Autoplay** to move to the next matching pending candidate. Track confirmation is required separately for each source; it is never silently checked.
+
+Filter by weapon, source, review status, duplicate group, minimum quality and minimum detection score. Sort by quality, time, weapon or source; use **Next** to start the filtered queue. Unknown/ambiguous proposals remain available when a possible weapon is selected, but selecting that filter does not confirm identity. Counters show global decisions and matching candidates. Use All statuses to revisit a decision. Filters never change annotations. Audio-only downloads hide the empty video area. The current JSON sidecar saves the whole proposal bundle per decision; a measured 10,518-candidate / 29 MB collection took about 1.2 seconds per acceptance with auto-advance on this machine, mostly persistence. This is not an inference or game latency measurement.
+
+Accepting candidates does **not** mark whole windows or clips fully reviewed. Missed events still require checking before marking a range reviewed; rejected suggestions do not establish background truth. Existing class-scoped review rules continue to apply.
+
+All ranges from a source video stay in the same group and compatible split. New source groups start in train; the collector never reshuffles existing groups and never generates proposals for reserved test sources. Reserve independent source/session groups for validation and test before future model development. Reuploads, compilations and shared footage across different channels may still leak the same underlying recording: grouping by URL cannot prove recording independence. Avoid treating many shots from one showcase as independent source diversity.
+
+### Quality, similarity and diversity
+
+Quality additionally considers local background level, SNR, nearby competing transients, spectral distinctiveness and clipping. Dedupe compares centered log-mel shape using cosine similarity and a bounded 64-neighbor search, default threshold 0.995. It stores `duplicate_group_id` and `duplicate_similarity`, retaining **every** candidate and decision. A similar spectrum can represent different real shots; similarity groups are advisory, can miss pairs, and do not establish copied footage or independent recordings. Distinct nearby shots within one recording are protected from collapsing into a duplicate group. `burst_group_id` separately links nearby onsets and is scoped to its source and absolute first onset. Optional duplicate-scoring failures are reported without discarding collected candidates.
+
+`weapon-dataset-status` reports registered/available sources, downloaded/failed videos, pending/accepted/rejected/corrected proposals, accepted human shot counts, duplicate groups and known channels per weapon. Accepted corrections are credited to the human-selected weapon. Unknown-weapon proposals are counted separately. Warnings flag fewer than three reviewed videos, fewer than two known channels, or one video providing over 70% of accepted shots. These are conservative collection checks, not sufficient-data guarantees. Many candidate windows from one uploader do not establish generalization. Check duplicate footage and reserve independent sessions before training.
+
+### Optional discovery: metadata stays unverified
+
+Only after the curated workflow works, search for more possible sources:
+
+```powershell
+.\.venv\Scripts\python.exe -m arc_audio discover-weapon-sources `
+  --weapon 'Anvil' --max-results 10 `
+  --output .\artifacts\anvil-unverified-sources.json
+```
+
+This searches YouTube through yt-dlp and saves metadata marked `verification: unverified`. It downloads no media, creates no labels and never trains. Inspect the source, relevance, other audible weapons and usable shooting ranges before manually adding verified rows to the curated CSV. Discovery JSON is not an ingestion CSV; CSV rows explicitly marked `verification=unverified` are refused. Optional `--dataset .\training\dataset.json` registers these unverified references for status reporting only, separately from curated acquisition inputs. Close the labeler before that metadata update. Discovery registration is idempotent and never starts collection.
+
+### Optional background / hard-negative review
+
+Once weapon-shot collection is working, propose ranges away from existing transient peaks and human gunshot intervals:
+
+```powershell
+.\.venv\Scripts\python.exe -m arc_audio suggest-weapon-background `
+  .\training\dataset.json --seconds 2 --margin 0.75 --max-per-source 8
+```
+
+This writes **pending** `gunshot_absence` proposals only, within registered source ranges on non-test clips with matching fingerprints. No quiet stretch becomes truth automatically. These are background candidates, not proven hard confusers; listen for missed/suppressed gunfire. Their detection score is zero by construction, not a trained negative prediction. Filter thresholds can hide them. Linked review provenance is retained through review merges and interval edits so a failed sidecar save can still be reversed safely.
+
+In the existing labeler, the row says **Background / no gunfire (verify)**. Accept requires a separate, default-No confirmation that you listened to the entire edited range and heard **no gunfire**. It adds reviewed coverage for `gunshot` only and creates **no positive sound interval**. Other classes remain unknown. Acceptance refuses overlap with any saved gunshot; trim or reject the proposal instead. Reject/Undo removes its linked absence review. If later manual review merges erased provenance, Undo conservatively clears affected gunshot coverage for re-review, retaining other classes. Deleting a linked reviewed row reopens its proposal. A background decision never establishes a weapon identity.
+
+### Collection troubleshooting
+
+| Problem | Action |
+|---|---|
+| Missing yt-dlp/PyAV | Install `.[collection]` with this venv's Python, then restart the command. |
+| Missing FFmpeg | Ordinary audio-only acquisition needs no conversion. If yt-dlp reports FFmpeg is needed, install an FFmpeg build and pass `--ffmpeg-location 'C:\Tools\ffmpeg\bin'`. `imageio-ffmpeg` also supplies a local executable, whose path is printed by `.\.venv\Scripts\python.exe -c "import imageio_ffmpeg; print(imageio_ffmpeg.get_ffmpeg_exe())"`. |
+| Private/deleted/unavailable video | Replace or remove that curated source; other rows still process. |
+| Age/region restriction or HTTP 403 | Update the collection packages; check supported local Node/Deno runtime and source availability. The collector does not bypass restrictions or automatically load browser cookies. Use an accessible permitted source or local fallback if it remains unavailable. |
+| No audio stream | Inspect the original source; use a source with audible audio. No silent file is substituted. |
+| No candidates | Zero proposals is not proof of no shots. Check track/range and listen; add missed intervals in the labeler or improve the source. |
+| Too many false positives | Use shorter, verified shooting ranges and clean sources; prioritize higher scores during review. Music and commentary can dominate transient detection. |
+| Cannot read cached media | Check local permissions and OneDrive availability. The collector reports unreadable caches instead of repeatedly downloading them. |
+| Save/lock/concurrent-edit error | Close the labeler and other collectors, retain the source cache, then rerun. Never delete human annotation files as a reset. |
 
 ## Train and use the model
 

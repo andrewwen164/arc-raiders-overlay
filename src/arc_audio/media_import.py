@@ -31,7 +31,9 @@ def _probe(path):
                             for stream in media.streams.audio if stream.duration), default=0)
         if not math.isfinite(duration) or duration <= 0:
             raise ValueError("Cannot determine a positive recording duration")
-    return {"duration": duration, "audio_streams": streams, "audio_stream": streams[0]["index"]}
+        has_video = bool(media.streams.video)
+    return {"duration": duration, "audio_streams": streams, "audio_stream": streams[0]["index"],
+            "has_video": has_video}
 
 
 def _safe_name(path):

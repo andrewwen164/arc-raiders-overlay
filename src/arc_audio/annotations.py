@@ -1,6 +1,6 @@
 """Human interval corrections and conservative class-scoped review invalidation."""
 
-from .dataset import CORE_CLASSES, TARGET_CLASSES, merge_reviewed, validate_span
+from .dataset import CORE_CLASSES, TARGET_CLASSES, merge_reviewed, validate_span, validate_weapon
 
 SOURCE_TAGS = ("unknown", "self", "teammate", "other_raider")
 
@@ -16,16 +16,16 @@ def invalidate_review(clip, interval):
             result.append(review)
             continue
         if review["start"] < first:
-            result.append({"start": review["start"], "end": first, "classes": classes})
+            result.append(dict(review, start=review["start"], end=first, classes=classes))
         remaining = [label for label in classes if label != interval["label"]]
         if remaining:
-            result.append({"start": first, "end": last, "classes": remaining})
+            result.append(dict(review, start=first, end=last, classes=remaining))
         if last < review["end"]:
-            result.append({"start": last, "end": review["end"], "classes": classes})
+            result.append(dict(review, start=last, end=review["end"], classes=classes))
     clip["reviewed"] = merge_reviewed(result)
 
 
-def write_interval(clip, start, end, label, source="unknown", *, index=None, proposal_id=None):
+def write_interval(clip, start, end, label, source="unknown", *, index=None, proposal_id=None, weapon=None):
     if not clip.get("track_confirmed"):
         raise ValueError("Listen to and confirm the game-audio track first")
     interval = {"start": start, "end": end, "label": label, "source": source}
@@ -37,6 +37,13 @@ def write_interval(clip, start, end, label, source="unknown", *, index=None, pro
         interval = dict(previous, **interval)  # Keep proposal linkage/other provenance.
     if proposal_id:
         interval["proposal_id"] = proposal_id
+    if weapon == "":
+        interval.pop("weapon", None)
+    elif weapon is not None:
+        validate_weapon(weapon)
+        interval["weapon"] = weapon
+    if label != "gunshot":
+        interval.pop("weapon", None)
     same_span_and_class = previous and all(previous[key] == interval[key] for key in ("start", "end", "label"))
     if not same_span_and_class:
         if previous:

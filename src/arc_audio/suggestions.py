@@ -12,8 +12,16 @@ from pathlib import Path
 
 import numpy as np
 
-from .annotations import SOURCE_TAGS, remove_interval, write_interval
-from .dataset import TARGET_CLASSES, load_dataset, media_path, read_media_audio, save_dataset, validate_span
+from .annotations import SOURCE_TAGS, invalidate_review, remove_interval, write_interval
+from .dataset import (
+    TARGET_CLASSES,
+    load_dataset,
+    media_path,
+    read_media_audio,
+    save_dataset,
+    validate_span,
+    validate_weapon,
+)
 
 RATE = 16000
 AST_CLASSES = ("gunshot", "footsteps")
@@ -56,16 +64,40 @@ def load_suggestions(manifest):
             identity = row.get("id")
             if (not isinstance(identity, str) or not identity or identity in seen
                     or row.get("label") not in TARGET_CLASSES
-                    or row.get("status") not in ("pending", "accepted", "rejected")
+                    or row.get("status") not in ("pending", "accepted", "rejected", "corrected")
                     or isinstance(score, bool) or not isinstance(score, (int, float))
                     or not math.isfinite(score) or not 0 <= score <= 1):
                 raise ValueError("Invalid suggestion ID, label, status or model score")
             seen.add(identity)
+            validate_weapon(row.get("proposed_weapon"))
+            if "collection_source_id" in row:
+                if row["label"] != "gunshot" or not isinstance(row["collection_source_id"], str):
+                    raise ValueError("Weapon candidates require a gunshot label and source identity")
+                for field, maximum in (("detection_score", 1), ("quality_score", 100)):
+                    value = row.get(field)
+                    if (isinstance(value, bool) or not isinstance(value, (int, float))
+                            or not math.isfinite(value) or not 0 <= value <= maximum):
+                        raise ValueError("Weapon candidate scores must be finite and within their documented range")
+                validate_span({"start": row.get("preview_start"), "end": row.get("preview_end")}, clip["duration"])
+                timestamp = row.get("source_timestamp")
+                if (isinstance(timestamp, bool) or not isinstance(timestamp, (int, float))
+                        or not math.isfinite(timestamp)
+                        or not row["preview_start"] <= timestamp < row["preview_end"]):
+                    raise ValueError("Weapon candidate onset must lie within its source preview")
+                possible = row.get("possible_weapons", [])
+                if (not isinstance(possible, list) or any(not isinstance(weapon, str) for weapon in possible)
+                        or len(set(possible)) != len(possible)):
+                    raise ValueError("Possible weapons must be a list")
+                for weapon in possible:
+                    validate_weapon(weapon)
             if "last_edit" in row:
                 edit = row["last_edit"]
                 validate_span(edit, clip.get("duration", 0))
                 if edit.get("label") not in TARGET_CLASSES or edit.get("source", "unknown") not in SOURCE_TAGS:
                     raise ValueError("Invalid saved human edit in suggestion")
+                validate_weapon(edit.get("weapon"))
+                if edit.get("weapon") is not None and edit["label"] != "gunshot":
+                    raise ValueError("Weapon identity is supported only on saved gunshot edits")
     return doc
 
 
@@ -82,12 +114,31 @@ def current_suggestions(bundle, manifest, clip):
     return [row for entry in entries if entry["media"] == stamp for row in entry["suggestions"]]
 
 
-def accept_suggestion(clip, row, start, end, label, source="unknown"):
+def accept_suggestion(clip, row, start, end, label, source="unknown", weapon=None):
+    if row.get("proposal_kind") == "gunshot_absence":
+        if not clip.get("track_confirmed"):
+            raise ValueError("Listen to and confirm the game-audio track first")
+        edit = {"start": start, "end": end, "label": "gunshot", "source": source,
+                "review_kind": "gunshot_absence"}
+        validate_span(edit, clip["duration"])
+        if label != "gunshot" or weapon or source not in SOURCE_TAGS:
+            raise ValueError("A background decision reviews absence of gunfire only; reject it and add an event for audible sounds")
+        if any(interval["label"] == "gunshot" and max(start, interval["start"]) < min(end, interval["end"])
+               for interval in clip["intervals"]):
+            raise ValueError("This range overlaps a saved gunshot. Trim it or reject the background proposal; existing labels preserved")
+        _clear_absence_review(clip, row)
+        clip.setdefault("reviewed", []).append({"start": start, "end": end, "classes": ["gunshot"],
+                                                "proposal_id": row["id"], "review_kind": "gunshot_absence"})
+        row.update(status="accepted", last_edit=edit)
+        return
     # Re-acceptance updates the linked human label, including after an interrupted
     # sidecar save. Other human labels are never removed or duplicated.
     index = next((i for i, old in enumerate(clip["intervals"]) if old.get("proposal_id") == row["id"]), None)
-    interval = write_interval(clip, start, end, label, source, index=index, proposal_id=row["id"])
-    row["status"] = "accepted"
+    if weapon is None:
+        weapon = suggestion_edit(clip, row).get("weapon", row.get("proposed_weapon"))
+    interval = write_interval(clip, start, end, label, source, index=index, proposal_id=row["id"], weapon=weapon)
+    proposed = row.get("proposed_weapon")
+    row["status"] = "corrected" if label == "gunshot" and interval.get("weapon") != proposed else "accepted"
     row["last_edit"] = dict(interval)
     # Deliberately do not add a reviewed range: misses still require inspection.
 
@@ -96,6 +147,8 @@ def change_suggestion_status(clip, row, status):
     """Undo or reverse any decision, removing only its linked human interval."""
     if status not in ("pending", "rejected"):
         raise ValueError("Use acceptance to save a label; otherwise choose pending or rejected")
+    if row.get("proposal_kind") == "gunshot_absence":
+        _clear_absence_review(clip, row)
     for interval in list(clip["intervals"]):
         if interval.get("proposal_id") == row["id"]:
             row["last_edit"] = dict(interval)
@@ -103,9 +156,26 @@ def change_suggestion_status(clip, row, status):
     row["status"] = status
 
 
+def _clear_absence_review(clip, row):
+    """Reverse a verified absence, including a dataset-first interrupted save.
+
+    A later manual review merge can erase provenance. In that case invalidate
+    only gunshot coverage within the accepted range, retaining other classes.
+    """
+    linked = any(review.get("proposal_id") == row["id"] for review in clip.get("reviewed", []))
+    clip["reviewed"] = [review for review in clip.get("reviewed", []) if review.get("proposal_id") != row["id"]]
+    previous = row.get("last_edit")
+    if (not linked and row["status"] in ("accepted", "corrected") and previous
+            and previous.get("review_kind") == "gunshot_absence"):
+        invalidate_review(clip, previous)
+
+
 def suggestion_edit(clip, row):
-    return next((interval for interval in clip["intervals"] if interval.get("proposal_id") == row["id"]),
-                row.get("last_edit", row))
+    result = next((interval for interval in clip["intervals"] if interval.get("proposal_id") == row["id"]),
+                  row.get("last_edit"))
+    if result is not None:
+        return result
+    return dict(row, **({"weapon": row["proposed_weapon"]} if row.get("proposed_weapon") else {}))
 
 
 def window_spans(count, window, hop):

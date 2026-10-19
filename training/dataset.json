@@ -890,6 +890,5536 @@
       "track_confirmed": false,
       "reviewed": [],
       "intervals": []
+    },
+    {
+      "file": "sources/source_04670a1c0d51c249e79f00b6/audio_2a2d799669467a2f069d1968.webm",
+      "duration": 697.921,
+      "audio_streams": [
+        {
+          "index": 0,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "opus",
+          "start": 0.0
+        }
+      ],
+      "audio_stream": 0,
+      "size": 12280990,
+      "group": "public-source:MlK0E83JfEE",
+      "split": "train",
+      "track_confirmed": true,
+      "intervals": [],
+      "reviewed": [],
+      "collection_source_id": "MlK0E83JfEE",
+      "source_metadata": {
+        "id": "MlK0E83JfEE",
+        "title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "webpage_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "channel": "TayXDc",
+        "channel_id": "UCTWDRA2tbOzBhgnLEYGIUzg",
+        "uploader": "TayXDc",
+        "uploader_id": "@tayxdc",
+        "duration": 698,
+        "chapters": null,
+        "source_id": "MlK0E83JfEE",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "media_file": "audio_2a2d799669467a2f069d1968.webm",
+        "media_size": 12280990,
+        "media_sha256": "2a2d799669467a2f069d196800885f52262117784e9ebbae121f6bebaf53b506"
+      },
+      "source_sha256": "2a2d799669467a2f069d196800885f52262117784e9ebbae121f6bebaf53b506",
+      "presence_media": {
+        "size": 12280990,
+        "mtime_ns": 1792376546765484300
+      },
+      "presence_reviews": [
+        {
+          "id": "presence-a97d17f2114780003bb02b63",
+          "start": 11.44225,
+          "end": 12.44225,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "49741a66d4b9fe0738819415f5820e66"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-73b3b2a6ff40ccb4d314b75d",
+          "start": 29.2238125,
+          "end": 30.2238125,
+          "label": "gunshot",
+          "present": true,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "8ed0450df0426b56203803d50199c182"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-0c209ed29cdfb2ce34aefee4",
+          "start": 52.4134375,
+          "end": 53.4134375,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "2df9cb610b72f47a74469fe83cf04f69"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-8935a0f8f200c7b4aff678f9",
+          "start": 96.815375,
+          "end": 97.815375,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "28ebf97ee27d6051cc559957f7a332d2"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-d5c8121ea9c93f44adcc274b",
+          "start": 136.6529375,
+          "end": 137.6529375,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "c2b1a8ceeedeb7eee37b232e891fec86"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-2345fa80ad0e767625f4e71a",
+          "start": 160.52375,
+          "end": 161.52375,
+          "label": "gunshot",
+          "present": true,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "e44c067a376798e017dea3d46181d4f5"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-2ffac74ae59d9e8238abad37",
+          "start": 343.222375,
+          "end": 344.222375,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "da6fc4ca9fa555233437e97e271b6128"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-b1b6a3c255e9be111a638bcc",
+          "start": 399.894375,
+          "end": 400.894375,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "f0325764c9c3225c6b247a5f2f4b62a7"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-a176d8bd5828d6a86c7f1772",
+          "start": 422.35275,
+          "end": 423.35275,
+          "label": "gunshot",
+          "present": true,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "22603e773ca0730de2e08f861a8b7810"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-40c9b92d946da0f34a7893d3",
+          "start": 455.0495,
+          "end": 456.0495,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "45b1c9067f9977b632a6297fb7b924e0"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-342a39639b0db5e3884118b5",
+          "start": 469.8749375,
+          "end": 470.8749375,
+          "label": "gunshot",
+          "present": true,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "58fefc4effaf50c9281cda86d39a185c"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-61760f3de65630e1aba420e7",
+          "start": 535.881875,
+          "end": 536.881875,
+          "label": "gunshot",
+          "present": true,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "cb9f55eb43b850ac79f30e93e0b80288"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-f1448d75bef31a72e3a8aadd",
+          "start": 549.614625,
+          "end": 550.614625,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "eaa713054fd1c5ff262a8f0b3f2dbeeb"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-8f3bee20918e0cc56f662d79",
+          "start": 598.7893125,
+          "end": 599.7893125,
+          "label": "gunshot",
+          "present": true,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "a832ef88273fd23c7cbb3d05c5992aea"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-92666f47e33b0e678deef6ec",
+          "start": 612.124,
+          "end": 613.124,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "4be55bd76a90bcb515acd31770181221"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-c01254a8ca889febc8649955",
+          "start": 612.394875,
+          "end": 613.394875,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "2a6ca55eb20131d7508d8e0681e0e147"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-5012662ab4a375bc404c79f1",
+          "start": 630.547,
+          "end": 631.547,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "b5c09d48cef23ace55cad5ef222eedf4"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-19288119819784698eb22aeb",
+          "start": 633.9948125,
+          "end": 634.9948125,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "f15606f8a3e40cbcad038a49ea5daa52"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-09625188e631cfa5f5c9039a",
+          "start": 644.8188125,
+          "end": 645.8188125,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "e7e6b77bfd1e587a7dcb423eeb7d1c28"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-38b70a03d2e31d774ad85d90",
+          "start": 645.0059375,
+          "end": 646.0059375,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "f2ae43e57815ffdb80c0f45e99b2e35f"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-e99c66be32984e5fecfe7bd2",
+          "start": 645.8631875,
+          "end": 646.8631875,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "27acadf4294a9c2e71a5524817aee5c3"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-3f788e48d8eae9457d04667c",
+          "start": 687.748625,
+          "end": 688.748625,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "236943133f0f4dce0296d9f732f1d22d"
+          ],
+          "review_kind": "window_presence"
+        }
+      ],
+      "presence_states": [
+        {
+          "id": "presence-e30696858b352a525ab2ab96",
+          "start": 30.3275625,
+          "end": 31.3275625,
+          "answer": "unsure",
+          "audio_stream": 0
+        }
+      ]
+    },
+    {
+      "file": "sources/source_d3cbee63b46151f86bcf1619/audio_f13a2e847a97d7a7e3458864.webm",
+      "duration": 671.961,
+      "audio_streams": [
+        {
+          "index": 0,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "opus",
+          "start": 0.0
+        }
+      ],
+      "audio_stream": 0,
+      "size": 11769716,
+      "group": "public-source:nL_gGbgzN6s",
+      "split": "train",
+      "track_confirmed": false,
+      "intervals": [],
+      "reviewed": [],
+      "collection_source_id": "nL_gGbgzN6s",
+      "source_metadata": {
+        "id": "nL_gGbgzN6s",
+        "title": "The Kettle is REALLY STRONG, and it\u2019s only a grey weapon (full breakdown + gameplay) | ARC Raiders",
+        "webpage_url": "https://www.youtube.com/watch?v=nL_gGbgzN6s",
+        "channel": "Max V",
+        "channel_id": "UCRYl71QYl-ifiwxGzU3C35g",
+        "uploader": "Max V",
+        "uploader_id": "@Maxv0001",
+        "duration": 672,
+        "chapters": [
+          {
+            "start_time": 0,
+            "title": "Kettle weapon breakdown",
+            "end_time": 236
+          },
+          {
+            "start_time": 236,
+            "title": "Solo Gameplay",
+            "end_time": 554
+          },
+          {
+            "start_time": 554,
+            "title": "Duo Highlights",
+            "end_time": 672
+          }
+        ],
+        "source_id": "nL_gGbgzN6s",
+        "source_url": "https://www.youtube.com/watch?v=nL_gGbgzN6s",
+        "media_file": "audio_f13a2e847a97d7a7e3458864.webm",
+        "media_size": 11769716,
+        "media_sha256": "f13a2e847a97d7a7e3458864cbf33d983abb20bfe43a845630c2a04607a6c5b7"
+      },
+      "source_sha256": "f13a2e847a97d7a7e3458864cbf33d983abb20bfe43a845630c2a04607a6c5b7"
+    },
+    {
+      "file": "sources/source_838ecb29e9a4ef54f9da4b70/audio_1ea25ba9a7d557ed6d5c3bc2.webm",
+      "duration": 542.021,
+      "audio_streams": [
+        {
+          "index": 0,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "opus",
+          "start": 0.0
+        }
+      ],
+      "audio_stream": 0,
+      "size": 9185396,
+      "group": "public-source:WXPEtupPmXU",
+      "split": "train",
+      "track_confirmed": false,
+      "intervals": [],
+      "reviewed": [],
+      "collection_source_id": "WXPEtupPmXU",
+      "source_metadata": {
+        "id": "WXPEtupPmXU",
+        "title": "Arc Raiders BOBCAT S-TIER Guide! How to Play it, Best Build & How to Get Bobcat Blueprint?",
+        "webpage_url": "https://www.youtube.com/watch?v=WXPEtupPmXU",
+        "channel": "KaidGames2",
+        "channel_id": "UCz0uNt3O_ohqAd5srxKbojA",
+        "uploader": "KaidGames2",
+        "uploader_id": "@KaidGames2",
+        "duration": 542,
+        "chapters": [
+          {
+            "start_time": 0,
+            "title": "Arc raiders bobcat",
+            "end_time": 116
+          },
+          {
+            "start_time": 116,
+            "title": "How to get bobcat blueprint",
+            "end_time": 195
+          },
+          {
+            "start_time": 195,
+            "title": "Best attachments",
+            "end_time": 255
+          },
+          {
+            "start_time": 255,
+            "title": "Best loadout",
+            "end_time": 319
+          },
+          {
+            "start_time": 319,
+            "title": "Skill tree",
+            "end_time": 400
+          },
+          {
+            "start_time": 400,
+            "title": "Best weapons to pair with",
+            "end_time": 440
+          },
+          {
+            "start_time": 440,
+            "title": "Best bobcat alternatives",
+            "end_time": 478
+          },
+          {
+            "start_time": 478,
+            "title": "How to play it",
+            "end_time": 542
+          }
+        ],
+        "source_id": "WXPEtupPmXU",
+        "source_url": "https://www.youtube.com/watch?v=WXPEtupPmXU",
+        "media_file": "audio_1ea25ba9a7d557ed6d5c3bc2.webm",
+        "media_size": 9185396,
+        "media_sha256": "1ea25ba9a7d557ed6d5c3bc2ccc8a2834c72f1dfbfa4dbd7167637abe669ce92"
+      },
+      "source_sha256": "1ea25ba9a7d557ed6d5c3bc2ccc8a2834c72f1dfbfa4dbd7167637abe669ce92"
+    },
+    {
+      "file": "sources/source_bbbddecb8c2378ec9219d0e3/audio_7d39ba58ab6388cce65e7a7a.webm",
+      "duration": 36.801,
+      "audio_streams": [
+        {
+          "index": 0,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "opus",
+          "start": 0.0
+        }
+      ],
+      "audio_stream": 0,
+      "size": 665158,
+      "group": "public-source:VB9FH35YGUY",
+      "split": "train",
+      "track_confirmed": true,
+      "intervals": [],
+      "reviewed": [],
+      "collection_source_id": "VB9FH35YGUY",
+      "source_metadata": {
+        "id": "VB9FH35YGUY",
+        "title": "Aphelion is great weapon for taking down big arcs. Arc raiders gun showcase #ArcRaiders #JohnRaider",
+        "webpage_url": "https://www.youtube.com/watch?v=VB9FH35YGUY",
+        "channel": "John Raider",
+        "channel_id": "UCsAZ0Vdi6mcQhRrmInvl3kA",
+        "uploader": "John Raider",
+        "uploader_id": "@johnraider_official",
+        "duration": 37,
+        "chapters": null,
+        "source_id": "VB9FH35YGUY",
+        "source_url": "https://www.youtube.com/watch?v=VB9FH35YGUY",
+        "media_file": "audio_7d39ba58ab6388cce65e7a7a.webm",
+        "media_size": 665158,
+        "media_sha256": "7d39ba58ab6388cce65e7a7adca2f36e8781755a6f0a0d869d9fa548ceed226a"
+      },
+      "source_sha256": "7d39ba58ab6388cce65e7a7adca2f36e8781755a6f0a0d869d9fa548ceed226a",
+      "presence_media": {
+        "size": 665158,
+        "mtime_ns": 1792376584621397900
+      },
+      "presence_reviews": [
+        {
+          "id": "presence-f5e7e3dbce608b1c7e6b3a9d",
+          "start": 0.0,
+          "end": 1.0,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "a63074517cf96e41f3e585f0f699747d"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-6168ca59ddd94599eb539d81",
+          "start": 9.9115,
+          "end": 10.9115,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "36a4ff7ef458b02a1af1c485ca486c84"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-9c4d51209f40a4bf898c2a22",
+          "start": 11.9115,
+          "end": 12.9115,
+          "label": "gunshot",
+          "present": true,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "b845713ab364ee28a7053644160a3012"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-d39c5b95eeda403469caeb64",
+          "start": 13.9115,
+          "end": 14.9115,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "47ad9f6dc8eb47e441dd19478307b39e"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-eadfe4e45ed9c15a40fd422c",
+          "start": 15.9115,
+          "end": 16.9115,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "5a431780992712db8109254a642cb2fb"
+          ],
+          "review_kind": "window_presence"
+        }
+      ],
+      "presence_states": []
+    },
+    {
+      "file": "sources/source_99716d0bf5d175a87f406cf6/audio_dacd73deaf6db3fd66b58c21.webm",
+      "duration": 244.061,
+      "audio_streams": [
+        {
+          "index": 0,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "opus",
+          "start": 0.0
+        }
+      ],
+      "audio_stream": 0,
+      "size": 4276662,
+      "group": "public-source:rh3lCZpqW-E",
+      "split": "train",
+      "track_confirmed": true,
+      "intervals": [],
+      "reviewed": [],
+      "collection_source_id": "rh3lCZpqW-E",
+      "source_metadata": {
+        "id": "rh3lCZpqW-E",
+        "title": "The APHELION: Full Guide & PvP Showcase (ARC Raiders)",
+        "webpage_url": "https://www.youtube.com/watch?v=rh3lCZpqW-E",
+        "channel": "Bentekkers",
+        "channel_id": "UCeASv1vXJh8Oj_ISoljsJpg",
+        "uploader": "Bentekkers",
+        "uploader_id": "@Bentekkers",
+        "duration": 244,
+        "chapters": [
+          {
+            "start_time": 0,
+            "title": "Introduction",
+            "end_time": 23
+          },
+          {
+            "start_time": 23,
+            "title": "Finding the blueprint",
+            "end_time": 57
+          },
+          {
+            "start_time": 57,
+            "title": "Crafting the weapon",
+            "end_time": 103
+          },
+          {
+            "start_time": 103,
+            "title": "Best loadout setup",
+            "end_time": 159
+          },
+          {
+            "start_time": 159,
+            "title": "PvE performance",
+            "end_time": 212
+          },
+          {
+            "start_time": 212,
+            "title": "PvP review and conclusion",
+            "end_time": 244
+          }
+        ],
+        "source_id": "rh3lCZpqW-E",
+        "source_url": "https://www.youtube.com/watch?v=rh3lCZpqW-E",
+        "media_file": "audio_dacd73deaf6db3fd66b58c21.webm",
+        "media_size": 4276662,
+        "media_sha256": "dacd73deaf6db3fd66b58c21f7afc102e6c90f80ef885bc485f34b24d9e54899"
+      },
+      "source_sha256": "dacd73deaf6db3fd66b58c21f7afc102e6c90f80ef885bc485f34b24d9e54899",
+      "presence_media": {
+        "size": 4276662,
+        "mtime_ns": 1792376588232108300
+      },
+      "presence_reviews": [
+        {
+          "id": "presence-bd3f3f62a669efb9aa40d47a",
+          "start": 66.97675,
+          "end": 67.97675,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "3779345f76582db7af25f32a96436666"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-3d1e8d9d7784a567e472ff81",
+          "start": 75.2114375,
+          "end": 76.2114375,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "3a1024a3a8cba4fc99b6d06521317fbc"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-5fb07eec9603d9a948cf9d50",
+          "start": 83.573625,
+          "end": 84.573625,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "475e5f6453cfe29b768bde4fbd6844d1"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-e7c70ebdceecaceb12b671e3",
+          "start": 242.337,
+          "end": 243.337,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "60f931eab48b294db3c9eb6c57ac8b6f"
+          ],
+          "review_kind": "window_presence"
+        }
+      ],
+      "presence_states": []
+    },
+    {
+      "file": "sources/source_2cd2354de89d9551b4edb524/audio_7bd9597d8a312492c4be6b30.webm",
+      "duration": 15.021,
+      "audio_streams": [
+        {
+          "index": 0,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "opus",
+          "start": 0.0
+        }
+      ],
+      "audio_stream": 0,
+      "size": 245682,
+      "group": "public-source:n6EU0c4fP9I",
+      "split": "train",
+      "track_confirmed": true,
+      "intervals": [],
+      "reviewed": [],
+      "collection_source_id": "n6EU0c4fP9I",
+      "source_metadata": {
+        "id": "n6EU0c4fP9I",
+        "title": "ARC RAIDERS - I LOVE THE IL TORO SHOTGUN",
+        "webpage_url": "https://www.youtube.com/watch?v=n6EU0c4fP9I",
+        "channel": "KirshaunTV",
+        "channel_id": "UC9SVmo-QlM3JtAAKAUpDNRw",
+        "uploader": "KirshaunTV",
+        "uploader_id": "@Kirshaun",
+        "duration": 15,
+        "chapters": null,
+        "source_id": "n6EU0c4fP9I",
+        "source_url": "https://www.youtube.com/watch?v=n6EU0c4fP9I",
+        "media_file": "audio_7bd9597d8a312492c4be6b30.webm",
+        "media_size": 245682,
+        "media_sha256": "7bd9597d8a312492c4be6b307ddd6bf5761bfa4e2c29a4baeff4f909c7536a53"
+      },
+      "source_sha256": "7bd9597d8a312492c4be6b307ddd6bf5761bfa4e2c29a4baeff4f909c7536a53",
+      "presence_media": {
+        "size": 245682,
+        "mtime_ns": 1792376591850493200
+      },
+      "presence_reviews": [
+        {
+          "id": "presence-fa3834fa17952751f373a26d",
+          "start": 9.339375,
+          "end": 10.339375,
+          "label": "gunshot",
+          "present": true,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "927d59b2720a56c3c4b8c4c271a86c7c"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-b8a094b685b31ac6741f1023",
+          "start": 11.339375,
+          "end": 12.339375,
+          "label": "gunshot",
+          "present": true,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "0bc129d9f9481f5000e16ca773ffce9f"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-5d3a92bbeb7ef351339427a0",
+          "start": 13.339375,
+          "end": 14.339375,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "19eae31f4f9aad012f949da6b5bb1fc9"
+          ],
+          "review_kind": "window_presence"
+        }
+      ],
+      "presence_states": []
+    },
+    {
+      "file": "sources/source_77ea2cacca6f8eee3752fc8d/audio_91912faed18a4d09e4dd9e4c.webm",
+      "duration": 25.721,
+      "audio_streams": [
+        {
+          "index": 0,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "opus",
+          "start": 0.0
+        }
+      ],
+      "audio_stream": 0,
+      "size": 402843,
+      "group": "public-source:7F7LS3QwRls",
+      "split": "train",
+      "track_confirmed": true,
+      "intervals": [],
+      "reviewed": [],
+      "collection_source_id": "7F7LS3QwRls",
+      "source_metadata": {
+        "id": "7F7LS3QwRls",
+        "title": "Using a Torrente in Arc Raiders",
+        "webpage_url": "https://www.youtube.com/watch?v=7F7LS3QwRls",
+        "channel": "Miguel Meola",
+        "channel_id": "UCZEljwpOW6bN8gsEBtQHxcw",
+        "uploader": "Miguel Meola",
+        "uploader_id": "@MiguelMeola",
+        "duration": 26,
+        "chapters": null,
+        "source_id": "7F7LS3QwRls",
+        "source_url": "https://www.youtube.com/watch?v=7F7LS3QwRls",
+        "media_file": "audio_91912faed18a4d09e4dd9e4c.webm",
+        "media_size": 402843,
+        "media_sha256": "91912faed18a4d09e4dd9e4cd59da0a2ad096b14c7fe30630abe18be0dc1e31b"
+      },
+      "source_sha256": "91912faed18a4d09e4dd9e4cd59da0a2ad096b14c7fe30630abe18be0dc1e31b",
+      "presence_media": {
+        "size": 402843,
+        "mtime_ns": 1792376595951512600
+      },
+      "presence_reviews": [
+        {
+          "id": "presence-092b8995b8917dec88773e81",
+          "start": 0.0,
+          "end": 1.0,
+          "label": "gunshot",
+          "present": true,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "dbc13df6b8f01081a943ad1ea36e11a6"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-438fce5eafab03cd960a5d4f",
+          "start": 2.256875,
+          "end": 3.256875,
+          "label": "gunshot",
+          "present": true,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "6d653f65b3963a81e5641c4a24b3a99b"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-d3253462d095785d62673939",
+          "start": 4.256875,
+          "end": 5.256875,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "f2a0f53a6558aa9da44ac083d20af2e4"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-693acd19d0173a0876b6ed27",
+          "start": 6.256875,
+          "end": 7.256875,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "823b2d8c7cb03e495355970215f016dd"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-a3aee69873e7dc1e4dc82881",
+          "start": 8.256875,
+          "end": 9.256875,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "4e57daad85c2b56a3789de31ce30d1ec"
+          ],
+          "review_kind": "window_presence"
+        }
+      ],
+      "presence_states": []
+    },
+    {
+      "file": "sources/source_0fe6b84dc45f0a14fb9c4492/audio_4ebe38824dd0078444ac24de.webm",
+      "duration": 755.581,
+      "audio_streams": [
+        {
+          "index": 0,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "opus",
+          "start": 0.0
+        }
+      ],
+      "audio_stream": 0,
+      "size": 12321854,
+      "group": "public-source:8wSmTKOihhQ",
+      "split": "train",
+      "track_confirmed": true,
+      "intervals": [],
+      "reviewed": [],
+      "collection_source_id": "8wSmTKOihhQ",
+      "source_metadata": {
+        "id": "8wSmTKOihhQ",
+        "title": "\u6fc0\u30ec\u30a2\u6b66\u5668\u300e\u30c6\u30f3\u30da\u30b9\u30c8\u300f\u304c\u6700\u5f37\u3059\u304e\u305f\u4ef6\u3010ARC RAIDERS\u3011",
+        "webpage_url": "https://www.youtube.com/watch?v=8wSmTKOihhQ",
+        "channel": "NIRU",
+        "channel_id": "UC3UvC3byXL0o-daNS54m1Xg",
+        "uploader": "NIRU",
+        "uploader_id": "@NIRU1218",
+        "duration": 756,
+        "chapters": null,
+        "source_id": "8wSmTKOihhQ",
+        "source_url": "https://www.youtube.com/watch?v=8wSmTKOihhQ",
+        "media_file": "audio_4ebe38824dd0078444ac24de.webm",
+        "media_size": 12321854,
+        "media_sha256": "4ebe38824dd0078444ac24de21f224d617f5bc03b1a5732e5bd128984e57eb00"
+      },
+      "source_sha256": "4ebe38824dd0078444ac24de21f224d617f5bc03b1a5732e5bd128984e57eb00",
+      "presence_media": {
+        "size": 12321854,
+        "mtime_ns": 1792376612935184200
+      },
+      "presence_reviews": [
+        {
+          "id": "presence-46d1dbc4f5fbb087f605a076",
+          "start": 0.0,
+          "end": 1.0,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "33c2982a951a2f78e8aeebc09ea7a5a8"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-c1eb31d6ad68b8ed0b484d3e",
+          "start": 6.22875,
+          "end": 7.22875,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "614e489a876e4bb218cb8bd20d662952"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-b0044e16ba513a1919774ca7",
+          "start": 8.22875,
+          "end": 9.22875,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "af0ea865f7027749195baacc828f55bc"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-25850e78aa0f6087f55deec7",
+          "start": 10.22875,
+          "end": 11.22875,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "892dbfef395233b113508ce320e39d72"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-c7e308d062cf3547a8be1390",
+          "start": 201.3208125,
+          "end": 202.3208125,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "9799dc124577ff2e21b25bccfed45735"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-6c7c3d6d6337daf7ecac6c72",
+          "start": 276.171875,
+          "end": 277.171875,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "f830fc230ac82a504795783957d0e868"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-7b0736942c7a5c768ab28f3f",
+          "start": 387.6610625,
+          "end": 388.6610625,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "c5e580038e29210b19d847b82480839f"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-3b2938a14858d14a88a63a59",
+          "start": 555.7208125,
+          "end": 556.7208125,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "868371f1f11d38f74f624a64fde308aa"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-32a6b384cc6b3f9102ca5261",
+          "start": 591.537875,
+          "end": 592.537875,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "eace6ea7706ad1b08fb620b13891cf51"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-97fe30f94ab292b3b8336adb",
+          "start": 624.2614375,
+          "end": 625.2614375,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "8de3a94d12335801e6e3ff94c7688bd3"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-3c006cf2e48c0703820680db",
+          "start": 630.126875,
+          "end": 631.126875,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "0eaae9fd3e4f671c4d83d11daac64d5e"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-e5ef83ad3668d4a6c7f52f1c",
+          "start": 675.0961875,
+          "end": 676.0961875,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "6ae0afa0d155799941efdf9e1c3ea27b"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-5e61ef3bc2859a488cb84a8d",
+          "start": 682.9166875,
+          "end": 683.9166875,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "2a0cc6d09ffcc28bf37c02b5684ea3c2"
+          ],
+          "review_kind": "window_presence"
+        }
+      ],
+      "presence_states": [
+        {
+          "id": "presence-60cdcc356e36784b4aa1734c",
+          "start": 523.2585625,
+          "end": 524.2585625,
+          "answer": "unsure",
+          "audio_stream": 0
+        }
+      ]
+    },
+    {
+      "file": "sources/source_0163c0bb8f85b99932ee40d5/audio_d760264b8b69ac8c12807cdc.webm",
+      "duration": 867.921,
+      "audio_streams": [
+        {
+          "index": 0,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "opus",
+          "start": 0.0
+        }
+      ],
+      "audio_stream": 0,
+      "size": 14047879,
+      "group": "public-source:kxftgjwU8ms",
+      "split": "validation",
+      "track_confirmed": false,
+      "intervals": [],
+      "reviewed": [],
+      "collection_source_id": "kxftgjwU8ms",
+      "source_metadata": {
+        "id": "kxftgjwU8ms",
+        "title": "The Highest Agility Weapon In ARC Raiders Is Better Than You Think",
+        "webpage_url": "https://www.youtube.com/watch?v=kxftgjwU8ms",
+        "channel": "takibo",
+        "channel_id": "UC8FnJrfl4OeqtunWP38v2tg",
+        "uploader": "takibo",
+        "uploader_id": "@the_takibo",
+        "duration": 868,
+        "chapters": [
+          {
+            "start_time": 0,
+            "title": "Intro & Important Information",
+            "end_time": 60
+          },
+          {
+            "start_time": 60,
+            "title": "Burletta Damage & Fire Rate",
+            "end_time": 108
+          },
+          {
+            "start_time": 108,
+            "title": "Burletta Recoil & Spread vs Kettle",
+            "end_time": 133
+          },
+          {
+            "start_time": 133,
+            "title": "Hipfire Recoil Is Insane",
+            "end_time": 158
+          },
+          {
+            "start_time": 158,
+            "title": "Highest Agility in the Game",
+            "end_time": 175
+          },
+          {
+            "start_time": 175,
+            "title": "Weapon Agility Explained",
+            "end_time": 290
+          },
+          {
+            "start_time": 290,
+            "title": "Do NOT Upgrade Your Burlettas",
+            "end_time": 383
+          },
+          {
+            "start_time": 383,
+            "title": "Burlettas Attachments & Mods",
+            "end_time": 475
+          },
+          {
+            "start_time": 475,
+            "title": "Muzzle Brake is Goated??",
+            "end_time": 595
+          },
+          {
+            "start_time": 595,
+            "title": "Burletta is a DIVING Weapon (Not Poking)",
+            "end_time": 630
+          },
+          {
+            "start_time": 630,
+            "title": "Headshots",
+            "end_time": 746
+          },
+          {
+            "start_time": 746,
+            "title": "Bring a Poking Weapon (Long Range)",
+            "end_time": 767
+          },
+          {
+            "start_time": 767,
+            "title": "Flanking Augment",
+            "end_time": 792
+          },
+          {
+            "start_time": 792,
+            "title": "Built To Be a Secondary",
+            "end_time": 868
+          }
+        ],
+        "source_id": "kxftgjwU8ms",
+        "source_url": "https://www.youtube.com/watch?v=kxftgjwU8ms",
+        "media_file": "audio_d760264b8b69ac8c12807cdc.webm",
+        "media_size": 14047879,
+        "media_sha256": "d760264b8b69ac8c12807cdc5c80144e9678c259a190280e589394924fd2a3bf"
+      },
+      "source_sha256": "d760264b8b69ac8c12807cdc5c80144e9678c259a190280e589394924fd2a3bf",
+      "presence_media": {
+        "size": 14047879,
+        "mtime_ns": 1792376638091828500
+      }
+    },
+    {
+      "file": "sources/source_5381ce54f470eababdbf25f6/audio_5944bb22b3f47d7850fbf9de.webm",
+      "duration": 1869.301,
+      "audio_streams": [
+        {
+          "index": 0,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "opus",
+          "start": 0.0
+        }
+      ],
+      "audio_stream": 0,
+      "size": 32632533,
+      "group": "public-source:WHzHLGX-WG0",
+      "split": "train",
+      "track_confirmed": true,
+      "intervals": [],
+      "reviewed": [],
+      "collection_source_id": "WHzHLGX-WG0",
+      "source_metadata": {
+        "id": "WHzHLGX-WG0",
+        "title": "MOST LOADED RATTLER YOU HAVE SEEN TODAY (PvP + Looting) | ARC RAIDERS",
+        "webpage_url": "https://www.youtube.com/watch?v=WHzHLGX-WG0",
+        "channel": "Domi - Arc Raiders",
+        "channel_id": "UCoYEoQKqapEs9iMpQOxBCJQ",
+        "uploader": "Domi - Arc Raiders",
+        "uploader_id": "@Domi-FPS",
+        "duration": 1869,
+        "chapters": [
+          {
+            "start_time": 0,
+            "title": "intro",
+            "end_time": 60
+          },
+          {
+            "start_time": 60,
+            "title": "Start (we go straight into PvP)",
+            "end_time": 300
+          },
+          {
+            "start_time": 300,
+            "title": "Surely this guy won't betray me",
+            "end_time": 520
+          },
+          {
+            "start_time": 520,
+            "title": "finally a friendly player",
+            "end_time": 700
+          },
+          {
+            "start_time": 700,
+            "title": "Brilliant Troll",
+            "end_time": 820
+          },
+          {
+            "start_time": 820,
+            "title": "afk brotha",
+            "end_time": 1000
+          },
+          {
+            "start_time": 1000,
+            "title": "humble duo",
+            "end_time": 1080
+          },
+          {
+            "start_time": 1080,
+            "title": "I tricked myself",
+            "end_time": 1332
+          },
+          {
+            "start_time": 1332,
+            "title": "I 'd rather die but I TAKE ALL LOOT",
+            "end_time": 1420
+          },
+          {
+            "start_time": 1420,
+            "title": "INSANE PUSH in DUOS",
+            "end_time": 1520
+          },
+          {
+            "start_time": 1520,
+            "title": "Majestic Backpack with crazy loot",
+            "end_time": 1615
+          },
+          {
+            "start_time": 1615,
+            "title": "cinematic fight",
+            "end_time": 1790
+          },
+          {
+            "start_time": 1790,
+            "title": "they'd rather die than press the button...",
+            "end_time": 1869
+          }
+        ],
+        "source_id": "WHzHLGX-WG0",
+        "source_url": "https://www.youtube.com/watch?v=WHzHLGX-WG0",
+        "media_file": "audio_5944bb22b3f47d7850fbf9de.webm",
+        "media_size": 32632533,
+        "media_sha256": "5944bb22b3f47d7850fbf9deb82a3cf3a4dab54826adca916b781d9a08079fb2"
+      },
+      "source_sha256": "5944bb22b3f47d7850fbf9deb82a3cf3a4dab54826adca916b781d9a08079fb2",
+      "presence_media": {
+        "size": 32632533,
+        "mtime_ns": 1792376674238913700
+      },
+      "presence_reviews": [
+        {
+          "id": "presence-bda1d2d03f176f191252eda7",
+          "start": 55.8869375,
+          "end": 56.8869375,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "667bb02db064f51bcbafd358bf22788f"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-2efd297b2f8b45934bf02441",
+          "start": 147.873125,
+          "end": 148.873125,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "65049ccb79ab25296d93cd6fdcf1c704"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-1ead03e982a9d7463fd3a3cd",
+          "start": 154.626125,
+          "end": 155.626125,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "70b0fd951f67677da1193e0534fdc059"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-6afaada78417e1515501cc8d",
+          "start": 238.357375,
+          "end": 239.357375,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "ac57334ad8c5dfe1d2c7d63e125e8e58"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-186350b61c1920a129582c4a",
+          "start": 336.5660625,
+          "end": 337.5660625,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "85e14e5bdfc1ad7dc8ed7f781fe0bf67"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-8c0b04a622a591e0539ec504",
+          "start": 352.6709375,
+          "end": 353.6709375,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "2698d52864055e62921cde0ebf75e7d9"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-5703b0ed2ca4bc7eb7240745",
+          "start": 421.6621875,
+          "end": 422.6621875,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "9fb1defcf5902f55d0192bdd409ef405"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-bf8f14eb756dd3e8eb342e03",
+          "start": 442.104125,
+          "end": 443.104125,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "23f29207e4ccde92a521b053e8495665"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-a113081ef2e14a1f2ffe4c23",
+          "start": 451.234375,
+          "end": 452.234375,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "ea735f95fad594a379463421cab88db4"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-052713b2fe9b25e5da47c32d",
+          "start": 483.323625,
+          "end": 484.323625,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "79b3c4e1d32fe75509a8a62701f227ee"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-c56d6b078749619a7013b4a2",
+          "start": 494.8398125,
+          "end": 495.8398125,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "7563f00bf4ddcfca75c580637b1268fd"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-dbee3938aeaf03d24c51802f",
+          "start": 644.8898125,
+          "end": 645.8898125,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "a9ecd6a4c13ffd432f233634b9a9e4ae"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-6f18f960c848e93ab3ac4de5",
+          "start": 650.4880625,
+          "end": 651.4880625,
+          "label": "gunshot",
+          "present": true,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "e7ce8a0e8e3e93cc0115b9c3639a66f1"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-bc15b8d5f93b3af347ff0891",
+          "start": 655.17225,
+          "end": 656.17225,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "7fbb01ec63877e0cb3bf5643b4035bd9"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-62f166894ff6e648a5cd16fa",
+          "start": 662.439875,
+          "end": 663.439875,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "9ced5d7ebf0edc378d8c52a4f3440787"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-0ba11d4a895f4c43e0f6e870",
+          "start": 670.6549375,
+          "end": 671.6549375,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "16bdac1dff83d393b51fc351a88ad3ea"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-d95850b7326cff4934348b29",
+          "start": 671.83675,
+          "end": 672.83675,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "9357082773c60df5699a089755c05fe8"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-32c699255036e405eb82b4bb",
+          "start": 718.50725,
+          "end": 719.50725,
+          "label": "gunshot",
+          "present": true,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "5a01400d2e0ed9de4a907b99c603ae4a"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-bdecb98cf016d699d5ca0dc7",
+          "start": 750.4736875,
+          "end": 751.4736875,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "1e560f8c2ec97784064daf4e1eb59ee9"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-6f16cad33ccb73ccb2269324",
+          "start": 770.47275,
+          "end": 771.47275,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "7ad641dde38bd4ee01e79fbcb3a50055"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-06eb5e19b3f3d4910ee3200a",
+          "start": 934.1735625,
+          "end": 935.1735625,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "32e166d7cabe9d44d54eb3e2d8b34814"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-852d1886c2423d5d9076aac2",
+          "start": 943.7450625,
+          "end": 944.7450625,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "a79f1e2760bcb1f108d49df0a795724a"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-3cc9fa22e0a1abc4c771d59c",
+          "start": 958.02375,
+          "end": 959.02375,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "99e2c54ea53a8e75c6c0ad2219dd5f5d"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-55e1e5376435d060d0e594c3",
+          "start": 961.6466875,
+          "end": 962.6466875,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "93ce9fa1c762ed8a4de9c12a2773ddb0"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-245a4145a302e010070274cb",
+          "start": 978.862875,
+          "end": 979.862875,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "2ce912bc946ac2fb1b205c2abaa3365c"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-0105be0c1f6551662c15a5bf",
+          "start": 1062.711875,
+          "end": 1063.711875,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "1c2c0f831bde036faa6210eb847a7dc5"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-0f3f2113f646a4340952418d",
+          "start": 1246.5165625,
+          "end": 1247.5165625,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "b359d15e21cb7e3c40edfdffb4c6a7db"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-a739398940d0484750ef332c",
+          "start": 1286.8598125,
+          "end": 1287.8598125,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "a95c6322439030c12c55b4640d78d1c0"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-584a034c2347e9dd356dbb07",
+          "start": 1318.7285,
+          "end": 1319.7285,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "891933a1406d04fe91cfdc871df43685"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-490b5958bc1d5010d9ae7835",
+          "start": 1323.476125,
+          "end": 1324.476125,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "8599328c3ad3e64bd5d9b6fadfeb8ea3"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-0450fd94b11cca55cc961990",
+          "start": 1327.6900625,
+          "end": 1328.6900625,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "50511adf4d13b7480b34c2622c8e80b3"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-9aace34d8a4ef0f0b7c41c32",
+          "start": 1328.124875,
+          "end": 1329.124875,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "8f1937e6d8bf8dcd9a9cf32128363795"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-85c9fe7805c18558ef136f55",
+          "start": 1335.1925,
+          "end": 1336.1925,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "cf3f0236c7fc6b8246faf27c48249364"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-0cb0da4c9eb6ea648d8f2c31",
+          "start": 1340.3849375,
+          "end": 1341.3849375,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "d2c5d74f53b86d72e59914f9cdaffe3a"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-03e135df164a2885263aeddf",
+          "start": 1341.997,
+          "end": 1342.997,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "1fb7e5cef9345fc6355ab04f4972a43e"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-2b83575aed48a292528b6966",
+          "start": 1349.2269375,
+          "end": 1350.2269375,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "f5bc52509f2992d64cbbf57bb5fb623e"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-d0f62a4cda3c302f6e390620",
+          "start": 1354.181125,
+          "end": 1355.181125,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "04a4b1ecd6e990e95c2101b94efbb4d4"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-04581a1ccb3382e1b86f4c7a",
+          "start": 1358.1279375,
+          "end": 1359.1279375,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "b672a0a74621c2b0b2cfa63f7b68b674"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-b92794b2f01bd8eb2dbe68fd",
+          "start": 1391.0046875,
+          "end": 1392.0046875,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "a38d4c1a0076a073a05443bfdfd9987b"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-253c220a1ea128dccf69dc3b",
+          "start": 1403.3131875,
+          "end": 1404.3131875,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "9dae2ca4677324fdefdd3e869efb6b10"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-297987de520447314bda77a7",
+          "start": 1408.8395625,
+          "end": 1409.8395625,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "9b755e3dc570f1b22b13a2047d4b5f60"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-a83874532045f6ad4e882d26",
+          "start": 1409.2643125,
+          "end": 1410.2643125,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "c2226f35336d78489303857202635284"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-aff682f96bc4f0db3b8f3cdd",
+          "start": 1514.83275,
+          "end": 1515.83275,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "af5d60ebca09c89c1d2fc3c0a846cad6"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-5f47407a8b5ccdd397b02faa",
+          "start": 1520.793375,
+          "end": 1521.793375,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "2f1d0bf5b9e649d26dcdcd746d53b718"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-205abf1592f322cfff012da9",
+          "start": 1524.1586875,
+          "end": 1525.1586875,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "acf59d9776ce13f936a0204f485aaa66"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-20686c4dc896faa388f0e6a2",
+          "start": 1572.23975,
+          "end": 1573.23975,
+          "label": "gunshot",
+          "present": true,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "70f1d1d07b763bfb712f6b2fe6f5ec2a"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-aa1e3a6ce6a6ac9fc0cf18cb",
+          "start": 1574.23975,
+          "end": 1575.23975,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "c3e1a9f43f62e3925c459062141ddb5b"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-fbba028b60ce0142136fdd78",
+          "start": 1620.5084375,
+          "end": 1621.5084375,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "54840e4d56313af9f7f2364e823c2964"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-b0a182770be0fc5dd7e8400b",
+          "start": 1669.7734375,
+          "end": 1670.7734375,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "2546b8a8ce0d8df726068b50360fe9ba"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-b721c83097e8acf3ca36fe90",
+          "start": 1685.7486875,
+          "end": 1686.7486875,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "4b0ae849ec31e51879f2e0e3e4cad6ac"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-0f72db210648d96cef756003",
+          "start": 1690.491,
+          "end": 1691.491,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "01b5acd9ac55a1968abcf89e1f9f27c7"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-a053028d5c52bdfd2bfa7c36",
+          "start": 1740.1990625,
+          "end": 1741.1990625,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "0bd5b0ebd04120ca5ea5f1ed83da0396"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-081028d90496136c21f53ea9",
+          "start": 1752.6060625,
+          "end": 1753.6060625,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "48ba951d0d23521522ee8eed97b27251"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-f4d0457e792892b7042f7704",
+          "start": 1765.7023125,
+          "end": 1766.7023125,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "21b5722be481f00e8cf9863252189841"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-d6e4f64253e4e057a8dbbdd3",
+          "start": 1814.9080625,
+          "end": 1815.9080625,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "0d6d3991e9382d7bb4f7571ab00c3126"
+          ],
+          "review_kind": "window_presence"
+        }
+      ],
+      "presence_states": []
+    },
+    {
+      "file": "sources/source_35b76fcaef303a976a8decaf/audio_76ffd983b0d1e549a228444c.webm",
+      "duration": 1749.461,
+      "audio_streams": [
+        {
+          "index": 0,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "opus",
+          "start": 0.0
+        }
+      ],
+      "audio_stream": 0,
+      "size": 29943652,
+      "group": "public-source:KmmeqkuhMRU",
+      "split": "train",
+      "track_confirmed": false,
+      "intervals": [],
+      "reviewed": [],
+      "collection_source_id": "KmmeqkuhMRU",
+      "source_metadata": {
+        "id": "KmmeqkuhMRU",
+        "title": "ARC Raiders Devs Said This is The BEST PVE Weapon, But..",
+        "webpage_url": "https://www.youtube.com/watch?v=KmmeqkuhMRU",
+        "channel": "The Gaming Merchant",
+        "channel_id": "UCz2_M6-NBgdiLvDOmlH074g",
+        "uploader": "The Gaming Merchant",
+        "uploader_id": "@Thegamingmerchant",
+        "duration": 1749,
+        "chapters": [
+          {
+            "start_time": 0,
+            "title": "Testing the Bettina",
+            "end_time": 49
+          },
+          {
+            "start_time": 49,
+            "title": "Stella Montis PvE mission",
+            "end_time": 269
+          },
+          {
+            "start_time": 269,
+            "title": "Bastion fight analysis",
+            "end_time": 342
+          },
+          {
+            "start_time": 342,
+            "title": "Tweaking the build",
+            "end_time": 427
+          },
+          {
+            "start_time": 427,
+            "title": "Rocketeer test results",
+            "end_time": 522
+          },
+          {
+            "start_time": 522,
+            "title": "Bettina PvE conclusions",
+            "end_time": 624
+          },
+          {
+            "start_time": 624,
+            "title": "Bettina PvP mission",
+            "end_time": 1026
+          },
+          {
+            "start_time": 1026,
+            "title": "PvP performance review",
+            "end_time": 1083
+          },
+          {
+            "start_time": 1083,
+            "title": "Alpha Bettina test",
+            "end_time": 1211
+          },
+          {
+            "start_time": 1211,
+            "title": "Intense firefight",
+            "end_time": 1338
+          },
+          {
+            "start_time": 1338,
+            "title": "Final PvP showdown",
+            "end_time": 1696
+          },
+          {
+            "start_time": 1696,
+            "title": "Final thoughts",
+            "end_time": 1749
+          }
+        ],
+        "source_id": "KmmeqkuhMRU",
+        "source_url": "https://www.youtube.com/watch?v=KmmeqkuhMRU",
+        "media_file": "audio_76ffd983b0d1e549a228444c.webm",
+        "media_size": 29943652,
+        "media_sha256": "76ffd983b0d1e549a228444c75e04a1e317dad2c7d793c3878b5ca719b4c5c49"
+      },
+      "source_sha256": "76ffd983b0d1e549a228444c75e04a1e317dad2c7d793c3878b5ca719b4c5c49"
+    },
+    {
+      "file": "sources/source_1753fc0ba328ebb588d0d2d2/audio_8f9867fb99635bb59d9d5604.webm",
+      "duration": 1319.581,
+      "audio_streams": [
+        {
+          "index": 0,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "opus",
+          "start": 0.0
+        }
+      ],
+      "audio_stream": 0,
+      "size": 21794225,
+      "group": "public-source:3j4CKLoJHec",
+      "split": "validation",
+      "track_confirmed": true,
+      "intervals": [],
+      "reviewed": [],
+      "collection_source_id": "3j4CKLoJHec",
+      "source_metadata": {
+        "id": "3j4CKLoJHec",
+        "title": "Finding and testing the NEW GUN in Arc Raiders ( BETTINA )",
+        "webpage_url": "https://www.youtube.com/watch?v=3j4CKLoJHec",
+        "channel": "LVNDMARK",
+        "channel_id": "UCOhsgjMEyldgS04MiP2x-zA",
+        "uploader": "LVNDMARK",
+        "uploader_id": "@LVNDMARK",
+        "duration": 1320,
+        "chapters": [
+          {
+            "start_time": 0,
+            "title": "Game discussion and plans",
+            "end_time": 47
+          },
+          {
+            "start_time": 47,
+            "title": "Infiltration and firefights",
+            "end_time": 265
+          },
+          {
+            "start_time": 265,
+            "title": "Room clear and gear check",
+            "end_time": 450
+          },
+          {
+            "start_time": 450,
+            "title": "Testing the Bettina",
+            "end_time": 661
+          },
+          {
+            "start_time": 661,
+            "title": "High-stakes engagements",
+            "end_time": 881
+          },
+          {
+            "start_time": 881,
+            "title": "Looting and extraction prep",
+            "end_time": 1056
+          },
+          {
+            "start_time": 1056,
+            "title": "Miraculous extraction",
+            "end_time": 1320
+          }
+        ],
+        "source_id": "3j4CKLoJHec",
+        "source_url": "https://www.youtube.com/watch?v=3j4CKLoJHec",
+        "media_file": "audio_8f9867fb99635bb59d9d5604.webm",
+        "media_size": 21794225,
+        "media_sha256": "8f9867fb99635bb59d9d5604611c581d9a1b335b6c588f328fccffc455ea3303"
+      },
+      "source_sha256": "8f9867fb99635bb59d9d5604611c581d9a1b335b6c588f328fccffc455ea3303",
+      "presence_media": {
+        "size": 21794225,
+        "mtime_ns": 1792376747102905600
+      },
+      "presence_reviews": [
+        {
+          "id": "presence-af313dd7bb81add43f458a7c",
+          "start": 0.0,
+          "end": 1.0,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "a49b854ad89dddf363a92d9f46662875"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-cb185a54eb31597eedc32b26",
+          "start": 15.07,
+          "end": 16.07,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "52762d044be0b4ec0497f204e5381b17"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-a9934d49f95fe453bda75588",
+          "start": 19.7395,
+          "end": 20.7395,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "ec706e1b5a4e999c9a60a5df78654217"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-72e1ee21294add8169d61137",
+          "start": 31.5078125,
+          "end": 32.5078125,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "f8a84147360a4453c4d057cf8c7e5f22"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-db38024f7e42bd0fc2d4b659",
+          "start": 180.13125,
+          "end": 181.13125,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "e2e31fa84376a9b1250b56649f0abc37"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-66f6d5fbd700d70c0706c5ca",
+          "start": 225.70575,
+          "end": 226.70575,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "8fe2d28030844f3f7ea7958ab1d5cb39"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-39f2a0fdea58e50665d44818",
+          "start": 256.801,
+          "end": 257.801,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "9e5c23ef29179b727517992f1c48415d"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-60759c0a8588222b422b1d8d",
+          "start": 330.3825,
+          "end": 331.3825,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "0525489a1ad0548597f42c8be54e62fb"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-79a2d4ab0b56894bc1dee7f7",
+          "start": 450.9719375,
+          "end": 451.9719375,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "c8b60b8c0292681658ac2fadbf05b1bd"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-081ce5d41b7da75b6449f1ac",
+          "start": 467.201875,
+          "end": 468.201875,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "d66d0bf1b2f8d5e52e8f819347d7bdd4"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-539a509af464f3b007df904a",
+          "start": 478.97875,
+          "end": 479.97875,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "3aa7c2963eeb778a05211d217af7dbda"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-a7cf102acbcd3bad50154f2b",
+          "start": 495.231625,
+          "end": 496.231625,
+          "label": "gunshot",
+          "present": true,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "b50cdf0fbdecc32c471f321742487077"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-0d549ce6a44119612d6f6d23",
+          "start": 499.20725,
+          "end": 500.20725,
+          "label": "gunshot",
+          "present": true,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "3fabdecf60bc64d50dd33d7aba28fd1e"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-10e1603c2e054ba1e1ea8a7e",
+          "start": 626.4769375,
+          "end": 627.4769375,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "7a530b18913bfe2bd195e7d1f394ac6d"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-17ab792af10c16bdcc682945",
+          "start": 650.111875,
+          "end": 651.111875,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "1dd7511860b85d69ff302af64607d8be"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-11da6867568765c4d81de857",
+          "start": 656.0850625,
+          "end": 657.0850625,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "9a53618319e0450309f23d6630d7ec03"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-733de2a9c16f52a53cd747e3",
+          "start": 660.8760625,
+          "end": 661.8760625,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "d1e80abd58f16d4766439cc22318b23d"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-dcd01fd2cec723c5425e3d84",
+          "start": 672.1545,
+          "end": 673.1545,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "ac20c53e2d840eadb1d75fea76ffde36"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-61b9f1caa17923cf453314b0",
+          "start": 710.8261875,
+          "end": 711.8261875,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "a088d0ce4af0e3f837c9c70db7144f85"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-69fd1b76a0e3cd8305baa1c6",
+          "start": 885.5336875,
+          "end": 886.5336875,
+          "label": "gunshot",
+          "present": true,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "5055f749c85c9b8ea6bb8868c2e20bcf"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-4932e90f3206a368c41c176b",
+          "start": 977.05325,
+          "end": 978.05325,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "754ed5a05e9356a3095171b5e8ecf25f"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-bb0db8f5f4baa8a6545abb23",
+          "start": 977.6530625,
+          "end": 978.6530625,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "59151d8fbce6c73fe6d64fa77b1dfccf"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-e52c939bc8e0a701affe4347",
+          "start": 1010.6436875,
+          "end": 1011.6436875,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "1552755b6ff855d38d307788ae892918"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-ac5fa247414444a5c89dc13d",
+          "start": 1093.5715625,
+          "end": 1094.5715625,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "466edc514b7df5fd4577a699f16fee30"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-1423eff9802883474679f4b6",
+          "start": 1095.5715625,
+          "end": 1096.5715625,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "021a55e8019a8ba5980aaf89ee54e3a0"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-7f82979a77fa3ad8198f7e9e",
+          "start": 1097.5715625,
+          "end": 1098.5715625,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "0a3f0f413877433e6b00ba53174266dd"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-6e2e70e53f0a25d122ec74d0",
+          "start": 1126.325125,
+          "end": 1127.325125,
+          "label": "gunshot",
+          "present": true,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "5e33bbd59ac5dcbfe4e2256f38d2a04d"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-e644286b5eabe4b00d17a249",
+          "start": 1162.7249375,
+          "end": 1163.7249375,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "3bf5200c12fc433d359b41e212687891"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-37db1727caf5f3984936ee95",
+          "start": 1178.4985,
+          "end": 1179.4985,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "2101f1feb2697e23e3d2016d979db7b8"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-97ff45ee82ab32e1ba65ec7c",
+          "start": 1185.8298125,
+          "end": 1186.8298125,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "fc90c049542486729e214b1cfb9543ab"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-2c4c4d20ca96ba7e9741fec2",
+          "start": 1248.3794375,
+          "end": 1249.3794375,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "ad6773e10c0b79b87b069b0cd03dea4b"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-ad1ca3a01c21855070964702",
+          "start": 1277.0134375,
+          "end": 1278.0134375,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "707f1ceee5139da8e4af90f72be4ae86"
+          ],
+          "review_kind": "window_presence"
+        },
+        {
+          "id": "presence-6ab6d2b59c22a6db4b893355",
+          "start": 1317.1179375,
+          "end": 1318.1179375,
+          "label": "gunshot",
+          "present": false,
+          "audio_stream": 0,
+          "proposal_ids": [
+            "55c8f6a39cb373e9abb18c18efb06b20"
+          ],
+          "review_kind": "window_presence"
+        }
+      ],
+      "presence_states": []
+    },
+    {
+      "file": "sources/source_6e9e1f13628313972813c09f/audio_73a1443e057ff7a8b38367f2.webm",
+      "duration": 1000.781,
+      "audio_streams": [
+        {
+          "index": 0,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "opus",
+          "start": 0.0
+        }
+      ],
+      "audio_stream": 0,
+      "size": 15731208,
+      "group": "public-source:t07hmXNA4Ys",
+      "split": "train",
+      "track_confirmed": false,
+      "intervals": [],
+      "reviewed": [],
+      "collection_source_id": "t07hmXNA4Ys",
+      "source_metadata": {
+        "id": "t07hmXNA4Ys",
+        "title": "The Stitcher Made Me VERY RICH in ARC Raiders (PvP + Looting)",
+        "webpage_url": "https://www.youtube.com/watch?v=t07hmXNA4Ys",
+        "channel": "xvohs",
+        "channel_id": "UC9OL4YgFkFaTnUgV3ZAP5UA",
+        "uploader": "xvohs",
+        "uploader_id": "@xvohs",
+        "duration": 1001,
+        "chapters": [
+          {
+            "start_time": 0,
+            "title": "Intro",
+            "end_time": 42
+          },
+          {
+            "start_time": 42,
+            "title": "Game 1 (Blue Gate)",
+            "end_time": 330
+          },
+          {
+            "start_time": 330,
+            "title": "Game 2 (Dam Battlegrounds)",
+            "end_time": 681
+          },
+          {
+            "start_time": 681,
+            "title": "Game 3 (Stella Montis)",
+            "end_time": 763
+          },
+          {
+            "start_time": 763,
+            "title": "Game 4 (Stella Montis)",
+            "end_time": 1001
+          }
+        ],
+        "source_id": "t07hmXNA4Ys",
+        "source_url": "https://www.youtube.com/watch?v=t07hmXNA4Ys",
+        "media_file": "audio_73a1443e057ff7a8b38367f2.webm",
+        "media_size": 15731208,
+        "media_sha256": "73a1443e057ff7a8b38367f27d93d831740d7d29133b9e1af53225f6ca3a64bf"
+      },
+      "source_sha256": "73a1443e057ff7a8b38367f27d93d831740d7d29133b9e1af53225f6ca3a64bf"
+    },
+    {
+      "file": "sources/source_21225d70260dc9e7fed957b8/audio_9d1c5adb57ee67ae3ff6f74d.webm",
+      "duration": 997.261,
+      "audio_streams": [
+        {
+          "index": 0,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "opus",
+          "start": 0.0
+        }
+      ],
+      "audio_stream": 0,
+      "has_video": false,
+      "size": 17912572,
+      "group": "public-source:EHZyt9pVpi0",
+      "split": "train",
+      "track_confirmed": false,
+      "intervals": [],
+      "reviewed": [],
+      "collection_source_id": "EHZyt9pVpi0",
+      "source_metadata": {
+        "id": "EHZyt9pVpi0",
+        "title": "ARC Raiders - Every Legendary Weapon, Item & Gear Explained (Full Showcase So Far)",
+        "webpage_url": "https://www.youtube.com/watch?v=EHZyt9pVpi0",
+        "channel": "Arekkz Gaming",
+        "channel_id": "UC-zjH-e5XBzMpy_VtwIGRxQ",
+        "uploader": "Arekkz Gaming",
+        "uploader_id": "@ArekkzGaming",
+        "duration": 997,
+        "chapters": [
+          {
+            "start_time": 0,
+            "title": "ALL Legendary Weapons, Items & Gear",
+            "end_time": 55
+          },
+          {
+            "start_time": 55,
+            "title": "Jupiter Legendary Weapon",
+            "end_time": 253
+          },
+          {
+            "start_time": 253,
+            "title": "Equalizer Legendary Weapon",
+            "end_time": 392
+          },
+          {
+            "start_time": 392,
+            "title": "Aphelion Legendary Weapon",
+            "end_time": 486
+          },
+          {
+            "start_time": 486,
+            "title": "Anvil Splitter Legendary Mod",
+            "end_time": 628
+          },
+          {
+            "start_time": 628,
+            "title": "Kinetic Converter Legendary Stock",
+            "end_time": 729
+          },
+          {
+            "start_time": 729,
+            "title": "Snap Hook Legendary Gadget",
+            "end_time": 874
+          },
+          {
+            "start_time": 874,
+            "title": "Matriarch Reactor Legendary Material",
+            "end_time": 898
+          },
+          {
+            "start_time": 898,
+            "title": "Queen Reactor Legendary Material",
+            "end_time": 997
+          }
+        ],
+        "source_id": "EHZyt9pVpi0",
+        "source_url": "https://www.youtube.com/watch?v=EHZyt9pVpi0",
+        "media_file": "audio_9d1c5adb57ee67ae3ff6f74d.webm",
+        "media_size": 17912572,
+        "media_sha256": "9d1c5adb57ee67ae3ff6f74df3fa42ab7f289fc537eac3b0ef2be8f07cba1384"
+      },
+      "source_sha256": "9d1c5adb57ee67ae3ff6f74df3fa42ab7f289fc537eac3b0ef2be8f07cba1384"
     }
-  ]
+  ],
+  "weapon_sources": [
+    {
+      "id": "manifest_a8dcda38a74a4ed32d752923",
+      "source_id": "MlK0E83JfEE",
+      "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+      "weapon": "kettle",
+      "start": null,
+      "end": null,
+      "metadata": {
+        "weapon": "Kettle",
+        "source_title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "start": "",
+        "end": "",
+        "quality": "general showcase",
+        "notes": "Raw in-game shooting; search index did not expose per-weapon timestamps. Use for manual/automated timestamp discovery."
+      },
+      "manifest_path": "C:\\Users\\andre\\OneDrive\\Desktop\\Codebase\\arc raiders overlay\\arc_raiders_audio_seed_manifest.csv",
+      "possible_weapons": [
+        "anvil",
+        "aphelion",
+        "arpeggio",
+        "bantam",
+        "bettina",
+        "bobcat",
+        "burletta",
+        "canto",
+        "dolabra",
+        "equalizer",
+        "ferro",
+        "hairpin",
+        "hullcracker",
+        "il_toro",
+        "jupiter",
+        "kettle",
+        "osprey",
+        "rascal",
+        "rattler",
+        "renegade",
+        "stiletto",
+        "stitcher",
+        "tempest",
+        "torrente",
+        "venator",
+        "vulcano"
+      ],
+      "ambiguous_weapon": true,
+      "status": "downloaded",
+      "file": "sources/source_04670a1c0d51c249e79f00b6/audio_2a2d799669467a2f069d1968.webm",
+      "source_metadata": {
+        "id": "MlK0E83JfEE",
+        "title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "webpage_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "channel": "TayXDc",
+        "channel_id": "UCTWDRA2tbOzBhgnLEYGIUzg",
+        "uploader": "TayXDc",
+        "uploader_id": "@tayxdc",
+        "duration": 698,
+        "chapters": null,
+        "source_id": "MlK0E83JfEE",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "media_file": "audio_2a2d799669467a2f069d1968.webm",
+        "media_size": 12280990,
+        "media_sha256": "2a2d799669467a2f069d196800885f52262117784e9ebbae121f6bebaf53b506"
+      }
+    },
+    {
+      "id": "manifest_24758742117f93c1509bf5ed",
+      "source_id": "MlK0E83JfEE",
+      "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+      "weapon": "rattler",
+      "start": null,
+      "end": null,
+      "metadata": {
+        "weapon": "Rattler",
+        "source_title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "start": "",
+        "end": "",
+        "quality": "general showcase",
+        "notes": "Raw in-game shooting; search index did not expose per-weapon timestamps. Use for manual/automated timestamp discovery."
+      },
+      "manifest_path": "C:\\Users\\andre\\OneDrive\\Desktop\\Codebase\\arc raiders overlay\\arc_raiders_audio_seed_manifest.csv",
+      "possible_weapons": [
+        "anvil",
+        "aphelion",
+        "arpeggio",
+        "bantam",
+        "bettina",
+        "bobcat",
+        "burletta",
+        "canto",
+        "dolabra",
+        "equalizer",
+        "ferro",
+        "hairpin",
+        "hullcracker",
+        "il_toro",
+        "jupiter",
+        "kettle",
+        "osprey",
+        "rascal",
+        "rattler",
+        "renegade",
+        "stiletto",
+        "stitcher",
+        "tempest",
+        "torrente",
+        "venator",
+        "vulcano"
+      ],
+      "ambiguous_weapon": true,
+      "status": "downloaded",
+      "file": "sources/source_04670a1c0d51c249e79f00b6/audio_2a2d799669467a2f069d1968.webm",
+      "source_metadata": {
+        "id": "MlK0E83JfEE",
+        "title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "webpage_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "channel": "TayXDc",
+        "channel_id": "UCTWDRA2tbOzBhgnLEYGIUzg",
+        "uploader": "TayXDc",
+        "uploader_id": "@tayxdc",
+        "duration": 698,
+        "chapters": null,
+        "source_id": "MlK0E83JfEE",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "media_file": "audio_2a2d799669467a2f069d1968.webm",
+        "media_size": 12280990,
+        "media_sha256": "2a2d799669467a2f069d196800885f52262117784e9ebbae121f6bebaf53b506"
+      }
+    },
+    {
+      "id": "manifest_9ec00164f04ce446504938cb",
+      "source_id": "MlK0E83JfEE",
+      "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+      "weapon": "arpeggio",
+      "start": null,
+      "end": null,
+      "metadata": {
+        "weapon": "Arpeggio",
+        "source_title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "start": "",
+        "end": "",
+        "quality": "general showcase",
+        "notes": "Raw in-game shooting; search index did not expose per-weapon timestamps. Use for manual/automated timestamp discovery."
+      },
+      "manifest_path": "C:\\Users\\andre\\OneDrive\\Desktop\\Codebase\\arc raiders overlay\\arc_raiders_audio_seed_manifest.csv",
+      "possible_weapons": [
+        "anvil",
+        "aphelion",
+        "arpeggio",
+        "bantam",
+        "bettina",
+        "bobcat",
+        "burletta",
+        "canto",
+        "dolabra",
+        "equalizer",
+        "ferro",
+        "hairpin",
+        "hullcracker",
+        "il_toro",
+        "jupiter",
+        "kettle",
+        "osprey",
+        "rascal",
+        "rattler",
+        "renegade",
+        "stiletto",
+        "stitcher",
+        "tempest",
+        "torrente",
+        "venator",
+        "vulcano"
+      ],
+      "ambiguous_weapon": true,
+      "status": "downloaded",
+      "file": "sources/source_04670a1c0d51c249e79f00b6/audio_2a2d799669467a2f069d1968.webm",
+      "source_metadata": {
+        "id": "MlK0E83JfEE",
+        "title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "webpage_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "channel": "TayXDc",
+        "channel_id": "UCTWDRA2tbOzBhgnLEYGIUzg",
+        "uploader": "TayXDc",
+        "uploader_id": "@tayxdc",
+        "duration": 698,
+        "chapters": null,
+        "source_id": "MlK0E83JfEE",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "media_file": "audio_2a2d799669467a2f069d1968.webm",
+        "media_size": 12280990,
+        "media_sha256": "2a2d799669467a2f069d196800885f52262117784e9ebbae121f6bebaf53b506"
+      }
+    },
+    {
+      "id": "manifest_d3fabb03097709f1155cca88",
+      "source_id": "MlK0E83JfEE",
+      "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+      "weapon": "tempest",
+      "start": null,
+      "end": null,
+      "metadata": {
+        "weapon": "Tempest",
+        "source_title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "start": "",
+        "end": "",
+        "quality": "general showcase",
+        "notes": "Raw in-game shooting; search index did not expose per-weapon timestamps. Use for manual/automated timestamp discovery."
+      },
+      "manifest_path": "C:\\Users\\andre\\OneDrive\\Desktop\\Codebase\\arc raiders overlay\\arc_raiders_audio_seed_manifest.csv",
+      "possible_weapons": [
+        "anvil",
+        "aphelion",
+        "arpeggio",
+        "bantam",
+        "bettina",
+        "bobcat",
+        "burletta",
+        "canto",
+        "dolabra",
+        "equalizer",
+        "ferro",
+        "hairpin",
+        "hullcracker",
+        "il_toro",
+        "jupiter",
+        "kettle",
+        "osprey",
+        "rascal",
+        "rattler",
+        "renegade",
+        "stiletto",
+        "stitcher",
+        "tempest",
+        "torrente",
+        "venator",
+        "vulcano"
+      ],
+      "ambiguous_weapon": true,
+      "status": "downloaded",
+      "file": "sources/source_04670a1c0d51c249e79f00b6/audio_2a2d799669467a2f069d1968.webm",
+      "source_metadata": {
+        "id": "MlK0E83JfEE",
+        "title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "webpage_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "channel": "TayXDc",
+        "channel_id": "UCTWDRA2tbOzBhgnLEYGIUzg",
+        "uploader": "TayXDc",
+        "uploader_id": "@tayxdc",
+        "duration": 698,
+        "chapters": null,
+        "source_id": "MlK0E83JfEE",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "media_file": "audio_2a2d799669467a2f069d1968.webm",
+        "media_size": 12280990,
+        "media_sha256": "2a2d799669467a2f069d196800885f52262117784e9ebbae121f6bebaf53b506"
+      }
+    },
+    {
+      "id": "manifest_7ea81b7568f9469cd4665042",
+      "source_id": "MlK0E83JfEE",
+      "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+      "weapon": "bettina",
+      "start": null,
+      "end": null,
+      "metadata": {
+        "weapon": "Bettina",
+        "source_title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "start": "",
+        "end": "",
+        "quality": "general showcase",
+        "notes": "Raw in-game shooting; search index did not expose per-weapon timestamps. Use for manual/automated timestamp discovery."
+      },
+      "manifest_path": "C:\\Users\\andre\\OneDrive\\Desktop\\Codebase\\arc raiders overlay\\arc_raiders_audio_seed_manifest.csv",
+      "possible_weapons": [
+        "anvil",
+        "aphelion",
+        "arpeggio",
+        "bantam",
+        "bettina",
+        "bobcat",
+        "burletta",
+        "canto",
+        "dolabra",
+        "equalizer",
+        "ferro",
+        "hairpin",
+        "hullcracker",
+        "il_toro",
+        "jupiter",
+        "kettle",
+        "osprey",
+        "rascal",
+        "rattler",
+        "renegade",
+        "stiletto",
+        "stitcher",
+        "tempest",
+        "torrente",
+        "venator",
+        "vulcano"
+      ],
+      "ambiguous_weapon": true,
+      "status": "downloaded",
+      "file": "sources/source_04670a1c0d51c249e79f00b6/audio_2a2d799669467a2f069d1968.webm",
+      "source_metadata": {
+        "id": "MlK0E83JfEE",
+        "title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "webpage_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "channel": "TayXDc",
+        "channel_id": "UCTWDRA2tbOzBhgnLEYGIUzg",
+        "uploader": "TayXDc",
+        "uploader_id": "@tayxdc",
+        "duration": 698,
+        "chapters": null,
+        "source_id": "MlK0E83JfEE",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "media_file": "audio_2a2d799669467a2f069d1968.webm",
+        "media_size": 12280990,
+        "media_sha256": "2a2d799669467a2f069d196800885f52262117784e9ebbae121f6bebaf53b506"
+      }
+    },
+    {
+      "id": "manifest_af64b8fe2b2fbce35aa4677f",
+      "source_id": "MlK0E83JfEE",
+      "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+      "weapon": "ferro",
+      "start": null,
+      "end": null,
+      "metadata": {
+        "weapon": "Ferro",
+        "source_title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "start": "",
+        "end": "",
+        "quality": "general showcase",
+        "notes": "Raw in-game shooting; search index did not expose per-weapon timestamps. Use for manual/automated timestamp discovery."
+      },
+      "manifest_path": "C:\\Users\\andre\\OneDrive\\Desktop\\Codebase\\arc raiders overlay\\arc_raiders_audio_seed_manifest.csv",
+      "possible_weapons": [
+        "anvil",
+        "aphelion",
+        "arpeggio",
+        "bantam",
+        "bettina",
+        "bobcat",
+        "burletta",
+        "canto",
+        "dolabra",
+        "equalizer",
+        "ferro",
+        "hairpin",
+        "hullcracker",
+        "il_toro",
+        "jupiter",
+        "kettle",
+        "osprey",
+        "rascal",
+        "rattler",
+        "renegade",
+        "stiletto",
+        "stitcher",
+        "tempest",
+        "torrente",
+        "venator",
+        "vulcano"
+      ],
+      "ambiguous_weapon": true,
+      "status": "downloaded",
+      "file": "sources/source_04670a1c0d51c249e79f00b6/audio_2a2d799669467a2f069d1968.webm",
+      "source_metadata": {
+        "id": "MlK0E83JfEE",
+        "title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "webpage_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "channel": "TayXDc",
+        "channel_id": "UCTWDRA2tbOzBhgnLEYGIUzg",
+        "uploader": "TayXDc",
+        "uploader_id": "@tayxdc",
+        "duration": 698,
+        "chapters": null,
+        "source_id": "MlK0E83JfEE",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "media_file": "audio_2a2d799669467a2f069d1968.webm",
+        "media_size": 12280990,
+        "media_sha256": "2a2d799669467a2f069d196800885f52262117784e9ebbae121f6bebaf53b506"
+      }
+    },
+    {
+      "id": "manifest_72fdb696001a92ed80a2ea8a",
+      "source_id": "MlK0E83JfEE",
+      "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+      "weapon": "stiletto",
+      "start": null,
+      "end": null,
+      "metadata": {
+        "weapon": "Stiletto",
+        "source_title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "start": "",
+        "end": "",
+        "quality": "general showcase",
+        "notes": "Raw in-game shooting; search index did not expose per-weapon timestamps. Use for manual/automated timestamp discovery."
+      },
+      "manifest_path": "C:\\Users\\andre\\OneDrive\\Desktop\\Codebase\\arc raiders overlay\\arc_raiders_audio_seed_manifest.csv",
+      "possible_weapons": [
+        "anvil",
+        "aphelion",
+        "arpeggio",
+        "bantam",
+        "bettina",
+        "bobcat",
+        "burletta",
+        "canto",
+        "dolabra",
+        "equalizer",
+        "ferro",
+        "hairpin",
+        "hullcracker",
+        "il_toro",
+        "jupiter",
+        "kettle",
+        "osprey",
+        "rascal",
+        "rattler",
+        "renegade",
+        "stiletto",
+        "stitcher",
+        "tempest",
+        "torrente",
+        "venator",
+        "vulcano"
+      ],
+      "ambiguous_weapon": true,
+      "status": "downloaded",
+      "file": "sources/source_04670a1c0d51c249e79f00b6/audio_2a2d799669467a2f069d1968.webm",
+      "source_metadata": {
+        "id": "MlK0E83JfEE",
+        "title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "webpage_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "channel": "TayXDc",
+        "channel_id": "UCTWDRA2tbOzBhgnLEYGIUzg",
+        "uploader": "TayXDc",
+        "uploader_id": "@tayxdc",
+        "duration": 698,
+        "chapters": null,
+        "source_id": "MlK0E83JfEE",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "media_file": "audio_2a2d799669467a2f069d1968.webm",
+        "media_size": 12280990,
+        "media_sha256": "2a2d799669467a2f069d196800885f52262117784e9ebbae121f6bebaf53b506"
+      }
+    },
+    {
+      "id": "manifest_1fe6f721960df7ea46312d83",
+      "source_id": "MlK0E83JfEE",
+      "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+      "weapon": "renegade",
+      "start": null,
+      "end": null,
+      "metadata": {
+        "weapon": "Renegade",
+        "source_title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "start": "",
+        "end": "",
+        "quality": "general showcase",
+        "notes": "Raw in-game shooting; search index did not expose per-weapon timestamps. Use for manual/automated timestamp discovery."
+      },
+      "manifest_path": "C:\\Users\\andre\\OneDrive\\Desktop\\Codebase\\arc raiders overlay\\arc_raiders_audio_seed_manifest.csv",
+      "possible_weapons": [
+        "anvil",
+        "aphelion",
+        "arpeggio",
+        "bantam",
+        "bettina",
+        "bobcat",
+        "burletta",
+        "canto",
+        "dolabra",
+        "equalizer",
+        "ferro",
+        "hairpin",
+        "hullcracker",
+        "il_toro",
+        "jupiter",
+        "kettle",
+        "osprey",
+        "rascal",
+        "rattler",
+        "renegade",
+        "stiletto",
+        "stitcher",
+        "tempest",
+        "torrente",
+        "venator",
+        "vulcano"
+      ],
+      "ambiguous_weapon": true,
+      "status": "downloaded",
+      "file": "sources/source_04670a1c0d51c249e79f00b6/audio_2a2d799669467a2f069d1968.webm",
+      "source_metadata": {
+        "id": "MlK0E83JfEE",
+        "title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "webpage_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "channel": "TayXDc",
+        "channel_id": "UCTWDRA2tbOzBhgnLEYGIUzg",
+        "uploader": "TayXDc",
+        "uploader_id": "@tayxdc",
+        "duration": 698,
+        "chapters": null,
+        "source_id": "MlK0E83JfEE",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "media_file": "audio_2a2d799669467a2f069d1968.webm",
+        "media_size": 12280990,
+        "media_sha256": "2a2d799669467a2f069d196800885f52262117784e9ebbae121f6bebaf53b506"
+      }
+    },
+    {
+      "id": "manifest_afd70ca844d659647d650df6",
+      "source_id": "MlK0E83JfEE",
+      "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+      "weapon": "aphelion",
+      "start": null,
+      "end": null,
+      "metadata": {
+        "weapon": "Aphelion",
+        "source_title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "start": "",
+        "end": "",
+        "quality": "general showcase",
+        "notes": "Raw in-game shooting; search index did not expose per-weapon timestamps. Use for manual/automated timestamp discovery."
+      },
+      "manifest_path": "C:\\Users\\andre\\OneDrive\\Desktop\\Codebase\\arc raiders overlay\\arc_raiders_audio_seed_manifest.csv",
+      "possible_weapons": [
+        "anvil",
+        "aphelion",
+        "arpeggio",
+        "bantam",
+        "bettina",
+        "bobcat",
+        "burletta",
+        "canto",
+        "dolabra",
+        "equalizer",
+        "ferro",
+        "hairpin",
+        "hullcracker",
+        "il_toro",
+        "jupiter",
+        "kettle",
+        "osprey",
+        "rascal",
+        "rattler",
+        "renegade",
+        "stiletto",
+        "stitcher",
+        "tempest",
+        "torrente",
+        "venator",
+        "vulcano"
+      ],
+      "ambiguous_weapon": true,
+      "status": "downloaded",
+      "file": "sources/source_04670a1c0d51c249e79f00b6/audio_2a2d799669467a2f069d1968.webm",
+      "source_metadata": {
+        "id": "MlK0E83JfEE",
+        "title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "webpage_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "channel": "TayXDc",
+        "channel_id": "UCTWDRA2tbOzBhgnLEYGIUzg",
+        "uploader": "TayXDc",
+        "uploader_id": "@tayxdc",
+        "duration": 698,
+        "chapters": null,
+        "source_id": "MlK0E83JfEE",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "media_file": "audio_2a2d799669467a2f069d1968.webm",
+        "media_size": 12280990,
+        "media_sha256": "2a2d799669467a2f069d196800885f52262117784e9ebbae121f6bebaf53b506"
+      }
+    },
+    {
+      "id": "manifest_ebf70844fa027162b29fe1cc",
+      "source_id": "MlK0E83JfEE",
+      "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+      "weapon": "stitcher",
+      "start": null,
+      "end": null,
+      "metadata": {
+        "weapon": "Stitcher",
+        "source_title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "start": "",
+        "end": "",
+        "quality": "general showcase",
+        "notes": "Raw in-game shooting; search index did not expose per-weapon timestamps. Use for manual/automated timestamp discovery."
+      },
+      "manifest_path": "C:\\Users\\andre\\OneDrive\\Desktop\\Codebase\\arc raiders overlay\\arc_raiders_audio_seed_manifest.csv",
+      "possible_weapons": [
+        "anvil",
+        "aphelion",
+        "arpeggio",
+        "bantam",
+        "bettina",
+        "bobcat",
+        "burletta",
+        "canto",
+        "dolabra",
+        "equalizer",
+        "ferro",
+        "hairpin",
+        "hullcracker",
+        "il_toro",
+        "jupiter",
+        "kettle",
+        "osprey",
+        "rascal",
+        "rattler",
+        "renegade",
+        "stiletto",
+        "stitcher",
+        "tempest",
+        "torrente",
+        "venator",
+        "vulcano"
+      ],
+      "ambiguous_weapon": true,
+      "status": "downloaded",
+      "file": "sources/source_04670a1c0d51c249e79f00b6/audio_2a2d799669467a2f069d1968.webm",
+      "source_metadata": {
+        "id": "MlK0E83JfEE",
+        "title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "webpage_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "channel": "TayXDc",
+        "channel_id": "UCTWDRA2tbOzBhgnLEYGIUzg",
+        "uploader": "TayXDc",
+        "uploader_id": "@tayxdc",
+        "duration": 698,
+        "chapters": null,
+        "source_id": "MlK0E83JfEE",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "media_file": "audio_2a2d799669467a2f069d1968.webm",
+        "media_size": 12280990,
+        "media_sha256": "2a2d799669467a2f069d196800885f52262117784e9ebbae121f6bebaf53b506"
+      }
+    },
+    {
+      "id": "manifest_72f282f818d03470bc6f98c2",
+      "source_id": "MlK0E83JfEE",
+      "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+      "weapon": "canto",
+      "start": null,
+      "end": null,
+      "metadata": {
+        "weapon": "Canto",
+        "source_title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "start": "",
+        "end": "",
+        "quality": "general showcase",
+        "notes": "Raw in-game shooting; search index did not expose per-weapon timestamps. Use for manual/automated timestamp discovery."
+      },
+      "manifest_path": "C:\\Users\\andre\\OneDrive\\Desktop\\Codebase\\arc raiders overlay\\arc_raiders_audio_seed_manifest.csv",
+      "possible_weapons": [
+        "anvil",
+        "aphelion",
+        "arpeggio",
+        "bantam",
+        "bettina",
+        "bobcat",
+        "burletta",
+        "canto",
+        "dolabra",
+        "equalizer",
+        "ferro",
+        "hairpin",
+        "hullcracker",
+        "il_toro",
+        "jupiter",
+        "kettle",
+        "osprey",
+        "rascal",
+        "rattler",
+        "renegade",
+        "stiletto",
+        "stitcher",
+        "tempest",
+        "torrente",
+        "venator",
+        "vulcano"
+      ],
+      "ambiguous_weapon": true,
+      "status": "downloaded",
+      "file": "sources/source_04670a1c0d51c249e79f00b6/audio_2a2d799669467a2f069d1968.webm",
+      "source_metadata": {
+        "id": "MlK0E83JfEE",
+        "title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "webpage_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "channel": "TayXDc",
+        "channel_id": "UCTWDRA2tbOzBhgnLEYGIUzg",
+        "uploader": "TayXDc",
+        "uploader_id": "@tayxdc",
+        "duration": 698,
+        "chapters": null,
+        "source_id": "MlK0E83JfEE",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "media_file": "audio_2a2d799669467a2f069d1968.webm",
+        "media_size": 12280990,
+        "media_sha256": "2a2d799669467a2f069d196800885f52262117784e9ebbae121f6bebaf53b506"
+      }
+    },
+    {
+      "id": "manifest_d37893e8e19c8f471ef78e10",
+      "source_id": "MlK0E83JfEE",
+      "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+      "weapon": "bobcat",
+      "start": null,
+      "end": null,
+      "metadata": {
+        "weapon": "Bobcat",
+        "source_title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "start": "",
+        "end": "",
+        "quality": "general showcase",
+        "notes": "Raw in-game shooting; search index did not expose per-weapon timestamps. Use for manual/automated timestamp discovery."
+      },
+      "manifest_path": "C:\\Users\\andre\\OneDrive\\Desktop\\Codebase\\arc raiders overlay\\arc_raiders_audio_seed_manifest.csv",
+      "possible_weapons": [
+        "anvil",
+        "aphelion",
+        "arpeggio",
+        "bantam",
+        "bettina",
+        "bobcat",
+        "burletta",
+        "canto",
+        "dolabra",
+        "equalizer",
+        "ferro",
+        "hairpin",
+        "hullcracker",
+        "il_toro",
+        "jupiter",
+        "kettle",
+        "osprey",
+        "rascal",
+        "rattler",
+        "renegade",
+        "stiletto",
+        "stitcher",
+        "tempest",
+        "torrente",
+        "venator",
+        "vulcano"
+      ],
+      "ambiguous_weapon": true,
+      "status": "downloaded",
+      "file": "sources/source_04670a1c0d51c249e79f00b6/audio_2a2d799669467a2f069d1968.webm",
+      "source_metadata": {
+        "id": "MlK0E83JfEE",
+        "title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "webpage_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "channel": "TayXDc",
+        "channel_id": "UCTWDRA2tbOzBhgnLEYGIUzg",
+        "uploader": "TayXDc",
+        "uploader_id": "@tayxdc",
+        "duration": 698,
+        "chapters": null,
+        "source_id": "MlK0E83JfEE",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "media_file": "audio_2a2d799669467a2f069d1968.webm",
+        "media_size": 12280990,
+        "media_sha256": "2a2d799669467a2f069d196800885f52262117784e9ebbae121f6bebaf53b506"
+      }
+    },
+    {
+      "id": "manifest_d66552f1ebfabf4d6e475102",
+      "source_id": "MlK0E83JfEE",
+      "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+      "weapon": "il_toro",
+      "start": null,
+      "end": null,
+      "metadata": {
+        "weapon": "Il Toro",
+        "source_title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "start": "",
+        "end": "",
+        "quality": "general showcase",
+        "notes": "Raw in-game shooting; search index did not expose per-weapon timestamps. Use for manual/automated timestamp discovery."
+      },
+      "manifest_path": "C:\\Users\\andre\\OneDrive\\Desktop\\Codebase\\arc raiders overlay\\arc_raiders_audio_seed_manifest.csv",
+      "possible_weapons": [
+        "anvil",
+        "aphelion",
+        "arpeggio",
+        "bantam",
+        "bettina",
+        "bobcat",
+        "burletta",
+        "canto",
+        "dolabra",
+        "equalizer",
+        "ferro",
+        "hairpin",
+        "hullcracker",
+        "il_toro",
+        "jupiter",
+        "kettle",
+        "osprey",
+        "rascal",
+        "rattler",
+        "renegade",
+        "stiletto",
+        "stitcher",
+        "tempest",
+        "torrente",
+        "venator",
+        "vulcano"
+      ],
+      "ambiguous_weapon": true,
+      "status": "downloaded",
+      "file": "sources/source_04670a1c0d51c249e79f00b6/audio_2a2d799669467a2f069d1968.webm",
+      "source_metadata": {
+        "id": "MlK0E83JfEE",
+        "title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "webpage_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "channel": "TayXDc",
+        "channel_id": "UCTWDRA2tbOzBhgnLEYGIUzg",
+        "uploader": "TayXDc",
+        "uploader_id": "@tayxdc",
+        "duration": 698,
+        "chapters": null,
+        "source_id": "MlK0E83JfEE",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "media_file": "audio_2a2d799669467a2f069d1968.webm",
+        "media_size": 12280990,
+        "media_sha256": "2a2d799669467a2f069d196800885f52262117784e9ebbae121f6bebaf53b506"
+      }
+    },
+    {
+      "id": "manifest_e2aab46736cfb721a3d3bf59",
+      "source_id": "MlK0E83JfEE",
+      "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+      "weapon": "vulcano",
+      "start": null,
+      "end": null,
+      "metadata": {
+        "weapon": "Vulcano",
+        "source_title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "start": "",
+        "end": "",
+        "quality": "general showcase",
+        "notes": "Raw in-game shooting; search index did not expose per-weapon timestamps. Use for manual/automated timestamp discovery."
+      },
+      "manifest_path": "C:\\Users\\andre\\OneDrive\\Desktop\\Codebase\\arc raiders overlay\\arc_raiders_audio_seed_manifest.csv",
+      "possible_weapons": [
+        "anvil",
+        "aphelion",
+        "arpeggio",
+        "bantam",
+        "bettina",
+        "bobcat",
+        "burletta",
+        "canto",
+        "dolabra",
+        "equalizer",
+        "ferro",
+        "hairpin",
+        "hullcracker",
+        "il_toro",
+        "jupiter",
+        "kettle",
+        "osprey",
+        "rascal",
+        "rattler",
+        "renegade",
+        "stiletto",
+        "stitcher",
+        "tempest",
+        "torrente",
+        "venator",
+        "vulcano"
+      ],
+      "ambiguous_weapon": true,
+      "status": "downloaded",
+      "file": "sources/source_04670a1c0d51c249e79f00b6/audio_2a2d799669467a2f069d1968.webm",
+      "source_metadata": {
+        "id": "MlK0E83JfEE",
+        "title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "webpage_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "channel": "TayXDc",
+        "channel_id": "UCTWDRA2tbOzBhgnLEYGIUzg",
+        "uploader": "TayXDc",
+        "uploader_id": "@tayxdc",
+        "duration": 698,
+        "chapters": null,
+        "source_id": "MlK0E83JfEE",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "media_file": "audio_2a2d799669467a2f069d1968.webm",
+        "media_size": 12280990,
+        "media_sha256": "2a2d799669467a2f069d196800885f52262117784e9ebbae121f6bebaf53b506"
+      }
+    },
+    {
+      "id": "manifest_bf3a94702d85848370fed168",
+      "source_id": "MlK0E83JfEE",
+      "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+      "weapon": "dolabra",
+      "start": null,
+      "end": null,
+      "metadata": {
+        "weapon": "Dolabra",
+        "source_title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "start": "",
+        "end": "",
+        "quality": "general showcase",
+        "notes": "Raw in-game shooting; search index did not expose per-weapon timestamps. Use for manual/automated timestamp discovery."
+      },
+      "manifest_path": "C:\\Users\\andre\\OneDrive\\Desktop\\Codebase\\arc raiders overlay\\arc_raiders_audio_seed_manifest.csv",
+      "possible_weapons": [
+        "anvil",
+        "aphelion",
+        "arpeggio",
+        "bantam",
+        "bettina",
+        "bobcat",
+        "burletta",
+        "canto",
+        "dolabra",
+        "equalizer",
+        "ferro",
+        "hairpin",
+        "hullcracker",
+        "il_toro",
+        "jupiter",
+        "kettle",
+        "osprey",
+        "rascal",
+        "rattler",
+        "renegade",
+        "stiletto",
+        "stitcher",
+        "tempest",
+        "torrente",
+        "venator",
+        "vulcano"
+      ],
+      "ambiguous_weapon": true,
+      "status": "downloaded",
+      "file": "sources/source_04670a1c0d51c249e79f00b6/audio_2a2d799669467a2f069d1968.webm",
+      "source_metadata": {
+        "id": "MlK0E83JfEE",
+        "title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "webpage_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "channel": "TayXDc",
+        "channel_id": "UCTWDRA2tbOzBhgnLEYGIUzg",
+        "uploader": "TayXDc",
+        "uploader_id": "@tayxdc",
+        "duration": 698,
+        "chapters": null,
+        "source_id": "MlK0E83JfEE",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "media_file": "audio_2a2d799669467a2f069d1968.webm",
+        "media_size": 12280990,
+        "media_sha256": "2a2d799669467a2f069d196800885f52262117784e9ebbae121f6bebaf53b506"
+      }
+    },
+    {
+      "id": "manifest_1d68d68ff0f302d92a2bd28e",
+      "source_id": "MlK0E83JfEE",
+      "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+      "weapon": "hairpin",
+      "start": null,
+      "end": null,
+      "metadata": {
+        "weapon": "Hairpin",
+        "source_title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "start": "",
+        "end": "",
+        "quality": "general showcase",
+        "notes": "Raw in-game shooting; search index did not expose per-weapon timestamps. Use for manual/automated timestamp discovery."
+      },
+      "manifest_path": "C:\\Users\\andre\\OneDrive\\Desktop\\Codebase\\arc raiders overlay\\arc_raiders_audio_seed_manifest.csv",
+      "possible_weapons": [
+        "anvil",
+        "aphelion",
+        "arpeggio",
+        "bantam",
+        "bettina",
+        "bobcat",
+        "burletta",
+        "canto",
+        "dolabra",
+        "equalizer",
+        "ferro",
+        "hairpin",
+        "hullcracker",
+        "il_toro",
+        "jupiter",
+        "kettle",
+        "osprey",
+        "rascal",
+        "rattler",
+        "renegade",
+        "stiletto",
+        "stitcher",
+        "tempest",
+        "torrente",
+        "venator",
+        "vulcano"
+      ],
+      "ambiguous_weapon": true,
+      "status": "downloaded",
+      "file": "sources/source_04670a1c0d51c249e79f00b6/audio_2a2d799669467a2f069d1968.webm",
+      "source_metadata": {
+        "id": "MlK0E83JfEE",
+        "title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "webpage_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "channel": "TayXDc",
+        "channel_id": "UCTWDRA2tbOzBhgnLEYGIUzg",
+        "uploader": "TayXDc",
+        "uploader_id": "@tayxdc",
+        "duration": 698,
+        "chapters": null,
+        "source_id": "MlK0E83JfEE",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "media_file": "audio_2a2d799669467a2f069d1968.webm",
+        "media_size": 12280990,
+        "media_sha256": "2a2d799669467a2f069d196800885f52262117784e9ebbae121f6bebaf53b506"
+      }
+    },
+    {
+      "id": "manifest_4a0be8367ac5dd790a1de2c2",
+      "source_id": "MlK0E83JfEE",
+      "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+      "weapon": "burletta",
+      "start": null,
+      "end": null,
+      "metadata": {
+        "weapon": "Burletta",
+        "source_title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "start": "",
+        "end": "",
+        "quality": "general showcase",
+        "notes": "Raw in-game shooting; search index did not expose per-weapon timestamps. Use for manual/automated timestamp discovery."
+      },
+      "manifest_path": "C:\\Users\\andre\\OneDrive\\Desktop\\Codebase\\arc raiders overlay\\arc_raiders_audio_seed_manifest.csv",
+      "possible_weapons": [
+        "anvil",
+        "aphelion",
+        "arpeggio",
+        "bantam",
+        "bettina",
+        "bobcat",
+        "burletta",
+        "canto",
+        "dolabra",
+        "equalizer",
+        "ferro",
+        "hairpin",
+        "hullcracker",
+        "il_toro",
+        "jupiter",
+        "kettle",
+        "osprey",
+        "rascal",
+        "rattler",
+        "renegade",
+        "stiletto",
+        "stitcher",
+        "tempest",
+        "torrente",
+        "venator",
+        "vulcano"
+      ],
+      "ambiguous_weapon": true,
+      "status": "downloaded",
+      "file": "sources/source_04670a1c0d51c249e79f00b6/audio_2a2d799669467a2f069d1968.webm",
+      "source_metadata": {
+        "id": "MlK0E83JfEE",
+        "title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "webpage_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "channel": "TayXDc",
+        "channel_id": "UCTWDRA2tbOzBhgnLEYGIUzg",
+        "uploader": "TayXDc",
+        "uploader_id": "@tayxdc",
+        "duration": 698,
+        "chapters": null,
+        "source_id": "MlK0E83JfEE",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "media_file": "audio_2a2d799669467a2f069d1968.webm",
+        "media_size": 12280990,
+        "media_sha256": "2a2d799669467a2f069d196800885f52262117784e9ebbae121f6bebaf53b506"
+      }
+    },
+    {
+      "id": "manifest_cf6e9e49da513f5b7ffca800",
+      "source_id": "MlK0E83JfEE",
+      "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+      "weapon": "venator",
+      "start": null,
+      "end": null,
+      "metadata": {
+        "weapon": "Venator",
+        "source_title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "start": "",
+        "end": "",
+        "quality": "general showcase",
+        "notes": "Raw in-game shooting; search index did not expose per-weapon timestamps. Use for manual/automated timestamp discovery."
+      },
+      "manifest_path": "C:\\Users\\andre\\OneDrive\\Desktop\\Codebase\\arc raiders overlay\\arc_raiders_audio_seed_manifest.csv",
+      "possible_weapons": [
+        "anvil",
+        "aphelion",
+        "arpeggio",
+        "bantam",
+        "bettina",
+        "bobcat",
+        "burletta",
+        "canto",
+        "dolabra",
+        "equalizer",
+        "ferro",
+        "hairpin",
+        "hullcracker",
+        "il_toro",
+        "jupiter",
+        "kettle",
+        "osprey",
+        "rascal",
+        "rattler",
+        "renegade",
+        "stiletto",
+        "stitcher",
+        "tempest",
+        "torrente",
+        "venator",
+        "vulcano"
+      ],
+      "ambiguous_weapon": true,
+      "status": "downloaded",
+      "file": "sources/source_04670a1c0d51c249e79f00b6/audio_2a2d799669467a2f069d1968.webm",
+      "source_metadata": {
+        "id": "MlK0E83JfEE",
+        "title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "webpage_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "channel": "TayXDc",
+        "channel_id": "UCTWDRA2tbOzBhgnLEYGIUzg",
+        "uploader": "TayXDc",
+        "uploader_id": "@tayxdc",
+        "duration": 698,
+        "chapters": null,
+        "source_id": "MlK0E83JfEE",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "media_file": "audio_2a2d799669467a2f069d1968.webm",
+        "media_size": 12280990,
+        "media_sha256": "2a2d799669467a2f069d196800885f52262117784e9ebbae121f6bebaf53b506"
+      }
+    },
+    {
+      "id": "manifest_4013da3deb01bd6536abb1b8",
+      "source_id": "MlK0E83JfEE",
+      "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+      "weapon": "bantam",
+      "start": null,
+      "end": null,
+      "metadata": {
+        "weapon": "Bantam",
+        "source_title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "start": "",
+        "end": "",
+        "quality": "general showcase",
+        "notes": "Raw in-game shooting; search index did not expose per-weapon timestamps. Use for manual/automated timestamp discovery."
+      },
+      "manifest_path": "C:\\Users\\andre\\OneDrive\\Desktop\\Codebase\\arc raiders overlay\\arc_raiders_audio_seed_manifest.csv",
+      "possible_weapons": [
+        "anvil",
+        "aphelion",
+        "arpeggio",
+        "bantam",
+        "bettina",
+        "bobcat",
+        "burletta",
+        "canto",
+        "dolabra",
+        "equalizer",
+        "ferro",
+        "hairpin",
+        "hullcracker",
+        "il_toro",
+        "jupiter",
+        "kettle",
+        "osprey",
+        "rascal",
+        "rattler",
+        "renegade",
+        "stiletto",
+        "stitcher",
+        "tempest",
+        "torrente",
+        "venator",
+        "vulcano"
+      ],
+      "ambiguous_weapon": true,
+      "status": "downloaded",
+      "file": "sources/source_04670a1c0d51c249e79f00b6/audio_2a2d799669467a2f069d1968.webm",
+      "source_metadata": {
+        "id": "MlK0E83JfEE",
+        "title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "webpage_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "channel": "TayXDc",
+        "channel_id": "UCTWDRA2tbOzBhgnLEYGIUzg",
+        "uploader": "TayXDc",
+        "uploader_id": "@tayxdc",
+        "duration": 698,
+        "chapters": null,
+        "source_id": "MlK0E83JfEE",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "media_file": "audio_2a2d799669467a2f069d1968.webm",
+        "media_size": 12280990,
+        "media_sha256": "2a2d799669467a2f069d196800885f52262117784e9ebbae121f6bebaf53b506"
+      }
+    },
+    {
+      "id": "manifest_db667529c1c6a5bfbeecaa85",
+      "source_id": "MlK0E83JfEE",
+      "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+      "weapon": "anvil",
+      "start": null,
+      "end": null,
+      "metadata": {
+        "weapon": "Anvil",
+        "source_title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "start": "",
+        "end": "",
+        "quality": "general showcase",
+        "notes": "Raw in-game shooting; search index did not expose per-weapon timestamps. Use for manual/automated timestamp discovery."
+      },
+      "manifest_path": "C:\\Users\\andre\\OneDrive\\Desktop\\Codebase\\arc raiders overlay\\arc_raiders_audio_seed_manifest.csv",
+      "possible_weapons": [
+        "anvil",
+        "aphelion",
+        "arpeggio",
+        "bantam",
+        "bettina",
+        "bobcat",
+        "burletta",
+        "canto",
+        "dolabra",
+        "equalizer",
+        "ferro",
+        "hairpin",
+        "hullcracker",
+        "il_toro",
+        "jupiter",
+        "kettle",
+        "osprey",
+        "rascal",
+        "rattler",
+        "renegade",
+        "stiletto",
+        "stitcher",
+        "tempest",
+        "torrente",
+        "venator",
+        "vulcano"
+      ],
+      "ambiguous_weapon": true,
+      "status": "downloaded",
+      "file": "sources/source_04670a1c0d51c249e79f00b6/audio_2a2d799669467a2f069d1968.webm",
+      "source_metadata": {
+        "id": "MlK0E83JfEE",
+        "title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "webpage_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "channel": "TayXDc",
+        "channel_id": "UCTWDRA2tbOzBhgnLEYGIUzg",
+        "uploader": "TayXDc",
+        "uploader_id": "@tayxdc",
+        "duration": 698,
+        "chapters": null,
+        "source_id": "MlK0E83JfEE",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "media_file": "audio_2a2d799669467a2f069d1968.webm",
+        "media_size": 12280990,
+        "media_sha256": "2a2d799669467a2f069d196800885f52262117784e9ebbae121f6bebaf53b506"
+      }
+    },
+    {
+      "id": "manifest_dab7d5e67084e819859bd10b",
+      "source_id": "MlK0E83JfEE",
+      "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+      "weapon": "torrente",
+      "start": null,
+      "end": null,
+      "metadata": {
+        "weapon": "Torrente",
+        "source_title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "start": "",
+        "end": "",
+        "quality": "general showcase",
+        "notes": "Raw in-game shooting; search index did not expose per-weapon timestamps. Use for manual/automated timestamp discovery."
+      },
+      "manifest_path": "C:\\Users\\andre\\OneDrive\\Desktop\\Codebase\\arc raiders overlay\\arc_raiders_audio_seed_manifest.csv",
+      "possible_weapons": [
+        "anvil",
+        "aphelion",
+        "arpeggio",
+        "bantam",
+        "bettina",
+        "bobcat",
+        "burletta",
+        "canto",
+        "dolabra",
+        "equalizer",
+        "ferro",
+        "hairpin",
+        "hullcracker",
+        "il_toro",
+        "jupiter",
+        "kettle",
+        "osprey",
+        "rascal",
+        "rattler",
+        "renegade",
+        "stiletto",
+        "stitcher",
+        "tempest",
+        "torrente",
+        "venator",
+        "vulcano"
+      ],
+      "ambiguous_weapon": true,
+      "status": "downloaded",
+      "file": "sources/source_04670a1c0d51c249e79f00b6/audio_2a2d799669467a2f069d1968.webm",
+      "source_metadata": {
+        "id": "MlK0E83JfEE",
+        "title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "webpage_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "channel": "TayXDc",
+        "channel_id": "UCTWDRA2tbOzBhgnLEYGIUzg",
+        "uploader": "TayXDc",
+        "uploader_id": "@tayxdc",
+        "duration": 698,
+        "chapters": null,
+        "source_id": "MlK0E83JfEE",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "media_file": "audio_2a2d799669467a2f069d1968.webm",
+        "media_size": 12280990,
+        "media_sha256": "2a2d799669467a2f069d196800885f52262117784e9ebbae121f6bebaf53b506"
+      }
+    },
+    {
+      "id": "manifest_d902c3bf4e42fef7054f807a",
+      "source_id": "MlK0E83JfEE",
+      "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+      "weapon": "osprey",
+      "start": null,
+      "end": null,
+      "metadata": {
+        "weapon": "Osprey",
+        "source_title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "start": "",
+        "end": "",
+        "quality": "general showcase",
+        "notes": "Raw in-game shooting; search index did not expose per-weapon timestamps. Use for manual/automated timestamp discovery."
+      },
+      "manifest_path": "C:\\Users\\andre\\OneDrive\\Desktop\\Codebase\\arc raiders overlay\\arc_raiders_audio_seed_manifest.csv",
+      "possible_weapons": [
+        "anvil",
+        "aphelion",
+        "arpeggio",
+        "bantam",
+        "bettina",
+        "bobcat",
+        "burletta",
+        "canto",
+        "dolabra",
+        "equalizer",
+        "ferro",
+        "hairpin",
+        "hullcracker",
+        "il_toro",
+        "jupiter",
+        "kettle",
+        "osprey",
+        "rascal",
+        "rattler",
+        "renegade",
+        "stiletto",
+        "stitcher",
+        "tempest",
+        "torrente",
+        "venator",
+        "vulcano"
+      ],
+      "ambiguous_weapon": true,
+      "status": "downloaded",
+      "file": "sources/source_04670a1c0d51c249e79f00b6/audio_2a2d799669467a2f069d1968.webm",
+      "source_metadata": {
+        "id": "MlK0E83JfEE",
+        "title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "webpage_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "channel": "TayXDc",
+        "channel_id": "UCTWDRA2tbOzBhgnLEYGIUzg",
+        "uploader": "TayXDc",
+        "uploader_id": "@tayxdc",
+        "duration": 698,
+        "chapters": null,
+        "source_id": "MlK0E83JfEE",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "media_file": "audio_2a2d799669467a2f069d1968.webm",
+        "media_size": 12280990,
+        "media_sha256": "2a2d799669467a2f069d196800885f52262117784e9ebbae121f6bebaf53b506"
+      }
+    },
+    {
+      "id": "manifest_cd39c9b5fcc9cb3a30b8b494",
+      "source_id": "MlK0E83JfEE",
+      "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+      "weapon": "jupiter",
+      "start": null,
+      "end": null,
+      "metadata": {
+        "weapon": "Jupiter",
+        "source_title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "start": "",
+        "end": "",
+        "quality": "general showcase",
+        "notes": "Raw in-game shooting; search index did not expose per-weapon timestamps. Use for manual/automated timestamp discovery."
+      },
+      "manifest_path": "C:\\Users\\andre\\OneDrive\\Desktop\\Codebase\\arc raiders overlay\\arc_raiders_audio_seed_manifest.csv",
+      "possible_weapons": [
+        "anvil",
+        "aphelion",
+        "arpeggio",
+        "bantam",
+        "bettina",
+        "bobcat",
+        "burletta",
+        "canto",
+        "dolabra",
+        "equalizer",
+        "ferro",
+        "hairpin",
+        "hullcracker",
+        "il_toro",
+        "jupiter",
+        "kettle",
+        "osprey",
+        "rascal",
+        "rattler",
+        "renegade",
+        "stiletto",
+        "stitcher",
+        "tempest",
+        "torrente",
+        "venator",
+        "vulcano"
+      ],
+      "ambiguous_weapon": true,
+      "status": "downloaded",
+      "file": "sources/source_04670a1c0d51c249e79f00b6/audio_2a2d799669467a2f069d1968.webm",
+      "source_metadata": {
+        "id": "MlK0E83JfEE",
+        "title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "webpage_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "channel": "TayXDc",
+        "channel_id": "UCTWDRA2tbOzBhgnLEYGIUzg",
+        "uploader": "TayXDc",
+        "uploader_id": "@tayxdc",
+        "duration": 698,
+        "chapters": null,
+        "source_id": "MlK0E83JfEE",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "media_file": "audio_2a2d799669467a2f069d1968.webm",
+        "media_size": 12280990,
+        "media_sha256": "2a2d799669467a2f069d196800885f52262117784e9ebbae121f6bebaf53b506"
+      }
+    },
+    {
+      "id": "manifest_e31333c8ec10bbd13db679bf",
+      "source_id": "MlK0E83JfEE",
+      "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+      "weapon": "rascal",
+      "start": null,
+      "end": null,
+      "metadata": {
+        "weapon": "Rascal",
+        "source_title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "start": "",
+        "end": "",
+        "quality": "general showcase",
+        "notes": "Raw in-game shooting; search index did not expose per-weapon timestamps. Use for manual/automated timestamp discovery."
+      },
+      "manifest_path": "C:\\Users\\andre\\OneDrive\\Desktop\\Codebase\\arc raiders overlay\\arc_raiders_audio_seed_manifest.csv",
+      "possible_weapons": [
+        "anvil",
+        "aphelion",
+        "arpeggio",
+        "bantam",
+        "bettina",
+        "bobcat",
+        "burletta",
+        "canto",
+        "dolabra",
+        "equalizer",
+        "ferro",
+        "hairpin",
+        "hullcracker",
+        "il_toro",
+        "jupiter",
+        "kettle",
+        "osprey",
+        "rascal",
+        "rattler",
+        "renegade",
+        "stiletto",
+        "stitcher",
+        "tempest",
+        "torrente",
+        "venator",
+        "vulcano"
+      ],
+      "ambiguous_weapon": true,
+      "status": "downloaded",
+      "file": "sources/source_04670a1c0d51c249e79f00b6/audio_2a2d799669467a2f069d1968.webm",
+      "source_metadata": {
+        "id": "MlK0E83JfEE",
+        "title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "webpage_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "channel": "TayXDc",
+        "channel_id": "UCTWDRA2tbOzBhgnLEYGIUzg",
+        "uploader": "TayXDc",
+        "uploader_id": "@tayxdc",
+        "duration": 698,
+        "chapters": null,
+        "source_id": "MlK0E83JfEE",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "media_file": "audio_2a2d799669467a2f069d1968.webm",
+        "media_size": 12280990,
+        "media_sha256": "2a2d799669467a2f069d196800885f52262117784e9ebbae121f6bebaf53b506"
+      }
+    },
+    {
+      "id": "manifest_defc2cf1e16c4df450035316",
+      "source_id": "MlK0E83JfEE",
+      "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+      "weapon": "hullcracker",
+      "start": null,
+      "end": null,
+      "metadata": {
+        "weapon": "Hullcracker",
+        "source_title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "start": "",
+        "end": "",
+        "quality": "general showcase",
+        "notes": "Raw in-game shooting; search index did not expose per-weapon timestamps. Use for manual/automated timestamp discovery."
+      },
+      "manifest_path": "C:\\Users\\andre\\OneDrive\\Desktop\\Codebase\\arc raiders overlay\\arc_raiders_audio_seed_manifest.csv",
+      "possible_weapons": [
+        "anvil",
+        "aphelion",
+        "arpeggio",
+        "bantam",
+        "bettina",
+        "bobcat",
+        "burletta",
+        "canto",
+        "dolabra",
+        "equalizer",
+        "ferro",
+        "hairpin",
+        "hullcracker",
+        "il_toro",
+        "jupiter",
+        "kettle",
+        "osprey",
+        "rascal",
+        "rattler",
+        "renegade",
+        "stiletto",
+        "stitcher",
+        "tempest",
+        "torrente",
+        "venator",
+        "vulcano"
+      ],
+      "ambiguous_weapon": true,
+      "status": "downloaded",
+      "file": "sources/source_04670a1c0d51c249e79f00b6/audio_2a2d799669467a2f069d1968.webm",
+      "source_metadata": {
+        "id": "MlK0E83JfEE",
+        "title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "webpage_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "channel": "TayXDc",
+        "channel_id": "UCTWDRA2tbOzBhgnLEYGIUzg",
+        "uploader": "TayXDc",
+        "uploader_id": "@tayxdc",
+        "duration": 698,
+        "chapters": null,
+        "source_id": "MlK0E83JfEE",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "media_file": "audio_2a2d799669467a2f069d1968.webm",
+        "media_size": 12280990,
+        "media_sha256": "2a2d799669467a2f069d196800885f52262117784e9ebbae121f6bebaf53b506"
+      }
+    },
+    {
+      "id": "manifest_5ab14cfea236cd5d1d5eecdb",
+      "source_id": "MlK0E83JfEE",
+      "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+      "weapon": "equalizer",
+      "start": null,
+      "end": null,
+      "metadata": {
+        "weapon": "Equalizer",
+        "source_title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "start": "",
+        "end": "",
+        "quality": "general showcase",
+        "notes": "Raw in-game shooting; search index did not expose per-weapon timestamps. Use for manual/automated timestamp discovery."
+      },
+      "manifest_path": "C:\\Users\\andre\\OneDrive\\Desktop\\Codebase\\arc raiders overlay\\arc_raiders_audio_seed_manifest.csv",
+      "possible_weapons": [
+        "anvil",
+        "aphelion",
+        "arpeggio",
+        "bantam",
+        "bettina",
+        "bobcat",
+        "burletta",
+        "canto",
+        "dolabra",
+        "equalizer",
+        "ferro",
+        "hairpin",
+        "hullcracker",
+        "il_toro",
+        "jupiter",
+        "kettle",
+        "osprey",
+        "rascal",
+        "rattler",
+        "renegade",
+        "stiletto",
+        "stitcher",
+        "tempest",
+        "torrente",
+        "venator",
+        "vulcano"
+      ],
+      "ambiguous_weapon": true,
+      "status": "downloaded",
+      "file": "sources/source_04670a1c0d51c249e79f00b6/audio_2a2d799669467a2f069d1968.webm",
+      "source_metadata": {
+        "id": "MlK0E83JfEE",
+        "title": "Arc Raiders All Weapons Showcase | Real Gameplay Quick Look",
+        "webpage_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "channel": "TayXDc",
+        "channel_id": "UCTWDRA2tbOzBhgnLEYGIUzg",
+        "uploader": "TayXDc",
+        "uploader_id": "@tayxdc",
+        "duration": 698,
+        "chapters": null,
+        "source_id": "MlK0E83JfEE",
+        "source_url": "https://www.youtube.com/watch?v=MlK0E83JfEE",
+        "media_file": "audio_2a2d799669467a2f069d1968.webm",
+        "media_size": 12280990,
+        "media_sha256": "2a2d799669467a2f069d196800885f52262117784e9ebbae121f6bebaf53b506"
+      }
+    },
+    {
+      "id": "manifest_95af3734c784e7036e3fa972",
+      "source_id": "EHZyt9pVpi0",
+      "source_url": "https://www.youtube.com/watch?v=EHZyt9pVpi0",
+      "weapon": "jupiter",
+      "start": 55.0,
+      "end": 253.0,
+      "metadata": {
+        "weapon": "Jupiter",
+        "source_title": "ARC Raiders - Every Legendary Weapon, Item & Gear Explained (Full Showcase So Far)",
+        "source_url": "https://www.youtube.com/watch?v=EHZyt9pVpi0",
+        "start": "00:55",
+        "end": "04:13",
+        "quality": "timestamped showcase",
+        "notes": "Legendary weapon segment."
+      },
+      "manifest_path": "C:\\Users\\andre\\OneDrive\\Desktop\\Codebase\\arc raiders overlay\\arc_raiders_audio_seed_manifest.csv",
+      "possible_weapons": [
+        "jupiter"
+      ],
+      "ambiguous_weapon": false,
+      "status": "downloaded",
+      "file": "sources/source_21225d70260dc9e7fed957b8/audio_9d1c5adb57ee67ae3ff6f74d.webm",
+      "source_metadata": {
+        "id": "EHZyt9pVpi0",
+        "title": "ARC Raiders - Every Legendary Weapon, Item & Gear Explained (Full Showcase So Far)",
+        "webpage_url": "https://www.youtube.com/watch?v=EHZyt9pVpi0",
+        "channel": "Arekkz Gaming",
+        "channel_id": "UC-zjH-e5XBzMpy_VtwIGRxQ",
+        "uploader": "Arekkz Gaming",
+        "uploader_id": "@ArekkzGaming",
+        "duration": 997,
+        "chapters": [
+          {
+            "start_time": 0,
+            "title": "ALL Legendary Weapons, Items & Gear",
+            "end_time": 55
+          },
+          {
+            "start_time": 55,
+            "title": "Jupiter Legendary Weapon",
+            "end_time": 253
+          },
+          {
+            "start_time": 253,
+            "title": "Equalizer Legendary Weapon",
+            "end_time": 392
+          },
+          {
+            "start_time": 392,
+            "title": "Aphelion Legendary Weapon",
+            "end_time": 486
+          },
+          {
+            "start_time": 486,
+            "title": "Anvil Splitter Legendary Mod",
+            "end_time": 628
+          },
+          {
+            "start_time": 628,
+            "title": "Kinetic Converter Legendary Stock",
+            "end_time": 729
+          },
+          {
+            "start_time": 729,
+            "title": "Snap Hook Legendary Gadget",
+            "end_time": 874
+          },
+          {
+            "start_time": 874,
+            "title": "Matriarch Reactor Legendary Material",
+            "end_time": 898
+          },
+          {
+            "start_time": 898,
+            "title": "Queen Reactor Legendary Material",
+            "end_time": 997
+          }
+        ],
+        "source_id": "EHZyt9pVpi0",
+        "source_url": "https://www.youtube.com/watch?v=EHZyt9pVpi0",
+        "media_file": "audio_9d1c5adb57ee67ae3ff6f74d.webm",
+        "media_size": 17912572,
+        "media_sha256": "9d1c5adb57ee67ae3ff6f74df3fa42ab7f289fc537eac3b0ef2be8f07cba1384"
+      }
+    },
+    {
+      "id": "manifest_094bf9a2ee57e9f34b10ad33",
+      "source_id": "EHZyt9pVpi0",
+      "source_url": "https://www.youtube.com/watch?v=EHZyt9pVpi0",
+      "weapon": "equalizer",
+      "start": 253.0,
+      "end": 392.0,
+      "metadata": {
+        "weapon": "Equalizer",
+        "source_title": "ARC Raiders - Every Legendary Weapon, Item & Gear Explained (Full Showcase So Far)",
+        "source_url": "https://www.youtube.com/watch?v=EHZyt9pVpi0",
+        "start": "04:13",
+        "end": "06:32",
+        "quality": "timestamped showcase",
+        "notes": "Legendary weapon segment."
+      },
+      "manifest_path": "C:\\Users\\andre\\OneDrive\\Desktop\\Codebase\\arc raiders overlay\\arc_raiders_audio_seed_manifest.csv",
+      "possible_weapons": [
+        "equalizer"
+      ],
+      "ambiguous_weapon": false,
+      "status": "downloaded",
+      "file": "sources/source_21225d70260dc9e7fed957b8/audio_9d1c5adb57ee67ae3ff6f74d.webm",
+      "source_metadata": {
+        "id": "EHZyt9pVpi0",
+        "title": "ARC Raiders - Every Legendary Weapon, Item & Gear Explained (Full Showcase So Far)",
+        "webpage_url": "https://www.youtube.com/watch?v=EHZyt9pVpi0",
+        "channel": "Arekkz Gaming",
+        "channel_id": "UC-zjH-e5XBzMpy_VtwIGRxQ",
+        "uploader": "Arekkz Gaming",
+        "uploader_id": "@ArekkzGaming",
+        "duration": 997,
+        "chapters": [
+          {
+            "start_time": 0,
+            "title": "ALL Legendary Weapons, Items & Gear",
+            "end_time": 55
+          },
+          {
+            "start_time": 55,
+            "title": "Jupiter Legendary Weapon",
+            "end_time": 253
+          },
+          {
+            "start_time": 253,
+            "title": "Equalizer Legendary Weapon",
+            "end_time": 392
+          },
+          {
+            "start_time": 392,
+            "title": "Aphelion Legendary Weapon",
+            "end_time": 486
+          },
+          {
+            "start_time": 486,
+            "title": "Anvil Splitter Legendary Mod",
+            "end_time": 628
+          },
+          {
+            "start_time": 628,
+            "title": "Kinetic Converter Legendary Stock",
+            "end_time": 729
+          },
+          {
+            "start_time": 729,
+            "title": "Snap Hook Legendary Gadget",
+            "end_time": 874
+          },
+          {
+            "start_time": 874,
+            "title": "Matriarch Reactor Legendary Material",
+            "end_time": 898
+          },
+          {
+            "start_time": 898,
+            "title": "Queen Reactor Legendary Material",
+            "end_time": 997
+          }
+        ],
+        "source_id": "EHZyt9pVpi0",
+        "source_url": "https://www.youtube.com/watch?v=EHZyt9pVpi0",
+        "media_file": "audio_9d1c5adb57ee67ae3ff6f74d.webm",
+        "media_size": 17912572,
+        "media_sha256": "9d1c5adb57ee67ae3ff6f74df3fa42ab7f289fc537eac3b0ef2be8f07cba1384"
+      }
+    },
+    {
+      "id": "manifest_523203f6e97ff58db238b43d",
+      "source_id": "EHZyt9pVpi0",
+      "source_url": "https://www.youtube.com/watch?v=EHZyt9pVpi0",
+      "weapon": "aphelion",
+      "start": 392.0,
+      "end": 486.0,
+      "metadata": {
+        "weapon": "Aphelion",
+        "source_title": "ARC Raiders - Every Legendary Weapon, Item & Gear Explained (Full Showcase So Far)",
+        "source_url": "https://www.youtube.com/watch?v=EHZyt9pVpi0",
+        "start": "06:32",
+        "end": "08:06",
+        "quality": "timestamped showcase",
+        "notes": "Legendary weapon segment."
+      },
+      "manifest_path": "C:\\Users\\andre\\OneDrive\\Desktop\\Codebase\\arc raiders overlay\\arc_raiders_audio_seed_manifest.csv",
+      "possible_weapons": [
+        "aphelion"
+      ],
+      "ambiguous_weapon": false,
+      "status": "downloaded",
+      "file": "sources/source_21225d70260dc9e7fed957b8/audio_9d1c5adb57ee67ae3ff6f74d.webm",
+      "source_metadata": {
+        "id": "EHZyt9pVpi0",
+        "title": "ARC Raiders - Every Legendary Weapon, Item & Gear Explained (Full Showcase So Far)",
+        "webpage_url": "https://www.youtube.com/watch?v=EHZyt9pVpi0",
+        "channel": "Arekkz Gaming",
+        "channel_id": "UC-zjH-e5XBzMpy_VtwIGRxQ",
+        "uploader": "Arekkz Gaming",
+        "uploader_id": "@ArekkzGaming",
+        "duration": 997,
+        "chapters": [
+          {
+            "start_time": 0,
+            "title": "ALL Legendary Weapons, Items & Gear",
+            "end_time": 55
+          },
+          {
+            "start_time": 55,
+            "title": "Jupiter Legendary Weapon",
+            "end_time": 253
+          },
+          {
+            "start_time": 253,
+            "title": "Equalizer Legendary Weapon",
+            "end_time": 392
+          },
+          {
+            "start_time": 392,
+            "title": "Aphelion Legendary Weapon",
+            "end_time": 486
+          },
+          {
+            "start_time": 486,
+            "title": "Anvil Splitter Legendary Mod",
+            "end_time": 628
+          },
+          {
+            "start_time": 628,
+            "title": "Kinetic Converter Legendary Stock",
+            "end_time": 729
+          },
+          {
+            "start_time": 729,
+            "title": "Snap Hook Legendary Gadget",
+            "end_time": 874
+          },
+          {
+            "start_time": 874,
+            "title": "Matriarch Reactor Legendary Material",
+            "end_time": 898
+          },
+          {
+            "start_time": 898,
+            "title": "Queen Reactor Legendary Material",
+            "end_time": 997
+          }
+        ],
+        "source_id": "EHZyt9pVpi0",
+        "source_url": "https://www.youtube.com/watch?v=EHZyt9pVpi0",
+        "media_file": "audio_9d1c5adb57ee67ae3ff6f74d.webm",
+        "media_size": 17912572,
+        "media_sha256": "9d1c5adb57ee67ae3ff6f74df3fa42ab7f289fc537eac3b0ef2be8f07cba1384"
+      }
+    },
+    {
+      "id": "manifest_1557a66056479a1eccd96c8b",
+      "source_id": "nL_gGbgzN6s",
+      "source_url": "https://www.youtube.com/watch?v=nL_gGbgzN6s",
+      "weapon": "kettle",
+      "start": 236.0,
+      "end": null,
+      "metadata": {
+        "weapon": "Kettle",
+        "source_title": "The Kettle is REALLY STRONG, and it\u2019s only a grey weapon (full breakdown + gameplay) | ARC Raiders",
+        "source_url": "https://www.youtube.com/watch?v=nL_gGbgzN6s",
+        "start": "03:56",
+        "end": "",
+        "quality": "weapon-specific gameplay",
+        "notes": "Gameplay starts at 03:56; contains combat rather than isolated firing."
+      },
+      "manifest_path": "C:\\Users\\andre\\OneDrive\\Desktop\\Codebase\\arc raiders overlay\\arc_raiders_audio_seed_manifest.csv",
+      "possible_weapons": [
+        "kettle"
+      ],
+      "ambiguous_weapon": false,
+      "status": "downloaded",
+      "file": "sources/source_d3cbee63b46151f86bcf1619/audio_f13a2e847a97d7a7e3458864.webm",
+      "source_metadata": {
+        "id": "nL_gGbgzN6s",
+        "title": "The Kettle is REALLY STRONG, and it\u2019s only a grey weapon (full breakdown + gameplay) | ARC Raiders",
+        "webpage_url": "https://www.youtube.com/watch?v=nL_gGbgzN6s",
+        "channel": "Max V",
+        "channel_id": "UCRYl71QYl-ifiwxGzU3C35g",
+        "uploader": "Max V",
+        "uploader_id": "@Maxv0001",
+        "duration": 672,
+        "chapters": [
+          {
+            "start_time": 0,
+            "title": "Kettle weapon breakdown",
+            "end_time": 236
+          },
+          {
+            "start_time": 236,
+            "title": "Solo Gameplay",
+            "end_time": 554
+          },
+          {
+            "start_time": 554,
+            "title": "Duo Highlights",
+            "end_time": 672
+          }
+        ],
+        "source_id": "nL_gGbgzN6s",
+        "source_url": "https://www.youtube.com/watch?v=nL_gGbgzN6s",
+        "media_file": "audio_f13a2e847a97d7a7e3458864.webm",
+        "media_size": 11769716,
+        "media_sha256": "f13a2e847a97d7a7e3458864cbf33d983abb20bfe43a845630c2a04607a6c5b7"
+      }
+    },
+    {
+      "id": "manifest_afa57da6144714166333dfad",
+      "source_id": "WXPEtupPmXU",
+      "source_url": "https://www.youtube.com/watch?v=WXPEtupPmXU",
+      "weapon": "bobcat",
+      "start": 478.0,
+      "end": null,
+      "metadata": {
+        "weapon": "Bobcat",
+        "source_title": "Arc Raiders BOBCAT S-TIER Guide! How to Play it, Best Build & How to Get Bobcat Blueprint?",
+        "source_url": "https://www.youtube.com/watch?v=WXPEtupPmXU",
+        "start": "07:58",
+        "end": "",
+        "quality": "weapon-specific gameplay",
+        "notes": "How-to-play section begins 07:58."
+      },
+      "manifest_path": "C:\\Users\\andre\\OneDrive\\Desktop\\Codebase\\arc raiders overlay\\arc_raiders_audio_seed_manifest.csv",
+      "possible_weapons": [
+        "bobcat"
+      ],
+      "ambiguous_weapon": false,
+      "status": "downloaded",
+      "file": "sources/source_838ecb29e9a4ef54f9da4b70/audio_1ea25ba9a7d557ed6d5c3bc2.webm",
+      "source_metadata": {
+        "id": "WXPEtupPmXU",
+        "title": "Arc Raiders BOBCAT S-TIER Guide! How to Play it, Best Build & How to Get Bobcat Blueprint?",
+        "webpage_url": "https://www.youtube.com/watch?v=WXPEtupPmXU",
+        "channel": "KaidGames2",
+        "channel_id": "UCz0uNt3O_ohqAd5srxKbojA",
+        "uploader": "KaidGames2",
+        "uploader_id": "@KaidGames2",
+        "duration": 542,
+        "chapters": [
+          {
+            "start_time": 0,
+            "title": "Arc raiders bobcat",
+            "end_time": 116
+          },
+          {
+            "start_time": 116,
+            "title": "How to get bobcat blueprint",
+            "end_time": 195
+          },
+          {
+            "start_time": 195,
+            "title": "Best attachments",
+            "end_time": 255
+          },
+          {
+            "start_time": 255,
+            "title": "Best loadout",
+            "end_time": 319
+          },
+          {
+            "start_time": 319,
+            "title": "Skill tree",
+            "end_time": 400
+          },
+          {
+            "start_time": 400,
+            "title": "Best weapons to pair with",
+            "end_time": 440
+          },
+          {
+            "start_time": 440,
+            "title": "Best bobcat alternatives",
+            "end_time": 478
+          },
+          {
+            "start_time": 478,
+            "title": "How to play it",
+            "end_time": 542
+          }
+        ],
+        "source_id": "WXPEtupPmXU",
+        "source_url": "https://www.youtube.com/watch?v=WXPEtupPmXU",
+        "media_file": "audio_1ea25ba9a7d557ed6d5c3bc2.webm",
+        "media_size": 9185396,
+        "media_sha256": "1ea25ba9a7d557ed6d5c3bc2ccc8a2834c72f1dfbfa4dbd7167637abe669ce92"
+      }
+    },
+    {
+      "id": "manifest_c854a3820e14cdcc4df6a0b7",
+      "source_id": "VB9FH35YGUY",
+      "source_url": "https://www.youtube.com/watch?v=VB9FH35YGUY",
+      "weapon": "aphelion",
+      "start": null,
+      "end": null,
+      "metadata": {
+        "weapon": "Aphelion",
+        "source_title": "Aphelion is great weapon for taking down big arcs. Arc raiders gun showcase",
+        "source_url": "https://www.youtube.com/watch?v=VB9FH35YGUY",
+        "start": "",
+        "end": "",
+        "quality": "weapon-specific showcase",
+        "notes": "Short/weapon-focused source; timestamp not needed if whole video is relevant."
+      },
+      "manifest_path": "C:\\Users\\andre\\OneDrive\\Desktop\\Codebase\\arc raiders overlay\\arc_raiders_audio_seed_manifest.csv",
+      "possible_weapons": [
+        "aphelion"
+      ],
+      "ambiguous_weapon": false,
+      "status": "downloaded",
+      "file": "sources/source_bbbddecb8c2378ec9219d0e3/audio_7d39ba58ab6388cce65e7a7a.webm",
+      "source_metadata": {
+        "id": "VB9FH35YGUY",
+        "title": "Aphelion is great weapon for taking down big arcs. Arc raiders gun showcase #ArcRaiders #JohnRaider",
+        "webpage_url": "https://www.youtube.com/watch?v=VB9FH35YGUY",
+        "channel": "John Raider",
+        "channel_id": "UCsAZ0Vdi6mcQhRrmInvl3kA",
+        "uploader": "John Raider",
+        "uploader_id": "@johnraider_official",
+        "duration": 37,
+        "chapters": null,
+        "source_id": "VB9FH35YGUY",
+        "source_url": "https://www.youtube.com/watch?v=VB9FH35YGUY",
+        "media_file": "audio_7d39ba58ab6388cce65e7a7a.webm",
+        "media_size": 665158,
+        "media_sha256": "7d39ba58ab6388cce65e7a7adca2f36e8781755a6f0a0d869d9fa548ceed226a"
+      }
+    },
+    {
+      "id": "manifest_4e7012470326bad118996e72",
+      "source_id": "rh3lCZpqW-E",
+      "source_url": "https://www.youtube.com/watch?v=rh3lCZpqW-E",
+      "weapon": "aphelion",
+      "start": null,
+      "end": null,
+      "metadata": {
+        "weapon": "Aphelion",
+        "source_title": "The APHELION: Full Guide & PvP Showcase (ARC Raiders)",
+        "source_url": "https://www.youtube.com/watch?v=rh3lCZpqW-E",
+        "start": "",
+        "end": "",
+        "quality": "weapon-specific gameplay",
+        "notes": "Weapon-focused guide/PvP showcase."
+      },
+      "manifest_path": "C:\\Users\\andre\\OneDrive\\Desktop\\Codebase\\arc raiders overlay\\arc_raiders_audio_seed_manifest.csv",
+      "possible_weapons": [
+        "aphelion"
+      ],
+      "ambiguous_weapon": false,
+      "status": "downloaded",
+      "file": "sources/source_99716d0bf5d175a87f406cf6/audio_dacd73deaf6db3fd66b58c21.webm",
+      "source_metadata": {
+        "id": "rh3lCZpqW-E",
+        "title": "The APHELION: Full Guide & PvP Showcase (ARC Raiders)",
+        "webpage_url": "https://www.youtube.com/watch?v=rh3lCZpqW-E",
+        "channel": "Bentekkers",
+        "channel_id": "UCeASv1vXJh8Oj_ISoljsJpg",
+        "uploader": "Bentekkers",
+        "uploader_id": "@Bentekkers",
+        "duration": 244,
+        "chapters": [
+          {
+            "start_time": 0,
+            "title": "Introduction",
+            "end_time": 23
+          },
+          {
+            "start_time": 23,
+            "title": "Finding the blueprint",
+            "end_time": 57
+          },
+          {
+            "start_time": 57,
+            "title": "Crafting the weapon",
+            "end_time": 103
+          },
+          {
+            "start_time": 103,
+            "title": "Best loadout setup",
+            "end_time": 159
+          },
+          {
+            "start_time": 159,
+            "title": "PvE performance",
+            "end_time": 212
+          },
+          {
+            "start_time": 212,
+            "title": "PvP review and conclusion",
+            "end_time": 244
+          }
+        ],
+        "source_id": "rh3lCZpqW-E",
+        "source_url": "https://www.youtube.com/watch?v=rh3lCZpqW-E",
+        "media_file": "audio_dacd73deaf6db3fd66b58c21.webm",
+        "media_size": 4276662,
+        "media_sha256": "dacd73deaf6db3fd66b58c21f7afc102e6c90f80ef885bc485f34b24d9e54899"
+      }
+    },
+    {
+      "id": "manifest_acc395cc2f44f2fbd06a6498",
+      "source_id": "n6EU0c4fP9I",
+      "source_url": "https://www.youtube.com/watch?v=n6EU0c4fP9I",
+      "weapon": "il_toro",
+      "start": null,
+      "end": null,
+      "metadata": {
+        "weapon": "Il Toro",
+        "source_title": "ARC RAIDERS - I LOVE THE IL TORO SHOTGUN",
+        "source_url": "https://www.youtube.com/watch?v=n6EU0c4fP9I",
+        "start": "",
+        "end": "",
+        "quality": "weapon-specific gameplay",
+        "notes": "Weapon-focused video."
+      },
+      "manifest_path": "C:\\Users\\andre\\OneDrive\\Desktop\\Codebase\\arc raiders overlay\\arc_raiders_audio_seed_manifest.csv",
+      "possible_weapons": [
+        "il_toro"
+      ],
+      "ambiguous_weapon": false,
+      "status": "downloaded",
+      "file": "sources/source_2cd2354de89d9551b4edb524/audio_7bd9597d8a312492c4be6b30.webm",
+      "source_metadata": {
+        "id": "n6EU0c4fP9I",
+        "title": "ARC RAIDERS - I LOVE THE IL TORO SHOTGUN",
+        "webpage_url": "https://www.youtube.com/watch?v=n6EU0c4fP9I",
+        "channel": "KirshaunTV",
+        "channel_id": "UC9SVmo-QlM3JtAAKAUpDNRw",
+        "uploader": "KirshaunTV",
+        "uploader_id": "@Kirshaun",
+        "duration": 15,
+        "chapters": null,
+        "source_id": "n6EU0c4fP9I",
+        "source_url": "https://www.youtube.com/watch?v=n6EU0c4fP9I",
+        "media_file": "audio_7bd9597d8a312492c4be6b30.webm",
+        "media_size": 245682,
+        "media_sha256": "7bd9597d8a312492c4be6b307ddd6bf5761bfa4e2c29a4baeff4f909c7536a53"
+      }
+    },
+    {
+      "id": "manifest_1142e628dfc0836cf563f4b2",
+      "source_id": "7F7LS3QwRls",
+      "source_url": "https://www.youtube.com/watch?v=7F7LS3QwRls",
+      "weapon": "torrente",
+      "start": null,
+      "end": null,
+      "metadata": {
+        "weapon": "Torrente",
+        "source_title": "Using a Torrente in Arc Raiders",
+        "source_url": "https://www.youtube.com/watch?v=7F7LS3QwRls",
+        "start": "",
+        "end": "",
+        "quality": "weapon-specific gameplay",
+        "notes": "Weapon-focused video."
+      },
+      "manifest_path": "C:\\Users\\andre\\OneDrive\\Desktop\\Codebase\\arc raiders overlay\\arc_raiders_audio_seed_manifest.csv",
+      "possible_weapons": [
+        "torrente"
+      ],
+      "ambiguous_weapon": false,
+      "status": "downloaded",
+      "file": "sources/source_77ea2cacca6f8eee3752fc8d/audio_91912faed18a4d09e4dd9e4c.webm",
+      "source_metadata": {
+        "id": "7F7LS3QwRls",
+        "title": "Using a Torrente in Arc Raiders",
+        "webpage_url": "https://www.youtube.com/watch?v=7F7LS3QwRls",
+        "channel": "Miguel Meola",
+        "channel_id": "UCZEljwpOW6bN8gsEBtQHxcw",
+        "uploader": "Miguel Meola",
+        "uploader_id": "@MiguelMeola",
+        "duration": 26,
+        "chapters": null,
+        "source_id": "7F7LS3QwRls",
+        "source_url": "https://www.youtube.com/watch?v=7F7LS3QwRls",
+        "media_file": "audio_91912faed18a4d09e4dd9e4c.webm",
+        "media_size": 402843,
+        "media_sha256": "91912faed18a4d09e4dd9e4cd59da0a2ad096b14c7fe30630abe18be0dc1e31b"
+      }
+    },
+    {
+      "id": "manifest_677b1b7697c09988ba631fc5",
+      "source_id": "8wSmTKOihhQ",
+      "source_url": "https://www.youtube.com/watch?v=8wSmTKOihhQ",
+      "weapon": "tempest",
+      "start": null,
+      "end": null,
+      "metadata": {
+        "weapon": "Tempest",
+        "source_title": "The super rare weapon \"Tempest\" is too powerful [ARC RAIDERS]",
+        "source_url": "https://www.youtube.com/watch?v=8wSmTKOihhQ",
+        "start": "",
+        "end": "",
+        "quality": "weapon-specific gameplay",
+        "notes": "Weapon-focused gameplay."
+      },
+      "manifest_path": "C:\\Users\\andre\\OneDrive\\Desktop\\Codebase\\arc raiders overlay\\arc_raiders_audio_seed_manifest.csv",
+      "possible_weapons": [
+        "tempest"
+      ],
+      "ambiguous_weapon": false,
+      "status": "downloaded",
+      "file": "sources/source_0fe6b84dc45f0a14fb9c4492/audio_4ebe38824dd0078444ac24de.webm",
+      "source_metadata": {
+        "id": "8wSmTKOihhQ",
+        "title": "\u6fc0\u30ec\u30a2\u6b66\u5668\u300e\u30c6\u30f3\u30da\u30b9\u30c8\u300f\u304c\u6700\u5f37\u3059\u304e\u305f\u4ef6\u3010ARC RAIDERS\u3011",
+        "webpage_url": "https://www.youtube.com/watch?v=8wSmTKOihhQ",
+        "channel": "NIRU",
+        "channel_id": "UC3UvC3byXL0o-daNS54m1Xg",
+        "uploader": "NIRU",
+        "uploader_id": "@NIRU1218",
+        "duration": 756,
+        "chapters": null,
+        "source_id": "8wSmTKOihhQ",
+        "source_url": "https://www.youtube.com/watch?v=8wSmTKOihhQ",
+        "media_file": "audio_4ebe38824dd0078444ac24de.webm",
+        "media_size": 12321854,
+        "media_sha256": "4ebe38824dd0078444ac24de21f224d617f5bc03b1a5732e5bd128984e57eb00"
+      }
+    },
+    {
+      "id": "manifest_916eab50586308c3566b575a",
+      "source_id": "kxftgjwU8ms",
+      "source_url": "https://www.youtube.com/watch?v=kxftgjwU8ms",
+      "weapon": "burletta",
+      "start": 60.0,
+      "end": 133.0,
+      "metadata": {
+        "weapon": "Burletta",
+        "source_title": "The Highest Agility Weapon In ARC Raiders Is Better Than You Think",
+        "source_url": "https://www.youtube.com/watch?v=kxftgjwU8ms",
+        "start": "01:00",
+        "end": "02:13",
+        "quality": "controlled weapon analysis",
+        "notes": "Damage/fire-rate + recoil/spread sections should contain relatively clean firing samples."
+      },
+      "manifest_path": "C:\\Users\\andre\\OneDrive\\Desktop\\Codebase\\arc raiders overlay\\arc_raiders_audio_seed_manifest.csv",
+      "possible_weapons": [
+        "burletta"
+      ],
+      "ambiguous_weapon": false,
+      "status": "downloaded",
+      "file": "sources/source_0163c0bb8f85b99932ee40d5/audio_d760264b8b69ac8c12807cdc.webm",
+      "source_metadata": {
+        "id": "kxftgjwU8ms",
+        "title": "The Highest Agility Weapon In ARC Raiders Is Better Than You Think",
+        "webpage_url": "https://www.youtube.com/watch?v=kxftgjwU8ms",
+        "channel": "takibo",
+        "channel_id": "UC8FnJrfl4OeqtunWP38v2tg",
+        "uploader": "takibo",
+        "uploader_id": "@the_takibo",
+        "duration": 868,
+        "chapters": [
+          {
+            "start_time": 0,
+            "title": "Intro & Important Information",
+            "end_time": 60
+          },
+          {
+            "start_time": 60,
+            "title": "Burletta Damage & Fire Rate",
+            "end_time": 108
+          },
+          {
+            "start_time": 108,
+            "title": "Burletta Recoil & Spread vs Kettle",
+            "end_time": 133
+          },
+          {
+            "start_time": 133,
+            "title": "Hipfire Recoil Is Insane",
+            "end_time": 158
+          },
+          {
+            "start_time": 158,
+            "title": "Highest Agility in the Game",
+            "end_time": 175
+          },
+          {
+            "start_time": 175,
+            "title": "Weapon Agility Explained",
+            "end_time": 290
+          },
+          {
+            "start_time": 290,
+            "title": "Do NOT Upgrade Your Burlettas",
+            "end_time": 383
+          },
+          {
+            "start_time": 383,
+            "title": "Burlettas Attachments & Mods",
+            "end_time": 475
+          },
+          {
+            "start_time": 475,
+            "title": "Muzzle Brake is Goated??",
+            "end_time": 595
+          },
+          {
+            "start_time": 595,
+            "title": "Burletta is a DIVING Weapon (Not Poking)",
+            "end_time": 630
+          },
+          {
+            "start_time": 630,
+            "title": "Headshots",
+            "end_time": 746
+          },
+          {
+            "start_time": 746,
+            "title": "Bring a Poking Weapon (Long Range)",
+            "end_time": 767
+          },
+          {
+            "start_time": 767,
+            "title": "Flanking Augment",
+            "end_time": 792
+          },
+          {
+            "start_time": 792,
+            "title": "Built To Be a Secondary",
+            "end_time": 868
+          }
+        ],
+        "source_id": "kxftgjwU8ms",
+        "source_url": "https://www.youtube.com/watch?v=kxftgjwU8ms",
+        "media_file": "audio_d760264b8b69ac8c12807cdc.webm",
+        "media_size": 14047879,
+        "media_sha256": "d760264b8b69ac8c12807cdc5c80144e9678c259a190280e589394924fd2a3bf"
+      }
+    },
+    {
+      "id": "manifest_f12fc8b857a1f4dc433b5aa9",
+      "source_id": "WHzHLGX-WG0",
+      "source_url": "https://www.youtube.com/watch?v=WHzHLGX-WG0",
+      "weapon": "rattler",
+      "start": 53.0,
+      "end": null,
+      "metadata": {
+        "weapon": "Rattler",
+        "source_title": "MOST LOADED RATTLER YOU HAVE SEEN TODAY (PvP + Looting) | ARC RAIDERS",
+        "source_url": "https://www.youtube.com/watch?v=WHzHLGX-WG0",
+        "start": "00:53",
+        "end": "",
+        "quality": "weapon-specific gameplay",
+        "notes": "Source URL/timestamp surfaced via mirrored page; combat begins around 00:53."
+      },
+      "manifest_path": "C:\\Users\\andre\\OneDrive\\Desktop\\Codebase\\arc raiders overlay\\arc_raiders_audio_seed_manifest.csv",
+      "possible_weapons": [
+        "rattler"
+      ],
+      "ambiguous_weapon": false,
+      "status": "downloaded",
+      "file": "sources/source_5381ce54f470eababdbf25f6/audio_5944bb22b3f47d7850fbf9de.webm",
+      "source_metadata": {
+        "id": "WHzHLGX-WG0",
+        "title": "MOST LOADED RATTLER YOU HAVE SEEN TODAY (PvP + Looting) | ARC RAIDERS",
+        "webpage_url": "https://www.youtube.com/watch?v=WHzHLGX-WG0",
+        "channel": "Domi - Arc Raiders",
+        "channel_id": "UCoYEoQKqapEs9iMpQOxBCJQ",
+        "uploader": "Domi - Arc Raiders",
+        "uploader_id": "@Domi-FPS",
+        "duration": 1869,
+        "chapters": [
+          {
+            "start_time": 0,
+            "title": "intro",
+            "end_time": 60
+          },
+          {
+            "start_time": 60,
+            "title": "Start (we go straight into PvP)",
+            "end_time": 300
+          },
+          {
+            "start_time": 300,
+            "title": "Surely this guy won't betray me",
+            "end_time": 520
+          },
+          {
+            "start_time": 520,
+            "title": "finally a friendly player",
+            "end_time": 700
+          },
+          {
+            "start_time": 700,
+            "title": "Brilliant Troll",
+            "end_time": 820
+          },
+          {
+            "start_time": 820,
+            "title": "afk brotha",
+            "end_time": 1000
+          },
+          {
+            "start_time": 1000,
+            "title": "humble duo",
+            "end_time": 1080
+          },
+          {
+            "start_time": 1080,
+            "title": "I tricked myself",
+            "end_time": 1332
+          },
+          {
+            "start_time": 1332,
+            "title": "I 'd rather die but I TAKE ALL LOOT",
+            "end_time": 1420
+          },
+          {
+            "start_time": 1420,
+            "title": "INSANE PUSH in DUOS",
+            "end_time": 1520
+          },
+          {
+            "start_time": 1520,
+            "title": "Majestic Backpack with crazy loot",
+            "end_time": 1615
+          },
+          {
+            "start_time": 1615,
+            "title": "cinematic fight",
+            "end_time": 1790
+          },
+          {
+            "start_time": 1790,
+            "title": "they'd rather die than press the button...",
+            "end_time": 1869
+          }
+        ],
+        "source_id": "WHzHLGX-WG0",
+        "source_url": "https://www.youtube.com/watch?v=WHzHLGX-WG0",
+        "media_file": "audio_5944bb22b3f47d7850fbf9de.webm",
+        "media_size": 32632533,
+        "media_sha256": "5944bb22b3f47d7850fbf9deb82a3cf3a4dab54826adca916b781d9a08079fb2"
+      }
+    },
+    {
+      "id": "manifest_990cbf361c4d1d984da77fc8",
+      "source_id": "KmmeqkuhMRU",
+      "source_url": "https://www.youtube.com/watch?v=KmmeqkuhMRU",
+      "weapon": "bettina",
+      "start": null,
+      "end": null,
+      "metadata": {
+        "weapon": "Bettina",
+        "source_title": "ARC Raiders Devs Said This is The BEST PVE Weapon, But..",
+        "source_url": "https://www.youtube.com/watch?v=KmmeqkuhMRU",
+        "start": "",
+        "end": "",
+        "quality": "weapon-specific gameplay",
+        "notes": "Source URL surfaced via mirrored page."
+      },
+      "manifest_path": "C:\\Users\\andre\\OneDrive\\Desktop\\Codebase\\arc raiders overlay\\arc_raiders_audio_seed_manifest.csv",
+      "possible_weapons": [
+        "bettina"
+      ],
+      "ambiguous_weapon": false,
+      "status": "downloaded",
+      "file": "sources/source_35b76fcaef303a976a8decaf/audio_76ffd983b0d1e549a228444c.webm",
+      "source_metadata": {
+        "id": "KmmeqkuhMRU",
+        "title": "ARC Raiders Devs Said This is The BEST PVE Weapon, But..",
+        "webpage_url": "https://www.youtube.com/watch?v=KmmeqkuhMRU",
+        "channel": "The Gaming Merchant",
+        "channel_id": "UCz2_M6-NBgdiLvDOmlH074g",
+        "uploader": "The Gaming Merchant",
+        "uploader_id": "@Thegamingmerchant",
+        "duration": 1749,
+        "chapters": [
+          {
+            "start_time": 0,
+            "title": "Testing the Bettina",
+            "end_time": 49
+          },
+          {
+            "start_time": 49,
+            "title": "Stella Montis PvE mission",
+            "end_time": 269
+          },
+          {
+            "start_time": 269,
+            "title": "Bastion fight analysis",
+            "end_time": 342
+          },
+          {
+            "start_time": 342,
+            "title": "Tweaking the build",
+            "end_time": 427
+          },
+          {
+            "start_time": 427,
+            "title": "Rocketeer test results",
+            "end_time": 522
+          },
+          {
+            "start_time": 522,
+            "title": "Bettina PvE conclusions",
+            "end_time": 624
+          },
+          {
+            "start_time": 624,
+            "title": "Bettina PvP mission",
+            "end_time": 1026
+          },
+          {
+            "start_time": 1026,
+            "title": "PvP performance review",
+            "end_time": 1083
+          },
+          {
+            "start_time": 1083,
+            "title": "Alpha Bettina test",
+            "end_time": 1211
+          },
+          {
+            "start_time": 1211,
+            "title": "Intense firefight",
+            "end_time": 1338
+          },
+          {
+            "start_time": 1338,
+            "title": "Final PvP showdown",
+            "end_time": 1696
+          },
+          {
+            "start_time": 1696,
+            "title": "Final thoughts",
+            "end_time": 1749
+          }
+        ],
+        "source_id": "KmmeqkuhMRU",
+        "source_url": "https://www.youtube.com/watch?v=KmmeqkuhMRU",
+        "media_file": "audio_76ffd983b0d1e549a228444c.webm",
+        "media_size": 29943652,
+        "media_sha256": "76ffd983b0d1e549a228444c75e04a1e317dad2c7d793c3878b5ca719b4c5c49"
+      }
+    },
+    {
+      "id": "manifest_fda68c2472ad71ee4c2feb42",
+      "source_id": "3j4CKLoJHec",
+      "source_url": "https://www.youtube.com/watch?v=3j4CKLoJHec",
+      "weapon": "bettina",
+      "start": null,
+      "end": null,
+      "metadata": {
+        "weapon": "Bettina",
+        "source_title": "Finding and Testing the New Gun (BETTINA) in Arc Raiders",
+        "source_url": "https://www.youtube.com/watch?v=3j4CKLoJHec",
+        "start": "",
+        "end": "",
+        "quality": "weapon-specific gameplay",
+        "notes": "Source URL surfaced via mirrored page."
+      },
+      "manifest_path": "C:\\Users\\andre\\OneDrive\\Desktop\\Codebase\\arc raiders overlay\\arc_raiders_audio_seed_manifest.csv",
+      "possible_weapons": [
+        "bettina"
+      ],
+      "ambiguous_weapon": false,
+      "status": "downloaded",
+      "file": "sources/source_1753fc0ba328ebb588d0d2d2/audio_8f9867fb99635bb59d9d5604.webm",
+      "source_metadata": {
+        "id": "3j4CKLoJHec",
+        "title": "Finding and testing the NEW GUN in Arc Raiders ( BETTINA )",
+        "webpage_url": "https://www.youtube.com/watch?v=3j4CKLoJHec",
+        "channel": "LVNDMARK",
+        "channel_id": "UCOhsgjMEyldgS04MiP2x-zA",
+        "uploader": "LVNDMARK",
+        "uploader_id": "@LVNDMARK",
+        "duration": 1320,
+        "chapters": [
+          {
+            "start_time": 0,
+            "title": "Game discussion and plans",
+            "end_time": 47
+          },
+          {
+            "start_time": 47,
+            "title": "Infiltration and firefights",
+            "end_time": 265
+          },
+          {
+            "start_time": 265,
+            "title": "Room clear and gear check",
+            "end_time": 450
+          },
+          {
+            "start_time": 450,
+            "title": "Testing the Bettina",
+            "end_time": 661
+          },
+          {
+            "start_time": 661,
+            "title": "High-stakes engagements",
+            "end_time": 881
+          },
+          {
+            "start_time": 881,
+            "title": "Looting and extraction prep",
+            "end_time": 1056
+          },
+          {
+            "start_time": 1056,
+            "title": "Miraculous extraction",
+            "end_time": 1320
+          }
+        ],
+        "source_id": "3j4CKLoJHec",
+        "source_url": "https://www.youtube.com/watch?v=3j4CKLoJHec",
+        "media_file": "audio_8f9867fb99635bb59d9d5604.webm",
+        "media_size": 21794225,
+        "media_sha256": "8f9867fb99635bb59d9d5604611c581d9a1b335b6c588f328fccffc455ea3303"
+      }
+    },
+    {
+      "id": "manifest_1d94692f9f77d79e188d09ee",
+      "source_id": "t07hmXNA4Ys",
+      "source_url": "https://www.youtube.com/watch?v=t07hmXNA4Ys",
+      "weapon": "stitcher",
+      "start": null,
+      "end": null,
+      "metadata": {
+        "weapon": "Stitcher",
+        "source_title": "The Stitcher Made Me VERY RICH in ARC Raiders (PvP + Looting)",
+        "source_url": "https://www.youtube.com/watch?v=t07hmXNA4Ys",
+        "start": "",
+        "end": "",
+        "quality": "weapon-specific gameplay",
+        "notes": "Source URL surfaced via mirrored page."
+      },
+      "manifest_path": "C:\\Users\\andre\\OneDrive\\Desktop\\Codebase\\arc raiders overlay\\arc_raiders_audio_seed_manifest.csv",
+      "possible_weapons": [
+        "stitcher"
+      ],
+      "ambiguous_weapon": false,
+      "status": "downloaded",
+      "file": "sources/source_6e9e1f13628313972813c09f/audio_73a1443e057ff7a8b38367f2.webm",
+      "source_metadata": {
+        "id": "t07hmXNA4Ys",
+        "title": "The Stitcher Made Me VERY RICH in ARC Raiders (PvP + Looting)",
+        "webpage_url": "https://www.youtube.com/watch?v=t07hmXNA4Ys",
+        "channel": "xvohs",
+        "channel_id": "UC9OL4YgFkFaTnUgV3ZAP5UA",
+        "uploader": "xvohs",
+        "uploader_id": "@xvohs",
+        "duration": 1001,
+        "chapters": [
+          {
+            "start_time": 0,
+            "title": "Intro",
+            "end_time": 42
+          },
+          {
+            "start_time": 42,
+            "title": "Game 1 (Blue Gate)",
+            "end_time": 330
+          },
+          {
+            "start_time": 330,
+            "title": "Game 2 (Dam Battlegrounds)",
+            "end_time": 681
+          },
+          {
+            "start_time": 681,
+            "title": "Game 3 (Stella Montis)",
+            "end_time": 763
+          },
+          {
+            "start_time": 763,
+            "title": "Game 4 (Stella Montis)",
+            "end_time": 1001
+          }
+        ],
+        "source_id": "t07hmXNA4Ys",
+        "source_url": "https://www.youtube.com/watch?v=t07hmXNA4Ys",
+        "media_file": "audio_73a1443e057ff7a8b38367f2.webm",
+        "media_size": 15731208,
+        "media_sha256": "73a1443e057ff7a8b38367f27d93d831740d7d29133b9e1af53225f6ca3a64bf"
+      }
+    }
+  ],
+  "weapons": [
+    "anvil",
+    "aphelion",
+    "arpeggio",
+    "bantam",
+    "bettina",
+    "bobcat",
+    "burletta",
+    "canto",
+    "dolabra",
+    "equalizer",
+    "ferro",
+    "hairpin",
+    "hullcracker",
+    "il_toro",
+    "jupiter",
+    "kettle",
+    "osprey",
+    "rascal",
+    "rattler",
+    "renegade",
+    "stiletto",
+    "stitcher",
+    "tempest",
+    "torrente",
+    "venator",
+    "vulcano"
+  ],
+  "weapon_manifest": {
+    "path": "C:\\Users\\andre\\OneDrive\\Desktop\\Codebase\\arc raiders overlay\\arc_raiders_audio_seed_manifest.csv",
+    "sha256": "398a383830641774060d9f08a020929f0df1c57bbb0fa3c9dc1854ef13636ad3"
+  },
+  "weapon_collection_report": {
+    "sources": 14,
+    "manifest_rows": 41,
+    "downloaded": 0,
+    "cached": 14,
+    "failed": [],
+    "skipped_test": [],
+    "new_candidates": 0,
+    "candidates": 10565,
+    "storage": "C:\\Users\\andre\\OneDrive\\Desktop\\Codebase\\arc raiders overlay\\training\\sources",
+    "dry_run": false,
+    "deduplication": {
+      "algorithm": "centered_log_mel_cosine_knn",
+      "threshold": 0.995,
+      "neighbors": 64,
+      "eligible_candidates": 10518,
+      "skipped_candidates": 47,
+      "comparisons": 2706,
+      "duplicate_groups": 135,
+      "duplicate_candidates": 343,
+      "possible_duplicates_only": true
+    }
+  }
 }

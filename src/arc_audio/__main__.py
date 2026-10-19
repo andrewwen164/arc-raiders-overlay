@@ -24,9 +24,33 @@ def main():
     evaluate.add_argument("--output", type=Path, help="Local detection JSONL path")
     prepare = commands.add_parser("prepare-training", help="Inventory local media; create label manifest without audio exports")
     prepare.add_argument("folder", type=Path, nargs="?", default=Path("training"))
-    labels = commands.add_parser("label-training", help="Watch local videos and mark sound/reviewed intervals")
+    labels = commands.add_parser("label-training", help="Review gunfire with Yes / No / Unsure questions")
     labels.add_argument("manifest", type=Path, nargs="?", default=Path("training/dataset.json"))
     labels.add_argument("--smoke-seconds", type=float, default=0)
+    labels.add_argument("--advanced", action="store_true", help="Open the optional legacy interval editor")
+    build = commands.add_parser("build-weapon-dataset", help="Explicitly acquire curated sources and propose weapon shots")
+    build.add_argument("csv", type=Path)
+    build.add_argument("--dataset", type=Path, default=Path("training/dataset.json"))
+    build.add_argument("--storage", type=Path, help="Source cache inside dataset folder; default: sources/")
+    build.add_argument("--dry-run", action="store_true", help="Validate/import preview only; no writes or downloads")
+    build.add_argument("--max-sources", type=int, help="Process the first N unique URLs")
+    build.add_argument("--source-url", help="Only process this exact curated URL")
+    build.add_argument("--pre", type=float, default=.35, help="Preview seconds before onset")
+    build.add_argument("--post", type=float, default=1., help="Preview seconds after onset")
+    build.add_argument("--min-spacing", type=float, default=.07, help="Minimum onset spacing, seconds")
+    build.add_argument("--ffmpeg-location", help="Optional FFmpeg executable or folder")
+    weapon_status = commands.add_parser("weapon-dataset-status", help="Review progress and source diversity per weapon")
+    weapon_status.add_argument("manifest", type=Path, nargs="?", default=Path("training/dataset.json"))
+    discovery = commands.add_parser("discover-weapon-sources", help="Search YouTube; save unverified metadata only")
+    discovery.add_argument("--weapon", required=True)
+    discovery.add_argument("--max-results", type=int, default=10)
+    discovery.add_argument("--output", type=Path, default=Path("artifacts/discovered-weapon-sources.json"))
+    discovery.add_argument("--dataset", type=Path, help="Optionally register unverified metadata for status reporting only")
+    backgrounds = commands.add_parser("suggest-weapon-background", help="Propose background ranges; explicit human review required")
+    backgrounds.add_argument("manifest", type=Path, nargs="?", default=Path("training/dataset.json"))
+    backgrounds.add_argument("--seconds", type=float, default=2.)
+    backgrounds.add_argument("--margin", type=float, default=.75)
+    backgrounds.add_argument("--max-per-source", type=int, default=8)
     suggest = commands.add_parser("suggest-labels", help="Offline cached AST proposals; human review required")
     suggest.add_argument("manifest", type=Path)
     suggest.add_argument("--model-dir", type=Path, help="Existing AST cache; never downloads weights")
@@ -82,7 +106,39 @@ def main():
             print(json.dumps(report, indent=2))
         elif args.command == "label-training":
             from .labeler import run_labeler
-            return run_labeler(args.manifest, args.smoke_seconds)
+            return run_labeler(args.manifest, args.smoke_seconds, advanced=args.advanced)
+        elif args.command == "build-weapon-dataset":
+            from .weapon_pipeline import build_weapon_dataset
+            report = build_weapon_dataset(args.csv, args.dataset, storage=args.storage, dry_run=args.dry_run,
+                                          max_sources=args.max_sources, source_url=args.source_url, pre=args.pre,
+                                          post=args.post, min_spacing=args.min_spacing,
+                                          ffmpeg_location=args.ffmpeg_location)
+            printable = {key: value for key, value in report.items() if key != "rows"}
+            print(json.dumps(printable, indent=2))
+            if not args.dry_run:
+                print(f'Next: .\\.venv\\Scripts\\python.exe -m arc_audio label-training "{args.dataset}"')
+            return 1 if report["failed"] else 0
+        elif args.command == "weapon-dataset-status":
+            from .weapon_pipeline import weapon_dataset_status
+            print(json.dumps(weapon_dataset_status(args.manifest), indent=2))
+        elif args.command == "discover-weapon-sources":
+            from .dataset import save_dataset
+            from .weapon_discovery import discover_weapon_sources
+            report = discover_weapon_sources(args.weapon, args.max_results)
+            save_dataset(args.output, report)
+            if args.dataset:
+                from .weapon_pipeline import register_discoveries
+                register_discoveries(args.dataset, report)
+            print(f"Saved {len(report['sources'])} UNVERIFIED source candidates: {args.output}")
+            print("No media downloaded or annotations created. Verify source relevance and ranges before adding curated CSV rows.")
+            if report["errors"]:
+                print(json.dumps({"errors": report["errors"]}, indent=2))
+            return int(not report["sources"] and bool(report["errors"]))
+        elif args.command == "suggest-weapon-background":
+            from .weapon_negatives import propose_background
+            report = propose_background(args.manifest, seconds=args.seconds, margin=args.margin,
+                                        max_per_source=args.max_per_source)
+            print(json.dumps(report, indent=2))
         elif args.command == "suggest-labels":
             from .suggestions import generate_suggestions
             path, report = generate_suggestions(args.manifest, model_path=args.model_dir,

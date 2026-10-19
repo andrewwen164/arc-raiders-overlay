@@ -72,7 +72,13 @@ def child(mode, folder):
              "split": "train", "audio_stream": 0, "audio_streams": [{"index": 0, "channels": 2}],
              "track_confirmed": True, "intervals": [{"start": .1, "end": .3, "label": "gunshot"}],
              "reviewed": []}]})
-        module, launch = labeler, lambda: labeler.run_labeler(manifest)
+        if mode == "labeler-quick":
+            from arc_audio.suggestions import media_stamp, suggestion_path
+            save_dataset(suggestion_path(manifest), {"version": 1, "clips": [{
+                "file": media.name, "duration": 1, "audio_stream": 0, "media": media_stamp(media),
+                "suggestions": [{"id": "quick-interrupt-fixture", "start": .1, "end": .3,
+                                 "label": "gunshot", "confidence": .7, "status": "pending"}]}]})
+        module, launch = labeler, lambda: labeler.run_labeler(manifest, advanced=mode != "labeler-quick")
     else:
         module, launch = ui, ui.run_ui
     actual_loop = module.run_event_loop
@@ -122,7 +128,7 @@ def child(mode, folder):
             doc = load_dataset(manifest)
             report.update(labels_preserved=doc["clips"][0]["intervals"] == [
                 {"start": .1, "end": .3, "label": "gunshot"}],
-                import_thread_finished=window.import_thread is None, clips=len(doc["clips"]))
+                import_thread_finished=getattr(window, "import_thread", None) is None, clips=len(doc["clips"]))
         else:
             report.update(overlay_hidden=not window.overlay.isVisible(), tray_hidden=not window.tray.isVisible())
         (folder / "result.json").write_text(json.dumps(report, indent=2))
@@ -151,7 +157,7 @@ def main():
     artifacts.mkdir(exist_ok=True)
     report = []
     with tempfile.TemporaryDirectory(prefix="interrupt-smoke-", dir=artifacts) as scratch:
-        modes = () if args.powershell_only else ("control-idle", "control-demo", "control-dialog", "labeler-idle", "labeler-import")
+        modes = () if args.powershell_only else ("control-idle", "control-demo", "control-dialog", "labeler-idle", "labeler-import", "labeler-quick")
         for mode in modes:
             folder = Path(scratch) / mode
             folder.mkdir()
