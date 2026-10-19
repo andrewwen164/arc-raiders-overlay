@@ -1,0 +1,371 @@
+{
+  "version": 1,
+  "clips": [
+    {
+      "file": "ferro 10 silenced.mp4",
+      "duration": 11.929,
+      "audio_stream": 1,
+      "media": {
+        "size": 15925537,
+        "mtime_ns": 1792362292236495100
+      },
+      "media_sha256": "f7ecad1a0a4fbcddec738e88d12b8eb0200e243510e5ef2fc18c512ca5027b00",
+      "track_confirmed_at_generation": false,
+      "suggestions": []
+    },
+    {
+      "file": "ferro 10 unsilenced.mp4",
+      "duration": 11.631,
+      "audio_stream": 1,
+      "media": {
+        "size": 15212692,
+        "mtime_ns": 1792362234204951400
+      },
+      "media_sha256": "b6bff87580b0516a5de978c534771ab8f38369ff2e7f9745620809060b20360d",
+      "track_confirmed_at_generation": false,
+      "suggestions": [
+        {
+          "id": "02f80d4a5cbcaa818ce19fe6a28bd614",
+          "start": 0.0,
+          "end": 2.0,
+          "label": "gunshot",
+          "confidence": 0.38833776116371155,
+          "status": "accepted",
+          "processing_ms": 926.4690999989398,
+          "provenance": {
+            "backend": "ast",
+            "model": "MIT/ast-finetuned-audioset-10-10-0.4593",
+            "weights_sha256": "ae0c1e2ad4e1381d851fa9bf298ba13ebc9c5a914cdee2dbe427a6583869924d",
+            "config_sha256": "a93d525511d77e8ecc933d09674b85099815bbbb417c228a4edd655e252fb9ff",
+            "features_sha256": "8d04ba5a9c6fca5d39d0de2b1fd05ecf79deb589fbba279728bbebac39934231",
+            "window_seconds": 2.0,
+            "hop_seconds": 2.0,
+            "short_window_feature_padding": true
+          },
+          "last_edit": {
+            "start": 0.0,
+            "end": 2.0,
+            "label": "gunshot",
+            "source": "unknown",
+            "proposal_id": "02f80d4a5cbcaa818ce19fe6a28bd614"
+          }
+        },
+        {
+          "id": "475581ed1db0b44ff77bc638838cf557",
+          "start": 4.0,
+          "end": 6.0,
+          "label": "gunshot",
+          "confidence": 0.31206703186035156,
+          "status": "accepted",
+          "processing_ms": 954.1343999953824,
+          "provenance": {
+            "backend": "ast",
+            "model": "MIT/ast-finetuned-audioset-10-10-0.4593",
+            "weights_sha256": "ae0c1e2ad4e1381d851fa9bf298ba13ebc9c5a914cdee2dbe427a6583869924d",
+            "config_sha256": "a93d525511d77e8ecc933d09674b85099815bbbb417c228a4edd655e252fb9ff",
+            "features_sha256": "8d04ba5a9c6fca5d39d0de2b1fd05ecf79deb589fbba279728bbebac39934231",
+            "window_seconds": 2.0,
+            "hop_seconds": 2.0,
+            "short_window_feature_padding": true
+          },
+          "last_edit": {
+            "start": 4.0,
+            "end": 6.0,
+            "label": "gunshot",
+            "source": "unknown",
+            "proposal_id": "475581ed1db0b44ff77bc638838cf557"
+          }
+        }
+      ]
+    },
+    {
+      "file": "ferro 50m unsilenced.mp4",
+      "duration": 8.927,
+      "audio_stream": 1,
+      "media": {
+        "size": 11720472,
+        "mtime_ns": 1792362500216086600
+      },
+      "media_sha256": "16eb3765395f3847520a5bc3ec5467f3585b5baf1913989654aeb6d0eb601e04",
+      "track_confirmed_at_generation": false,
+      "suggestions": [
+        {
+          "id": "cbd993e935818db7702458140c335cc1",
+          "start": 4.0,
+          "end": 6.0,
+          "label": "gunshot",
+          "confidence": 0.2074463665485382,
+          "status": "pending",
+          "processing_ms": 923.2458999977098,
+          "provenance": {
+            "backend": "ast",
+            "model": "MIT/ast-finetuned-audioset-10-10-0.4593",
+            "weights_sha256": "ae0c1e2ad4e1381d851fa9bf298ba13ebc9c5a914cdee2dbe427a6583869924d",
+            "config_sha256": "a93d525511d77e8ecc933d09674b85099815bbbb417c228a4edd655e252fb9ff",
+            "features_sha256": "8d04ba5a9c6fca5d39d0de2b1fd05ecf79deb589fbba279728bbebac39934231",
+            "window_seconds": 2.0,
+            "hop_seconds": 2.0,
+            "short_window_feature_padding": true
+          }
+        }
+      ]
+    },
+    {
+      "file": "stitcher 10 silenced.mp4",
+      "duration": 11.976,
+      "audio_stream": 1,
+      "media": {
+        "size": 15415310,
+        "mtime_ns": 1792362172481983600
+      },
+      "media_sha256": "b525251ed2394735da0c96ec4fa466c31e926f9d3140509eec4622651215223f",
+      "track_confirmed_at_generation": false,
+      "suggestions": [
+        {
+          "id": "d30b15ca3cf1baa4ad6d672bc6ccf39d",
+          "start": 8.0,
+          "end": 10.0,
+          "label": "gunshot",
+          "confidence": 0.2066648304462433,
+          "status": "pending",
+          "processing_ms": 979.3210999996518,
+          "provenance": {
+            "backend": "ast",
+            "model": "MIT/ast-finetuned-audioset-10-10-0.4593",
+            "weights_sha256": "ae0c1e2ad4e1381d851fa9bf298ba13ebc9c5a914cdee2dbe427a6583869924d",
+            "config_sha256": "a93d525511d77e8ecc933d09674b85099815bbbb417c228a4edd655e252fb9ff",
+            "features_sha256": "8d04ba5a9c6fca5d39d0de2b1fd05ecf79deb589fbba279728bbebac39934231",
+            "window_seconds": 2.0,
+            "hop_seconds": 2.0,
+            "short_window_feature_padding": true
+          }
+        }
+      ]
+    },
+    {
+      "file": "stitcher 10 unsilenced.mp4",
+      "duration": 17.674,
+      "audio_stream": 1,
+      "media": {
+        "size": 23037023,
+        "mtime_ns": 1792362095864969400
+      },
+      "media_sha256": "aa1cae7222bb112a2f59524492844b5e1768131598ab67dc319ae15f4e9e23bc",
+      "track_confirmed_at_generation": false,
+      "suggestions": [
+        {
+          "id": "392e4132b395f437ca62f8ddf9d9cfb7",
+          "start": 0.0,
+          "end": 2.0,
+          "label": "gunshot",
+          "confidence": 0.42271992564201355,
+          "status": "pending",
+          "processing_ms": 920.3539999944041,
+          "provenance": {
+            "backend": "ast",
+            "model": "MIT/ast-finetuned-audioset-10-10-0.4593",
+            "weights_sha256": "ae0c1e2ad4e1381d851fa9bf298ba13ebc9c5a914cdee2dbe427a6583869924d",
+            "config_sha256": "a93d525511d77e8ecc933d09674b85099815bbbb417c228a4edd655e252fb9ff",
+            "features_sha256": "8d04ba5a9c6fca5d39d0de2b1fd05ecf79deb589fbba279728bbebac39934231",
+            "window_seconds": 2.0,
+            "hop_seconds": 2.0,
+            "short_window_feature_padding": true
+          }
+        },
+        {
+          "id": "3987fef4d9f3cc4112632861a122f9b6",
+          "start": 4.0,
+          "end": 6.0,
+          "label": "gunshot",
+          "confidence": 0.21459157764911652,
+          "status": "pending",
+          "processing_ms": 963.0341000010958,
+          "provenance": {
+            "backend": "ast",
+            "model": "MIT/ast-finetuned-audioset-10-10-0.4593",
+            "weights_sha256": "ae0c1e2ad4e1381d851fa9bf298ba13ebc9c5a914cdee2dbe427a6583869924d",
+            "config_sha256": "a93d525511d77e8ecc933d09674b85099815bbbb417c228a4edd655e252fb9ff",
+            "features_sha256": "8d04ba5a9c6fca5d39d0de2b1fd05ecf79deb589fbba279728bbebac39934231",
+            "window_seconds": 2.0,
+            "hop_seconds": 2.0,
+            "short_window_feature_padding": true
+          }
+        },
+        {
+          "id": "3e0fd1b4d198c721f46ddd6e0566dcf6",
+          "start": 6.0,
+          "end": 8.0,
+          "label": "gunshot",
+          "confidence": 0.32634979486465454,
+          "status": "pending",
+          "processing_ms": 949.0593999944394,
+          "provenance": {
+            "backend": "ast",
+            "model": "MIT/ast-finetuned-audioset-10-10-0.4593",
+            "weights_sha256": "ae0c1e2ad4e1381d851fa9bf298ba13ebc9c5a914cdee2dbe427a6583869924d",
+            "config_sha256": "a93d525511d77e8ecc933d09674b85099815bbbb417c228a4edd655e252fb9ff",
+            "features_sha256": "8d04ba5a9c6fca5d39d0de2b1fd05ecf79deb589fbba279728bbebac39934231",
+            "window_seconds": 2.0,
+            "hop_seconds": 2.0,
+            "short_window_feature_padding": true
+          }
+        },
+        {
+          "id": "c53cc856a0442287be99f35fcf156197",
+          "start": 12.0,
+          "end": 14.0,
+          "label": "gunshot",
+          "confidence": 0.3892067074775696,
+          "status": "pending",
+          "processing_ms": 932.7959000002011,
+          "provenance": {
+            "backend": "ast",
+            "model": "MIT/ast-finetuned-audioset-10-10-0.4593",
+            "weights_sha256": "ae0c1e2ad4e1381d851fa9bf298ba13ebc9c5a914cdee2dbe427a6583869924d",
+            "config_sha256": "a93d525511d77e8ecc933d09674b85099815bbbb417c228a4edd655e252fb9ff",
+            "features_sha256": "8d04ba5a9c6fca5d39d0de2b1fd05ecf79deb589fbba279728bbebac39934231",
+            "window_seconds": 2.0,
+            "hop_seconds": 2.0,
+            "short_window_feature_padding": true
+          }
+        }
+      ]
+    },
+    {
+      "file": "stitcher 50 silenced.mp4",
+      "duration": 6.368,
+      "audio_stream": 1,
+      "media": {
+        "size": 8709082,
+        "mtime_ns": 1792362452448178600
+      },
+      "media_sha256": "d507bc1d8fd09f03ed35649769e3a2ba9f7229c438f50166764377aa17c9ac8a",
+      "track_confirmed_at_generation": false,
+      "suggestions": [
+        {
+          "id": "be05f9daf7218d61524f11770b20c7b2",
+          "start": 2.0,
+          "end": 4.0,
+          "label": "gunshot",
+          "confidence": 0.24564161896705627,
+          "status": "pending",
+          "processing_ms": 928.0412000007345,
+          "provenance": {
+            "backend": "ast",
+            "model": "MIT/ast-finetuned-audioset-10-10-0.4593",
+            "weights_sha256": "ae0c1e2ad4e1381d851fa9bf298ba13ebc9c5a914cdee2dbe427a6583869924d",
+            "config_sha256": "a93d525511d77e8ecc933d09674b85099815bbbb417c228a4edd655e252fb9ff",
+            "features_sha256": "8d04ba5a9c6fca5d39d0de2b1fd05ecf79deb589fbba279728bbebac39934231",
+            "window_seconds": 2.0,
+            "hop_seconds": 2.0,
+            "short_window_feature_padding": true
+          }
+        }
+      ]
+    },
+    {
+      "file": "stitcher 50 unsilenced.mp4",
+      "duration": 7.375,
+      "audio_stream": 1,
+      "media": {
+        "size": 9847274,
+        "mtime_ns": 1792362386047504100
+      },
+      "media_sha256": "2d338fb044382cc43c4d60720f8bdd784761f2b06eb2ba77a4191bee07334b96",
+      "track_confirmed_at_generation": false,
+      "suggestions": [
+        {
+          "id": "0062454553898ef888d23848cd9da6dc",
+          "start": 4.0,
+          "end": 6.0,
+          "label": "gunshot",
+          "confidence": 0.34128788113594055,
+          "status": "pending",
+          "processing_ms": 966.1312000025646,
+          "provenance": {
+            "backend": "ast",
+            "model": "MIT/ast-finetuned-audioset-10-10-0.4593",
+            "weights_sha256": "ae0c1e2ad4e1381d851fa9bf298ba13ebc9c5a914cdee2dbe427a6583869924d",
+            "config_sha256": "a93d525511d77e8ecc933d09674b85099815bbbb417c228a4edd655e252fb9ff",
+            "features_sha256": "8d04ba5a9c6fca5d39d0de2b1fd05ecf79deb589fbba279728bbebac39934231",
+            "window_seconds": 2.0,
+            "hop_seconds": 2.0,
+            "short_window_feature_padding": true
+          }
+        }
+      ]
+    }
+  ],
+  "last_run": {
+    "provenance": {
+      "backend": "ast",
+      "model": "MIT/ast-finetuned-audioset-10-10-0.4593",
+      "weights_sha256": "ae0c1e2ad4e1381d851fa9bf298ba13ebc9c5a914cdee2dbe427a6583869924d",
+      "config_sha256": "a93d525511d77e8ecc933d09674b85099815bbbb417c228a4edd655e252fb9ff",
+      "features_sha256": "8d04ba5a9c6fca5d39d0de2b1fd05ecf79deb589fbba279728bbebac39934231",
+      "window_seconds": 2.0,
+      "hop_seconds": 2.0,
+      "short_window_feature_padding": true
+    },
+    "threshold": 0.2,
+    "clips": [
+      {
+        "file": "ferro 10 silenced.mp4",
+        "audio_stream": 1,
+        "windows_scored": 6,
+        "qualifying_windows": 0,
+        "processing_mean_ms": 982.6976666675668,
+        "processing_max_ms": 1152.3554000013974
+      },
+      {
+        "file": "ferro 10 unsilenced.mp4",
+        "audio_stream": 1,
+        "windows_scored": 6,
+        "qualifying_windows": 2,
+        "processing_mean_ms": 939.3029166652317,
+        "processing_max_ms": 959.3639000013354
+      },
+      {
+        "file": "ferro 50m unsilenced.mp4",
+        "audio_stream": 1,
+        "windows_scored": 5,
+        "qualifying_windows": 1,
+        "processing_mean_ms": 928.6815999992541,
+        "processing_max_ms": 976.7662000012933
+      },
+      {
+        "file": "stitcher 10 silenced.mp4",
+        "audio_stream": 1,
+        "windows_scored": 6,
+        "qualifying_windows": 1,
+        "processing_mean_ms": 939.464983336317,
+        "processing_max_ms": 979.3210999996518
+      },
+      {
+        "file": "stitcher 10 unsilenced.mp4",
+        "audio_stream": 1,
+        "windows_scored": 9,
+        "qualifying_windows": 4,
+        "processing_mean_ms": 941.7505666650767,
+        "processing_max_ms": 978.8649000038276
+      },
+      {
+        "file": "stitcher 50 silenced.mp4",
+        "audio_stream": 1,
+        "windows_scored": 4,
+        "qualifying_windows": 1,
+        "processing_mean_ms": 955.2744249995158,
+        "processing_max_ms": 1052.8568000008818
+      },
+      {
+        "file": "stitcher 50 unsilenced.mp4",
+        "audio_stream": 1,
+        "windows_scored": 4,
+        "qualifying_windows": 1,
+        "processing_mean_ms": 959.7159999993892,
+        "processing_max_ms": 993.7786999944365
+      }
+    ],
+    "notice": "Uncalibrated window suggestions, not verified events or onset boundaries. Short inputs are feature-padded; performance on ARC is unmeasured. Review misses as well as proposals. Test clips excluded."
+  }
+}

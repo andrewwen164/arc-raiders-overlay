@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "description": "Hand-labelled synthetic fixture intervals for make-demo --seconds 9. Demo is not gameplay accuracy evidence.",
+  "intervals": [
+    {"start": 1.0, "end": 1.18, "label": "transient", "direction": "left"},
+    {"start": 3.5, "end": 4.5, "label": "sound activity", "direction": "unknown"},
+    {"start": 6.5, "end": 6.68, "label": "transient", "direction": "right"}
+  ]
+}

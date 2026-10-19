@@ -1,0 +1,895 @@
+{
+  "version": 1,
+  "classes": [
+    "footsteps",
+    "reload",
+    "gunshot",
+    "landing",
+    "snap_hook",
+    "zipline",
+    "climb_vault",
+    "healing"
+  ],
+  "clips": [
+    {
+      "file": "MedalTVARCRaiders20260830190216959.mp4",
+      "duration": 300.032133,
+      "size": 385405373,
+      "group": "20260830",
+      "split": "train",
+      "audio_streams": [
+        {
+          "index": 1,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.017
+        },
+        {
+          "index": 2,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.017
+        },
+        {
+          "index": 3,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.017
+        },
+        {
+          "index": 4,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.017
+        }
+      ],
+      "audio_stream": 1,
+      "track_confirmed": true,
+      "reviewed": [],
+      "intervals": [
+        {
+          "start": 0.0,
+          "end": 2.28,
+          "label": "snap_hook",
+          "source": "self"
+        },
+        {
+          "start": 2.57,
+          "end": 3.49,
+          "label": "gunshot",
+          "source": "other_raider"
+        },
+        {
+          "start": 2.57,
+          "end": 3.49,
+          "label": "gunshot",
+          "source": "other_raider"
+        },
+        {
+          "start": 12.48,
+          "end": 14.89,
+          "label": "gunshot",
+          "source": "other_raider"
+        }
+      ]
+    },
+    {
+      "file": "MedalTVARCRaiders20260903164605480.mp4",
+      "duration": 300.103,
+      "size": 378151770,
+      "group": "20260903",
+      "split": "train",
+      "audio_streams": [
+        {
+          "index": 1,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.007
+        },
+        {
+          "index": 2,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.007
+        },
+        {
+          "index": 3,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.007
+        },
+        {
+          "index": 4,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.007
+        }
+      ],
+      "audio_stream": 1,
+      "track_confirmed": false,
+      "reviewed": [],
+      "intervals": []
+    },
+    {
+      "file": "MedalTVARCRaiders20260903165517501.mp4",
+      "duration": 300.298,
+      "size": 370033379,
+      "group": "20260903",
+      "split": "train",
+      "audio_streams": [
+        {
+          "index": 1,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.01
+        },
+        {
+          "index": 2,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.01
+        },
+        {
+          "index": 3,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.01
+        },
+        {
+          "index": 4,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.01
+        }
+      ],
+      "audio_stream": 1,
+      "track_confirmed": false,
+      "reviewed": [],
+      "intervals": []
+    },
+    {
+      "file": "MedalTVARCRaiders20260903171919110.mp4",
+      "duration": 300.182133,
+      "size": 377469467,
+      "group": "20260903",
+      "split": "train",
+      "audio_streams": [
+        {
+          "index": 1,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.01
+        },
+        {
+          "index": 2,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.01
+        },
+        {
+          "index": 3,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.01
+        },
+        {
+          "index": 4,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.01
+        }
+      ],
+      "audio_stream": 1,
+      "track_confirmed": false,
+      "reviewed": [],
+      "intervals": []
+    },
+    {
+      "file": "MedalTVARCRaiders20260903193600881.mp4",
+      "duration": 300.047,
+      "size": 382850036,
+      "group": "20260903",
+      "split": "train",
+      "audio_streams": [
+        {
+          "index": 1,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.015
+        },
+        {
+          "index": 2,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.015
+        },
+        {
+          "index": 3,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.015
+        },
+        {
+          "index": 4,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.015
+        }
+      ],
+      "audio_stream": 1,
+      "track_confirmed": false,
+      "reviewed": [],
+      "intervals": []
+    },
+    {
+      "file": "MedalTVARCRaiders20260916152224144.mp4",
+      "duration": 300.268667,
+      "size": 350618798,
+      "group": "20260916",
+      "split": "train",
+      "audio_streams": [
+        {
+          "index": 1,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.002
+        },
+        {
+          "index": 2,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.002
+        },
+        {
+          "index": 3,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.002
+        },
+        {
+          "index": 4,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.002
+        }
+      ],
+      "audio_stream": 1,
+      "track_confirmed": false,
+      "reviewed": [],
+      "intervals": []
+    },
+    {
+      "file": "MedalTVARCRaiders20260916180327996.mp4",
+      "duration": 300.112,
+      "size": 348277880,
+      "group": "20260916",
+      "split": "train",
+      "audio_streams": [
+        {
+          "index": 1,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.013
+        },
+        {
+          "index": 2,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.014
+        },
+        {
+          "index": 3,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.019
+        },
+        {
+          "index": 4,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.016
+        }
+      ],
+      "audio_stream": 1,
+      "track_confirmed": false,
+      "reviewed": [],
+      "intervals": []
+    },
+    {
+      "file": "MedalTVARCRaiders20260916181254429.mp4",
+      "duration": 300.36,
+      "size": 389065358,
+      "group": "20260916",
+      "split": "train",
+      "audio_streams": [
+        {
+          "index": 1,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.002
+        },
+        {
+          "index": 2,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.003
+        },
+        {
+          "index": 3,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.008
+        },
+        {
+          "index": 4,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.005
+        }
+      ],
+      "audio_stream": 1,
+      "track_confirmed": false,
+      "reviewed": [],
+      "intervals": []
+    },
+    {
+      "file": "MedalTVARCRaiders20260916181706384.mp4",
+      "duration": 300.303,
+      "size": 359618507,
+      "group": "20260916",
+      "split": "train",
+      "audio_streams": [
+        {
+          "index": 1,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.013
+        },
+        {
+          "index": 2,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.015
+        },
+        {
+          "index": 3,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.019
+        },
+        {
+          "index": 4,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.016
+        }
+      ],
+      "audio_stream": 1,
+      "track_confirmed": false,
+      "reviewed": [],
+      "intervals": []
+    },
+    {
+      "file": "MedalTVARCRaiders20260916194228720.mp4",
+      "duration": 300.207667,
+      "size": 373414653,
+      "group": "20260916",
+      "split": "train",
+      "audio_streams": [
+        {
+          "index": 1,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.004
+        },
+        {
+          "index": 2,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.005
+        },
+        {
+          "index": 3,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.01
+        },
+        {
+          "index": 4,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.007
+        }
+      ],
+      "audio_stream": 1,
+      "track_confirmed": false,
+      "reviewed": [],
+      "intervals": []
+    },
+    {
+      "file": "MedalTVARCRaiders20260921190349225.mp4",
+      "duration": 300.024667,
+      "size": 384703031,
+      "group": "20260921",
+      "split": "test",
+      "audio_streams": [
+        {
+          "index": 1,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.014
+        },
+        {
+          "index": 2,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.014
+        },
+        {
+          "index": 3,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.014
+        },
+        {
+          "index": 4,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.014
+        }
+      ],
+      "audio_stream": 1,
+      "track_confirmed": false,
+      "reviewed": [],
+      "intervals": []
+    },
+    {
+      "file": "MedalTVARCRaiders20260922164929652.mp4",
+      "duration": 299.974,
+      "size": 393510815,
+      "group": "20260922",
+      "split": "validation",
+      "audio_streams": [
+        {
+          "index": 1,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.006
+        },
+        {
+          "index": 2,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.006
+        },
+        {
+          "index": 3,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.006
+        },
+        {
+          "index": 4,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.006
+        }
+      ],
+      "audio_stream": 1,
+      "track_confirmed": false,
+      "reviewed": [],
+      "intervals": []
+    },
+    {
+      "file": "MedalTVARCRaiders20260926204218555.mp4",
+      "duration": 299.589,
+      "size": 353517692,
+      "group": "20260926",
+      "split": "train",
+      "audio_streams": [
+        {
+          "index": 1,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.001
+        },
+        {
+          "index": 2,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.003
+        },
+        {
+          "index": 3,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.005
+        },
+        {
+          "index": 4,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.019
+        }
+      ],
+      "audio_stream": 1,
+      "track_confirmed": false,
+      "reviewed": [],
+      "intervals": []
+    },
+    {
+      "file": "MedalTVARCRaiders20260926211917229.mp4",
+      "duration": 300.060333,
+      "size": 312179659,
+      "group": "20260926",
+      "split": "train",
+      "audio_streams": [
+        {
+          "index": 1,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.007
+        },
+        {
+          "index": 2,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.009
+        },
+        {
+          "index": 3,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.011
+        },
+        {
+          "index": 4,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.004
+        }
+      ],
+      "audio_stream": 1,
+      "track_confirmed": false,
+      "reviewed": [],
+      "intervals": []
+    },
+    {
+      "file": "MedalTVARCRaiders20260926220549772.mp4",
+      "duration": 300.128333,
+      "size": 386822054,
+      "group": "20260926",
+      "split": "train",
+      "audio_streams": [
+        {
+          "index": 1,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.009
+        },
+        {
+          "index": 2,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.011
+        },
+        {
+          "index": 3,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.013
+        },
+        {
+          "index": 4,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.006
+        }
+      ],
+      "audio_stream": 1,
+      "track_confirmed": false,
+      "reviewed": [],
+      "intervals": []
+    },
+    {
+      "file": "MedalTVARCRaiders20260926222731195.mp4",
+      "duration": 300.033,
+      "size": 381388254,
+      "group": "20260926",
+      "split": "train",
+      "audio_streams": [
+        {
+          "index": 1,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.018
+        },
+        {
+          "index": 2,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.02
+        },
+        {
+          "index": 3,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.001
+        },
+        {
+          "index": 4,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.015
+        }
+      ],
+      "audio_stream": 1,
+      "track_confirmed": false,
+      "reviewed": [],
+      "intervals": []
+    },
+    {
+      "file": "MedalTVARCRaiders20260926223914003.mp4",
+      "duration": 300.260333,
+      "size": 371534420,
+      "group": "20260926",
+      "split": "train",
+      "audio_streams": [
+        {
+          "index": 1,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.013
+        },
+        {
+          "index": 2,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.015
+        },
+        {
+          "index": 3,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.017
+        },
+        {
+          "index": 4,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.01
+        }
+      ],
+      "audio_stream": 1,
+      "track_confirmed": false,
+      "reviewed": [],
+      "intervals": []
+    },
+    {
+      "file": "MedalTVARCRaiders20260926224739419.mp4",
+      "duration": 300.302,
+      "size": 388463228,
+      "group": "20260926",
+      "split": "train",
+      "audio_streams": [
+        {
+          "index": 1,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.014
+        },
+        {
+          "index": 2,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.015
+        },
+        {
+          "index": 3,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.018
+        },
+        {
+          "index": 4,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.011
+        }
+      ],
+      "audio_stream": 1,
+      "track_confirmed": false,
+      "reviewed": [],
+      "intervals": []
+    },
+    {
+      "file": "MedalTVARCRaiders20261008181411120.mp4",
+      "duration": 300.251333,
+      "size": 378652733,
+      "group": "20261008",
+      "split": "train",
+      "audio_streams": [
+        {
+          "index": 1,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.016
+        },
+        {
+          "index": 2,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.006
+        },
+        {
+          "index": 3,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.011
+        },
+        {
+          "index": 4,
+          "channels": 2,
+          "rate": 48000,
+          "title": "",
+          "codec": "aac",
+          "start": 0.011
+        }
+      ],
+      "audio_stream": 1,
+      "track_confirmed": false,
+      "reviewed": [],
+      "intervals": []
+    }
+  ]
+}

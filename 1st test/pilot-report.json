@@ -1,0 +1,216 @@
+{
+  "notice": "Filename conditions and user-reported setup, not verified event labels. All pilot clips share one session/train split. No raw audio exports or uploads.",
+  "setup": {
+    "perspective": "listener",
+    "shooter": "friend / teammate",
+    "silencer": "Silencer II",
+    "provisional_audio_stream": 1,
+    "source": "user report"
+  },
+  "clips": [
+    {
+      "file": "ferro 10 silenced.mp4",
+      "seconds": 11.929,
+      "condition": {
+        "weapon": "ferro",
+        "reported_distance_m": 10,
+        "suppressed": true,
+        "silencer": "Silencer II",
+        "perspective": "listener",
+        "source": "teammate",
+        "condition_source": "filename plus user report; distance not independently measured"
+      },
+      "tracks": [
+        {
+          "audio_stream": 1,
+          "mono_rms_dbfs": -27.20704188224722,
+          "mono_peak_dbfs": -2.3003518210299747,
+          "decoded_seconds": 11.925375
+        },
+        {
+          "audio_stream": 2,
+          "mono_rms_dbfs": -27.156424870055524,
+          "mono_peak_dbfs": -2.4785981554571093,
+          "decoded_seconds": 11.92975
+        }
+      ],
+      "mono_track_correlation": -0.01204286589554584
+    },
+    {
+      "file": "ferro 10 unsilenced.mp4",
+      "seconds": 11.631,
+      "condition": {
+        "weapon": "ferro",
+        "reported_distance_m": 10,
+        "suppressed": false,
+        "silencer": "none",
+        "perspective": "listener",
+        "source": "teammate",
+        "condition_source": "filename plus user report; distance not independently measured"
+      },
+      "tracks": [
+        {
+          "audio_stream": 1,
+          "mono_rms_dbfs": -21.91541660467371,
+          "mono_peak_dbfs": -2.401925392642778,
+          "decoded_seconds": 11.62675
+        },
+        {
+          "audio_stream": 2,
+          "mono_rms_dbfs": -21.75377147136487,
+          "mono_peak_dbfs": -3.1328212398189197,
+          "decoded_seconds": 11.617375
+        }
+      ],
+      "mono_track_correlation": 0.08126319776061128
+    },
+    {
+      "file": "ferro 50m unsilenced.mp4",
+      "seconds": 8.927,
+      "condition": {
+        "weapon": "ferro",
+        "reported_distance_m": 50,
+        "suppressed": false,
+        "silencer": "none",
+        "perspective": "listener",
+        "source": "teammate",
+        "condition_source": "filename plus user report; distance not independently measured"
+      },
+      "tracks": [
+        {
+          "audio_stream": 1,
+          "mono_rms_dbfs": -21.643872990683363,
+          "mono_peak_dbfs": 1.6217268287474362,
+          "decoded_seconds": 8.917375
+        },
+        {
+          "audio_stream": 2,
+          "mono_rms_dbfs": -21.372469487640352,
+          "mono_peak_dbfs": 2.1331639600737797,
+          "decoded_seconds": 8.921375
+        }
+      ],
+      "mono_track_correlation": 0.09779782649937699
+    },
+    {
+      "file": "stitcher 10 silenced.mp4",
+      "seconds": 11.976,
+      "condition": {
+        "weapon": "stitcher",
+        "reported_distance_m": 10,
+        "suppressed": true,
+        "silencer": "Silencer II",
+        "perspective": "listener",
+        "source": "teammate",
+        "condition_source": "filename plus user report; distance not independently measured"
+      },
+      "tracks": [
+        {
+          "audio_stream": 1,
+          "mono_rms_dbfs": -22.461843143765844,
+          "mono_peak_dbfs": -0.3205456077361023,
+          "decoded_seconds": 11.989375
+        },
+        {
+          "audio_stream": 2,
+          "mono_rms_dbfs": -22.50189784164013,
+          "mono_peak_dbfs": -0.858934302377806,
+          "decoded_seconds": 11.97675
+        }
+      ],
+      "mono_track_correlation": -0.006569649614864685
+    },
+    {
+      "file": "stitcher 10 unsilenced.mp4",
+      "seconds": 17.674,
+      "condition": {
+        "weapon": "stitcher",
+        "reported_distance_m": 10,
+        "suppressed": false,
+        "silencer": "none",
+        "perspective": "listener",
+        "source": "teammate",
+        "condition_source": "filename plus user report; distance not independently measured"
+      },
+      "tracks": [
+        {
+          "audio_stream": 1,
+          "mono_rms_dbfs": -22.439401271588192,
+          "mono_peak_dbfs": -0.7067344658955532,
+          "decoded_seconds": 17.664
+        },
+        {
+          "audio_stream": 2,
+          "mono_rms_dbfs": -22.506191852718803,
+          "mono_peak_dbfs": -0.6565464354960726,
+          "decoded_seconds": 17.67475
+        }
+      ],
+      "mono_track_correlation": 0.0367428139974555
+    },
+    {
+      "file": "stitcher 50 silenced.mp4",
+      "seconds": 6.368,
+      "condition": {
+        "weapon": "stitcher",
+        "reported_distance_m": 50,
+        "suppressed": true,
+        "silencer": "Silencer II",
+        "perspective": "listener",
+        "source": "teammate",
+        "condition_source": "filename plus user report; distance not independently measured"
+      },
+      "tracks": [
+        {
+          "audio_stream": 1,
+          "mono_rms_dbfs": -29.95246633976771,
+          "mono_peak_dbfs": -9.608114927267842,
+          "decoded_seconds": 6.37875
+        },
+        {
+          "audio_stream": 2,
+          "mono_rms_dbfs": -29.8371022528727,
+          "mono_peak_dbfs": -9.54799080723215,
+          "decoded_seconds": 6.36875
+        }
+      ],
+      "mono_track_correlation": 0.003347683231330008
+    },
+    {
+      "file": "stitcher 50 unsilenced.mp4",
+      "seconds": 7.375,
+      "condition": {
+        "weapon": "stitcher",
+        "reported_distance_m": 50,
+        "suppressed": false,
+        "silencer": "none",
+        "perspective": "listener",
+        "source": "teammate",
+        "condition_source": "filename plus user report; distance not independently measured"
+      },
+      "tracks": [
+        {
+          "audio_stream": 1,
+          "mono_rms_dbfs": -25.17676223764481,
+          "mono_peak_dbfs": -0.16909792103251314,
+          "decoded_seconds": 7.36
+        },
+        {
+          "audio_stream": 2,
+          "mono_rms_dbfs": -25.06457896354238,
+          "mono_peak_dbfs": -0.5024753954487458,
+          "decoded_seconds": 7.375
+        }
+      ],
+      "mono_track_correlation": 0.048557425784337756
+    }
+  ],
+  "missing_conditions": [
+    {
+      "weapon": "ferro",
+      "distance_m": 50,
+      "suppressed": true
+    }
+  ],
+  "total_seconds": 75.88
+}
